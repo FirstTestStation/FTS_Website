@@ -40,7 +40,10 @@ improve_content:
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
 #
 ##urlimg: 'https://localhost/FirstTestStation/images/'
-urlimg: 'https://phlow.github.io/feeling-responsive/images/'  #DL
+
+urlimg: 'https://dlock8.github.io/FirstTestStation/images/'
+
+## urlimg: 'https://phlow.github.io/feeling-responsive/images/'  #DL
 
 
 # Logo size is 600x80 pixels
@@ -123,7 +126,7 @@ defaults:
       show_meta: true   # Show metadata for all posts
       # sidebar:        # Possible values › left, right › by default there will be no sidebar
       comments: false
-      author: phlow     # Default author for posts
+      author: dlock8     # Default author for posts
 
 
 
