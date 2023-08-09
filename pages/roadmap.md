@@ -2,9 +2,14 @@
 layout              : page
 title               : "Roadmap – What's up next?!?"
 subheadline         : "ToDo-List &amp; Ideas"
-teaser              : "<em>Feeling Responsive</em> works fine. I am happy lots of people use it. Currently I have no plans to make it <em>better</em> or <em>worse</em>."
+teaser              : "<em>First Test Station</em> is in development."
 header:
-   image_fullwidth  : "header_roadmap_3.jpg"
+   image_fullwidth  : "pcb.jpg"
 permalink           : "/roadmap/"
 ---
 
+## TO DO
+
+•	Hardware assembly of the InterconnectIO and SelfTest board. <br>
+•	Complete the firwmware for InterconnectIO and Selftest board.<br>
+•	Complete the mechanical hardware to mount InterconnectIO in chassis.<br>

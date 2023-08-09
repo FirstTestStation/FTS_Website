@@ -36,6 +36,10 @@ author: dlock8
 •	A voltage of at least 3.3V must be applied to DIG_PWR_IN in order to power the level shifter. There is a voltage level that is defined by the interface of the UUT (normally 3.3V or 5V).  If digital resources are needed, the voltage is mandatory.<br>
 
 
+### All Header-Styles 
+{: .t60 }
+
+{% include list-posts tag='design' %}
 
 
 

@@ -9,7 +9,7 @@ header:
   image_fullwidth: pcb.jpg
 widget1:
   title: "First TestStation <br> Project"
-  url:  #'http://phlow.github.io/feeling-responsive/info/'
+  url:  #'http://dlock8.github.io/FTS_Website/info/'
   image: FirstTestStation.png
   text: "The project's objective is to provide, at a low cost, a starting test platform for testing electronic production boards or electronic systems. Designed as a free project by just retired Test Engineer, it will offer a complete test solution by providing a complete testing example."
 widget2:
@@ -21,7 +21,7 @@ widget2:
   #video: '<a href="#" data-reveal-id="videoModal"><img src="http://phlow.github.io/feeling-responsive/images/start-video-feeling-responsive-302x182.jpg" width="302" height="182" alt=""/></a>'
 widget3:
   title: "Download Project"
-  url: 'https://github.com/Phlow/feeling-responsive'
+  url: 'https://github.com/dlock8'
   image: github.jpg
   text: '<em>First TestStation</em> is free and licensed under a MIT License. Make it your own and start using it. The schematic, gerber and code are available on Github.'
 #
