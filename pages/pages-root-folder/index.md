@@ -6,7 +6,7 @@
 #
 layout: frontpage
 header:
-  image_fullwidth: pcb.jpg
+  image_fullwidth: Interconnect_pcb.jpeg
 widget1:
   title: "First TestStation <br> Project"
   url:  #'http://dlock8.github.io/FTS_Website/info/'
@@ -23,8 +23,7 @@ widget3:
   title: "Download Project"
   url: 'https://github.com/dlock8'
   image: github.jpg
-  text: '<em>First TestStation</em> is free and licensed under a MIT License. Make it your own and start using it. The schematic, gerber and code are available on Github.'
-#
+  text: The '<em>First TestStation</em>' project is an open-source initiative providing schematics, Gerber files, and source code for a complete testing solution, freely available on GitHub.
 # Use the call for action to show a button on the frontpage
 #
 # To make internal links, just use a permalink like this

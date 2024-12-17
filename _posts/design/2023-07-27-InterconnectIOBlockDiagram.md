@@ -1,7 +1,7 @@
 ---
 layout: page-fullwidth
 subheadline: Block Diagram
-title:  "Inteconnect IO Board"
+title:  "Inteconnect IO Board Block Diagram"
 teaser: "Inteconnect IO Board contains electronics required to interface with the UUT"
 meta_teaser: ""
 breadcrumb: true
@@ -20,7 +20,7 @@ author: dlock8
 ---
 ## Features
 
-•	Interconnect IO Boards are designed to be easy to build and repair.Surface mount components could be soldered directly on board or bought in pre-assembled modules and mounted on Interconnect IO boards through through-hole sockets.<br> 
+•	Interconnect IO Boards are designed to be easy to build and repair. Surface mount components could be soldered directly on board or bought in pre-assembled modules and mounted on Interconnect IO boards through through-hole sockets.<br> 
 •	There are many basic components, such as resistors, transistors, relays, leds, etc., which are through-hole component and easy to solder.<br>
 •	Old Through-hole technology will be blended with a newly introduced raspberry pi module (Pico) to form a powerful combination of electronics for testing electronics cards or systems.<br>
 •	The Raspberry Pico controller was chosen due to its low price, the resources available, and the documentation and programming examples. Four Pico modules were required to provide all the resources needed on the First TestStation project.<br>
@@ -36,7 +36,6 @@ author: dlock8
 •	A voltage of at least 3.3V must be applied to DIG_PWR_IN in order to power the level shifter. There is a voltage level that is defined by the interface of the UUT (normally 3.3V or 5V).  If digital resources are needed, the voltage is mandatory.<br>
 
 
-### All Header-Styles 
 {: .t60 }
 
 {% include list-posts tag='design' %}

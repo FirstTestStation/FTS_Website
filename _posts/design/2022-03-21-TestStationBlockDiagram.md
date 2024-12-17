@@ -1,8 +1,8 @@
 ---
 layout: page
 sidebar: left
-subheadline: Block Diagram
-title:  "First TestStation Project"
+subheadline: Overview Drawing
+title:  "First TestStation Project Overview Drawing"
 teaser: "First TestStation plans to provide, free of charge, a starting test solution for testing electronic production boards or electronic systems."
 meta_teaser: ""
 
@@ -30,9 +30,9 @@ image:
 •	The interconnext IO Box will be compatible to PCB mating or to cable mating for having the maximum of flexibility.<br>
 •	A Selftest board will be designed to verify the functions and instruments available on the TestStation.<br>
 •	The OpenTap Selftest sequence will be used, as complete example, for proof of concept.<br>
+•	Fully documented, with comprehensive instructions and resources available to guide users through building and utilizing the TestStation effectively.
 
-
-### All Header-Styles 
+ 
 {: .t60 }
 
 {% include list-posts tag='design' %}

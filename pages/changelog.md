@@ -1,15 +1,28 @@
 ---
 layout: page
 title: "Change is good!"
-meta_title: "First Test Station Website Changelog"
-subheadline: "First Test Station Changelog"
-teaser: "History and changelog of First Test Station Website"
+meta_title: "First TestStation Website Changelog"
+subheadline: "First TestStation Changelog"
+teaser: "History and changelog of First TestStation project"
 header:
-   image_fullwidth: "pcb.jpg"
+   image_fullwidth: "Interconnect_pcb.jpeg"
 permalink: "/changelog/"
 ---
-2023-08-06 // Version 0.5
-:   First Release. Hardware design of PCB is completed
+
+
+
+
+2024-10-08 // Firmware Version 1.0 
+:   First Release.  Interconnect IO Master Firmware
+:   First Release.  Interconnect IO Slave Firmware
+:   First Release.  Selftest Firmware
+
+2023-10-31 // Version 2.0
+:   Second Release. Hardware routing of Selftest PCB is completed
+
+2023-08-06 // Version 1.0
+:   First Release. Hardware design of Interconnect IO PCB is completed
+:   First Release. Hardware design of Selftest PCB is completed
 
 2022-07-07 // Version 0.1
 :   Conceptual Design completed, Website theme selected, Hardware selected and software required defined,

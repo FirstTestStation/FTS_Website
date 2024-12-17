@@ -8,16 +8,17 @@
 #                                                 /____/
 #
 # Title of your website
-title: 'First Test Station'
+title: 'First TestStation'
 
 # The slogan describes your website and is used on homepage in <title> and other important places
-slogan: 'A Low Cost Flexible Test Station'
+slogan: 'A Low Cost Flexible TestStation'
 
 # The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
-description: '»First Test Station« is a starting test solution to be used to validate electronics boards and system.'
+description: '»First TestStation« is a starting test solution to be used to validate electronics boards and system.'
 
 # The credits show up in the includes/_footer.html – It would be nice of you to leave a link to Phlow or Feeling Responsive as a thank you :)
-credits: '<p>Created with &hearts; by <a href="http://phlow.de/">Phlow</a> with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> based on <a href="http://phlow.github.io/feeling-responsive/">Feeling Responsive</a>.</p>'
+# credits: '<p>Created with &hearts; by <a href="http://phlow.de/">Phlow</a> with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> based on <a href="http://phlow.github.io/feeling-responsive/">Feeling Responsive</a>.</p>'
+# credits: '<p>Created with &hearts; by <a href="https://dlock8.github.io/">dlock8</a> with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> based on <a href="http://phlow.github.io/feeling-responsive/">Feeling Responsive</a>.</p>'
 
 # Main author of the website
 # See > authors.yml
@@ -38,12 +39,10 @@ improve_content:
 #
 # Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
-#
-##urlimg: 'https://localhost/FirstTestStation/images/'
 
-urlimg: 'https://dlock8.github.io/FTS_Website/images/'
+urlimg: '/FTS_Website/images/'
 
-## urlimg: 'https://phlow.github.io/feeling-responsive/images/'  #DL
+##urlimg: 'https://dlock8.github.io/FTS_Website/images/'
 
 
 # Logo size is 600x80 pixels

@@ -2,14 +2,13 @@
 layout              : page
 title               : "Roadmap – What's up next?!?"
 subheadline         : "ToDo-List &amp; Ideas"
-teaser              : "<em>First Test Station</em> is in development."
+teaser              : "<em>First TestStation</em> is in development."
 header:
-   image_fullwidth  : "pcb.jpg"
+   image_fullwidth  : "Interconnect_pcb.jpeg"
 permalink           : "/roadmap/"
 ---
 
 ## TO DO
 
-•	Hardware assembly of the InterconnectIO and SelfTest board. <br>
-•	Complete the firwmware for InterconnectIO and Selftest board.<br>
-•	Complete the mechanical hardware to mount InterconnectIO in chassis.<br>
+•	Complete OpenTAP sequence. <br>
+•	Complete documentation.<br>

@@ -1,7 +1,7 @@
 ---
 layout: page-fullwidth
 subheadline: Block Diagram
-title:  "SelfTest Board"
+title:  "SelfTest Board Block Diagram"
 teaser: "Selftest Board contains electronics and routing required to validate the ressources contains on the First TestStation"
 meta_teaser: ""
 breadcrumb: true
@@ -40,7 +40,6 @@ author: dlock8
 •	 Space for custom module is present on Selftest Board.<br>
 
 
-### All Header-Styles 
 {: .t60 }
 
 {% include list-posts tag='design' %}

@@ -2,9 +2,9 @@
 layout: page
 show_meta: false
 title: "Technical Information!"
-subheadline: "Software Design"
+subheadline: "Test Software Design"
 header:
-   image_fullwidth: "pcb.jpg"
+   image_fullwidth: "Interconnect_pcb.jpeg"
 permalink: "/software/"
 ---
 <ul>

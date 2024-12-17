@@ -1,10 +1,10 @@
 ---
 layout: page
 show_meta: false
-title: "Technical content!"
-subheadline: "Hardware Project Layouts"
+title: "DESIGN LAYOUTS"
+subheadline: "Design Project Plan"
 header:
-   image_fullwidth: "pcb.jpg"
+   image_fullwidth: "Interconnect_pcb.jpeg"
 permalink: "/design/"
 ---
 <ul>

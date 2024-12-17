@@ -5,7 +5,7 @@ subheadline: "Who I am?"
 teaser: "Despite the end of my active career, I cannot let the field of test engineering go without a final project. A project in my head for many years, but impossible to accomplish under regular work, until now."
 permalink: "/info/"
 header:
-    image_fullwidth: "pcb.jpg"
+    image_fullwidth: "Interconnect_pcb.jpeg"
 ---
 My first job in electronics, was electronic technicians for <a href= "https://shop.heathkit.com/shop">Heathkit</a>, repairing kit not working after be assembled by the customer. I have learned how to debug electronics by visual inspection to find reverse components, wrong components, missing component and bad soldering. <br>
 

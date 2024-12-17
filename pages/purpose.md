@@ -5,7 +5,7 @@ title               : "Why doing this project?"
 subheadline         : "Purpose?"
 teaser              : ""
 header:
-   image_fullwidth  : "pcb.jpg"
+   image_fullwidth  : "Interconnect_pcb.jpeg"
 permalink           : "/purpose/"
 ---
 Having recently completed my career in test engineering, this project will be my voluntary contribution to the test engineering field to fill the void on expertise, in particular for small companies.<br><br>

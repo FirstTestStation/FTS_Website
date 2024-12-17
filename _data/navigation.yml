@@ -12,7 +12,7 @@
   url: "/design/"
   side: left
   dropdown:
-  - title: "TestStation Diagram"
+  - title: "TestStation Drawing"
     url: "/design/TestStationBlockDiagram/"
   - title: "Interconnect IO BOX Diagram"
     url: "/design/InterconnectBlockDiagram/"
@@ -20,55 +20,47 @@
     url: "/design/InterconnectIOBlockDiagram/"
   - title: "SelfTest Board Block Diagram"
     url: "/design/SelftestBlockDiagram/"
-  - title: "Interconnecto IO Board PCB"
-    url: "/design/InterconnectBoardPCB/"
+
+
+- title: "Hardware"
+  url: "/hardware/"
+  side: left
+  dropdown:
+  - title: "Interconnect IO Project"
+    url: "/hardware/InterconnectOpenBox/"
+  - title: "Interconnect  IO Box"
+    url: "/hardware/InterconnectBox/"
+  - title: "Interconnect IO Board PCB"
+    url: "/hardware/InterconnectBoardPCB/"
   - title: "Selftest Board PCB"
-    url: "/design/SelftestBoardPCB/"
- #   url: "/design/InterconnectBoardPCB/"
- # - title: "Daniel Grid"
- #   url: "/design/grid/"
- # - title: "Typography"
- #   url: "/design/typography/typography/"
- # - title: "Page/Post"
- #   url: "/design/page/"
- # - title: "Post-Left-Sidebar"
- #   url: "/design/post-left-sidebar/"
- # - title: "Post-Right-Sidebar"
- #   url: "/design/post-right-sidebar/"
- # - title: "Page Full-Width"
- #   url: "/design/page-fullwidth/"
- # - title: "Blog-Page"
- #   url: "/blog/"
- # - title: "Video"
- #   url: "/design/video/"
- # - title: "Gallery"
- #   url: "/design/gallery/"
- # - title: "Portfolio"
- #   url: "/design/portfolio/"
+    url: "/hardware/SelftestBoardPCB/"
+
+
+- title: "Firmware"
+  url: "/firmware/"
+  side: left
+  dropdown:
+  - title: "Pico Master Firmware"
+    url: "/firmware/Master_IO_Firmware/"
+  - title: "Pico Slave Firmware"
+    url: "/firmware/Slave_IO_Firmware/"
+  - title: "Pico Selftest Firmware"
+    url: "/firmware/Selftest_Firmware/"
 
 - title: "Software"
   url: "/software/"
   side: left
   dropdown:
-  - title: "MasterIO Firmware"
-    url: "/design/Firmware_MasterIO/"
-#  - title: "Header with Image and Pattern"
-#    url: "/design/header-image-pattern/"
-#  - title: "Header with image and color"
-#    url: "/design/header-image-color/"
-#  - title: "Header Only With Logo"
-#    url: "/design/header-logo-only/"
-#  - title: "Header With Text"
-#    url: "/design/header-with-text/"
-#  - title: "No Header"
-#    url: "/design/no-header/"
-#  - title: "No Header but Image"
-#    url: "/design/no-header-but-image/"
+  - title: "test Sequence Strategy"
+    url: "/software/Test_Sequence/"
+
 
 - title: Documentation
   url: "/documentation/"
   side: left
   dropdown:
+  - title: "Photos Gallery"
+    url: "/documentation/project-gallery/"
   - title: "Changelog"
     url: "/changelog/"
   - title: "Roadmap"
