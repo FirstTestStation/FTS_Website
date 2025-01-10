@@ -9,7 +9,9 @@ header:
 permalink: "/changelog/"
 ---
 
-
+2025-01-08 // Firmware Version 1.1 
+:   Updated to SDK 2.0.1 and now compatible with the Raspberry Pi Pico extension in Visual Studio Code.
+:   Code development has been moved from Raspberry Pi 4 to Raspberry Pi 5, providing improved performance and capabilities.
 
 
 2024-10-08 // Firmware Version 1.0 
