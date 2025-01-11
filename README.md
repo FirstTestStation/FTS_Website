@@ -1,16 +1,17 @@
 # First TestStation Website
 
-This website showcases the First Test Station project, including its hardware, software, and mechanical assembly. It serves as a hub for sharing project details, images, and GitHub repositories.
+This website showcases the First Test Station project, including its hardware, software, and mechanical assembly. It serves as a hub for sharing project details, images, and GitHub repositories. project ([FTS](https://dlock8.github.io/FTS_Website/))
 
+
+![Site](images/FTS_website.jpg)
 
 ## Table of Contents
 1. [About the Website](#about-the-website)
 2. [Features](#features)
-3. [Live Demo](#live-demo)
-4. [How to Use](#how-to-use)
-5. [Repository Overview](#repository-overview)
-6. [Contributing](#contributing)
-7. [License](#license)
+3. [How to Use](#how-to-use)
+4. [Repository Overview](#repository-overview)
+5. [Contributing](#contributing)
+6. [License](#license)
 
 
 
@@ -62,31 +63,35 @@ Whether you're an engineer looking for technical details or a hobbyist exploring
 
 Each repository in this project serves a unique purpose. Below is an overview of each repository and its contents:
 
-1. **[FTS_Website Repository](https://dlock8.github.io/FTS_Website/)**  
+1. **[FirstTestStation](https://github.com/dlock8/FirstTestSation)**  
+   - **Purpose**: Root of the First TestStation project. Contains the initial design documentation and main part list
+   - **Key Files**: `/DOC`, `/pdf`, `README.md`
+
+2. **[FTS_Website Repository](https://dlock8.github.io/FTS_Website/)**  
    - **Purpose**: Contains the website files, including documentation, images, and styles for presenting project information to users.
    - **Key Files**: `index.html`, `styles.css`, `images/`
 
-2. **[Interconnect IO Box Repository](https://github.com/dlock8/InterconnectIO_Box)**  
+3. **[Interconnect IO Box Repository](https://github.com/dlock8/InterconnectIO_Box)**  
    - **Purpose**: Stores CAD files and assembly guides for the mechanical assembly of the project.
    - **Key Files**: `Freecad/`, `assembly_instructions.pdf`, `README.md`
 
-3. **[Interconnect IO Board Repository](https://github.com/dlock8/InterconnectIO_Board)**  
+4. **[Interconnect IO Board Repository](https://github.com/dlock8/InterconnectIO_Board)**  
    - **Purpose**: Contains the electrical schematics and PCB layout files for the Interconnect IO Board.
    - **Key Files**: `schematics`, `BOM/` `interconnect.kicad_pcb`, `README.md`
 
-2. **[Firmware Master Repository](https://github.com/dlock8/InterconnectIO_Master)**  
+5. **[Firmware Master Repository](https://github.com/dlock8/InterconnectIO_Master)**  
    - **Purpose**: Holds the firmware source code and related files for the Master Pico used in the Interconnect IO Board.
    - **Key Files**: `firmware/`, `master.c`, `README.md`
 
-2. **[Firmware Slave Repository](https://github.com/dlock8/InterconnectIO_Slave)**  
+6. **[Firmware Slave Repository](https://github.com/dlock8/InterconnectIO_Slave)**  
    - **Purpose**: Holds the firmware source code and related files for the Slave Pico used in the Interconnect IO Board.
    - **Key Files**: `firmware/`, `slave.c`, `README.md`
 
-5. **[Selftest Board Repository](https://github.com/dlock8/Selftest_Board)**  
+7. **[Selftest Board Repository](https://github.com/dlock8/Selftest_Board)**  
    - **Purpose**: Includes the design files and firmware for the Selftest Board used in the First TestStation.
    - **Key Files**: `schematics`, `BOM/` `selftest.kicad_pcb`, `README.md`
 
-2. **[Firmware Selftest Repository](https://github.com/dlock8/Selftest_code)**  
+8. **[Firmware Selftest Repository](https://github.com/dlock8/Selftest_code)**  
    - **Purpose**: Holds the firmware source code and related files for the Selftest Pico used in the Selftest Board.
    - **Key Files**: `firmware/`, `selftest.c`, `README.md`
 
@@ -126,17 +131,18 @@ Thank you for considering contributing to this project! We look forward to worki
 
 ## License
 
-### Hardware
+The MIT License (MIT)
 
-This project is licensed under the [CERN Open Hardware License Version 2 - Weakly Reciprocal (CERN-OHL-W 2.0)](https://ohwr.org/cernohl/cern-ohl-v2-weakly-reciprocal/).
+Copyright (c) 2014 Moritz "mo." Sauer // Phlow.de
 
-### Software
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is provided to do so, subject to the following conditions:
 
-The software in this project is licensed under the [BSD 3-Clause License (BSD-3)](https://opensource.org/licenses/BSD-3-Clause).
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-### Website
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-The website is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+
 
 
 

@@ -42,6 +42,11 @@ gallery:
       caption: Sefltest running on serial interface and on diagnostic monitor
     - image_url: gallery-image-20.jpg
       caption: Selftest completed without errors
+    - image_url: gallery-image-50.jpg
+      caption:  Setup updated with Raspberry pi 5
+    - image_url: gallery-image-51.jpg
+      caption:  Cutecom settings with Raspberry pi 5
+
 
 
 ---
