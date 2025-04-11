@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://FirstTestStation.github.com/FTS_Website/assets/xslt/rss.xslt" ?>
+<?xml-stylesheet type="text/css" href="https://FirstTestStation.github.com/FTS_Website/assets/css/rss.css" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>First TestStation</title>
+		<description>»First TestStation« is a starting test solution to be used to validate electronics boards and system.</description>
+		<link>https://FirstTestStation.github.com/FTS_Website/</link>
+		<atom:link href="https://FirstTestStation.github.com/FTS_Website/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>OpenTAP SelfTest Sequence to validate the  First TestStation</title>
+				<link>https://FirstTestStation.github.com/FTS_Website/software/OpenTAP_Sequence/</link>
+				<pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+				<description>&lt;hr /&gt;
+&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
+
+&lt;p&gt;•   On the First TestStation (FTS), the plan was always to design the InterconnectIO Box coupled with the Selftest Board to ensure that the hardware operates as intended and the firmware functions as expected, with minimal bugs.&lt;br /&gt;
+•   The test sequence for validating the First TestStation was developed following the creation of the Selftest Block Diagram to ensure that the maximum number of hardware components and functionalities are covered in the Test Validation list.&lt;br /&gt;
+•	The Test Validation sequence are part of the InterconnectIO Box in the github repository.  For details, refer to the &lt;a href=&quot;https://github.com/FirstTestStation/InterconnectIO_Box/tree/main/pdf/Test_Validation.pdf&quot;&gt;Test Validation.pdf&lt;/a&gt;&lt;br /&gt;
+•   The Test Sequence has been integrated into the InterconnectIO Box in a built-in format to facilitate the validation and debugging of both the hardware and firmware. &lt;br /&gt;
+•   The design plan is to utilize the &lt;a href=&quot;https://opentap.io/&quot;&gt;OpenTAP environment&lt;/a&gt; to transition the built-in Selftest functionality to an external test sequencer.&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;flowchart&quot;&gt;Flowchart&lt;/h2&gt;
+
+&lt;p&gt;•	The flowchart below illustrates the algorithm used to validate the test procedures of the First TestStation.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../../images/Selftest_flowchart.jpg&quot; alt=&quot;Test Sequence Flowchart&quot; /&gt;
+  &lt;figcaption&gt;Test Sequence Flowchart&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;ul class=&quot;side-nav t60&quot;&gt;
+
+  
+
+    
+
+  
+&lt;/ul&gt;
+
+</description>
+				<guid isPermaLink="true">https://FirstTestStation.github.com/FTS_Website/software/OpenTAP_Sequence/</guid>
+			</item>
+		
+			<item>
+				<title>OpenTAP Plugin of InterconnectIO Box</title>
+				<link>https://FirstTestStation.github.com/FTS_Website/software/OpenTAP_Plugin/</link>
+				<pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
+				<description>&lt;hr /&gt;
+
+&lt;h2 id=&quot;purpose&quot;&gt;Purpose&lt;/h2&gt;
+
+&lt;p&gt;The &lt;strong&gt;InterconnectIO Box&lt;/strong&gt; has been developed to support communication using the &lt;strong&gt;SCPI&lt;/strong&gt; protocol. However, building test sequences solely with raw SCPI commands can quickly become tedious and time-consuming. By leveraging our chosen test sequencer, &lt;strong&gt;OpenTAP&lt;/strong&gt;, we can create more efficient and maintainable methods to interact with the instrument.&lt;/p&gt;
+
+&lt;p&gt;One of OpenTAP’s key features is the concept of &lt;strong&gt;Test Steps&lt;/strong&gt; — small programs written in &lt;strong&gt;C#&lt;/strong&gt; or &lt;strong&gt;Python&lt;/strong&gt; that perform either a basic or advanced operation:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A &lt;strong&gt;basic Test Step&lt;/strong&gt; might simply send a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*IDN?&lt;/code&gt; command to the instrument and return the response.&lt;/li&gt;
+  &lt;li&gt;An &lt;strong&gt;advanced Test Step&lt;/strong&gt; could send the same command, analyze the response, and assign a verdict (e.g., &lt;strong&gt;PASS&lt;/strong&gt; or &lt;strong&gt;FAIL&lt;/strong&gt;) based on predefined criteria.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;All the necessary Test Steps for communicating with the selected instruments (InterconnectIO Box) are grouped together and packaged into what OpenTAP calls a &lt;strong&gt;Plugin&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;In essence, the plugin transforms the InterconnectIO Box from standalone hardware into a fully integrated, intelligent component of your test workflow — greatly enhancing its usability and performance.&lt;/p&gt;
+
+&lt;p&gt;If you’re interested in exploring further, visit the &lt;a href=&quot;https://doc.opentap.io/&quot;&gt;OpenTAP documentation&lt;/a&gt; for in-depth information on plugin development and usage.&lt;/p&gt;
+
+&lt;h2 id=&quot;interconnectio-box-plugin&quot;&gt;InterconnectIO Box Plugin&lt;/h2&gt;
+
+&lt;p&gt;As shown in the image above, the actual plugin for the &lt;strong&gt;InterconnectIO Box&lt;/strong&gt; includes the following components, all integrated within the same plugin package:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;InterconnectIO Plugin&lt;/strong&gt;&lt;br /&gt;
+This plugin groups together all the Test Steps required to execute the full range of functions available on the InterconnectIO Box.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;DUT Plugin&lt;/strong&gt;&lt;br /&gt;
+This plugin defines the &lt;strong&gt;Device Under Test (DUT)&lt;/strong&gt;. According to our DUT strategy, each DUT should include a 1-Wire device, which is read and validated before power is applied. This plugin is responsible for defining the expected 1-Wire data to be validated during the test sequence.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Selftest Board Plugin&lt;/strong&gt;&lt;br /&gt;
+This plugin provides communication with the &lt;strong&gt;Selftest Board&lt;/strong&gt;, and is developed as an integrated part of the InterconnectIO Box Plugin. While it’s not required when the DUT is not a Selftest Board, it adds powerful and maintainable Test Steps for internal diagnostics and validation.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;plugin-description&quot;&gt;Plugin Description&lt;/h2&gt;
+
+&lt;p&gt;All the Test Steps required to control the &lt;strong&gt;FTS_InterconnectIO Box&lt;/strong&gt; have been organized into distinct categories for better clarity and ease of use:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;1-Wire&lt;/strong&gt;&lt;br /&gt;
+A set of Test Steps to check, read, or write data from 1-Wire devices.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Analog&lt;/strong&gt;&lt;br /&gt;
+Test Steps to read voltages from the ADC, set voltages using the DAC, take measurements from the Power Monitor, control individual relays, and toggle open-collector transistors.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Communication&lt;/strong&gt;&lt;br /&gt;
+Test Steps to configure and perform read/write operations using communication protocols such as &lt;strong&gt;I2C&lt;/strong&gt;, &lt;strong&gt;SPI&lt;/strong&gt;, and &lt;strong&gt;Serial&lt;/strong&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Config&lt;/strong&gt;&lt;br /&gt;
+Test Steps to read from or write to configuration parameters stored in the configuration EEPROM.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Digital&lt;/strong&gt;&lt;br /&gt;
+Test Steps to configure direction (&lt;strong&gt;Input/Output&lt;/strong&gt;) and perform bit- or byte-level read/write operations on one of the two 8-bit I/O ports.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;GPIO&lt;/strong&gt;&lt;br /&gt;
+Test Steps to set the direction of individual GPIO pins and perform read/write operations on designated GPIOs.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Route&lt;/strong&gt;&lt;br /&gt;
+Test Steps to control one of the four available relay banks.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;SCPI&lt;/strong&gt;&lt;br /&gt;
+Test Steps to send predefined basic SCPI commands or manually send/query SCPI instructions.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;System&lt;/strong&gt;&lt;br /&gt;
+Test Steps to monitor and control system-level features, including reading firmware and software version details.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;ZModule&lt;/strong&gt;&lt;br /&gt;
+Test Steps dedicated to controlling the &lt;strong&gt;Selftest Board&lt;/strong&gt;, enabling seamless command and response communication between the box and the Selftest module.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;plugin-location&quot;&gt;Plugin Location&lt;/h2&gt;
+
+&lt;p&gt;The plugin source code is hosted on the official GitHub repository. In the future, the &lt;strong&gt;InterconnectIO Box&lt;/strong&gt; plugin may also be made available directly through the &lt;strong&gt;OpenTAP Package Manager&lt;/strong&gt; for easier installation and updates.&lt;/p&gt;
+
+&lt;p&gt;🔗 &lt;a href=&quot;https://github.com/FirstTestStation/FTS_InterconnectIOBox_OpenTAP_Plugin&quot;&gt;OpenTAP InterconnectIO Box Plugin&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul class=&quot;side-nav t60&quot;&gt;
+
+  
+
+    
+
+  
+&lt;/ul&gt;
+
+</description>
+				<guid isPermaLink="true">https://FirstTestStation.github.com/FTS_Website/software/OpenTAP_Plugin/</guid>
+			</item>
+		
+			<item>
+				<title>First TestStation project photos</title>
+				<link>https://FirstTestStation.github.com/FTS_Website/documentation/project-gallery/</link>
+				<pubDate>Sat, 14 Dec 2024 00:00:00 +0000</pubDate>
+				<description>&lt;p&gt;The photos below showcase the progress of the project in both hardware and software, highlighting the tangible results. Click on the thumbnail images to view larger versions.&lt;/p&gt;
+
+&lt;div&gt;
+	&lt;ul class=&quot;clearing-thumbs small-block-grid-4&quot; data-clearing=&quot;&quot;&gt;
+		
+		
+		
+		
+		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-9.jpg&quot;&gt;&lt;img data-caption=&quot;Empty PCB of InterconnectIO Board and Selftest Board&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-9-thumb.jpg&quot; alt=&quot;Empty PCB of InterconnectIO Board and Selftest Board&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		
+		
+		
+		
+		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-6.jpg&quot;&gt;&lt;img data-caption=&quot;InterconnectIO Board with socket installed&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-6-thumb.jpg&quot; alt=&quot;InterconnectIO Board with socket installed&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		
+		
+		
+		
+		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-1.jpg&quot;&gt;&lt;img data-caption=&quot;Closed InterconnectIO Box&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-1-thumb.jpg&quot; alt=&quot;Closed InterconnectIO Box&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		
+		
+		
+		
+		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-15.jpg&quot;&gt;&lt;img data-caption=&quot;Front panel of InterconnectIO Box&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-15-thumb.jpg&quot; alt=&quot;Front panel of InterconnectIO Box&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		
+		
+		
+		
+		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-16.jpg&quot;&gt;&lt;img data-caption=&quot;Back panel of InterconnectIO Box&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-16-thumb.jpg&quot; alt=&quot;Back panel of InterconnectIO Box&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		
+		
+		
+		
+		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-7.jpg&quot;&gt;&lt;img data-caption=&quot;Development setup of First TestStation&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-7-thumb.jpg&quot; alt=&quot;Development setup of First TestStation&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		
+		
+		
+		
+		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-8.jpg&quot;&gt;&lt;img data-caption=&quot;Selftest board connected to InterconnectIO Box&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-8-thumb.jpg&quot; alt=&quot;Selftest board connected to InterconnectIO Box&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		
+		
+		
+		
+		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-10.jpg&quot;&gt;&lt;img data-caption=&quot;A method to remove a board without difficulty&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-10-thumb.jpg&quot; alt=&quot;A method to remove a board without difficulty&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		
+		
+		
+		
+		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-13.jpg&quot;&gt;&lt;img data-caption=&quot;Selftest board insertion using fingers only&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-13-thumb.jpg&quot; alt=&quot;Selftest board insertion using fingers only&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		
+		
+		
+		
+		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-11.jpg&quot;&gt;&lt;img data-caption=&quot;A method to insert a board using tools without difficulty.&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-11-thumb.jpg&quot; alt=&quot;A method to insert a board using tools without difficulty.&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		
+		
+		
+		
+		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-12.jpg&quot;&gt;&lt;img data-caption=&quot;Selftest board version 2.0 with connectors errors corrected&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-12-thumb.jpg&quot; alt=&quot;Selftest board version 2.0 with connectors errors corrected&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		
+		
+		
+		
+		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-14.jpg&quot;&gt;&lt;img data-caption=&quot;Errors found running built-in selftest&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-14-thumb.jpg&quot; alt=&quot;Errors found running built-in selftest&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		
+		
+		
+		
+		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-21.jpg&quot;&gt;&lt;img data-caption=&quot;Serial interface and diagnostic monitor on Master Pico&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-21-thumb.jpg&quot; alt=&quot;Serial interface and diagnostic monitor on Master Pico&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		
+		
+		
+		
+		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-19.jpg&quot;&gt;&lt;img data-caption=&quot;Operator Menu for built-in selftest&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-19-thumb.jpg&quot; alt=&quot;Operator Menu for built-in selftest&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		
+		
+		
+		
+		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-22.jpg&quot;&gt;&lt;img data-caption=&quot;Sefltest running on serial interface and on diagnostic monitor&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-22-thumb.jpg&quot; alt=&quot;Sefltest running on serial interface and on diagnostic monitor&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		
+		
+		
+		
+		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-20.jpg&quot;&gt;&lt;img data-caption=&quot;Selftest completed without errors&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-20-thumb.jpg&quot; alt=&quot;Selftest completed without errors&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		
+		
+		
+		
+		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-50.jpg&quot;&gt;&lt;img data-caption=&quot;Setup updated with Raspberry pi 5&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-50-thumb.jpg&quot; alt=&quot;Setup updated with Raspberry pi 5&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		
+		
+		
+		
+		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-51.jpg&quot;&gt;&lt;img data-caption=&quot;Cutecom settings with Raspberry pi 5&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-51-thumb.jpg&quot; alt=&quot;Cutecom settings with Raspberry pi 5&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		
+	&lt;/ul&gt;
+&lt;/div&gt;
+
+</description>
+				<guid isPermaLink="true">https://FirstTestStation.github.com/FTS_Website/documentation/project-gallery/</guid>
+			</item>
+		
+			<item>
+				<title>Test Sequence Strategy on First TestStation</title>
+				<link>https://FirstTestStation.github.com/FTS_Website/software/Test_Sequence/</link>
+				<pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
+				<description>&lt;hr /&gt;
+&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
+
+&lt;p&gt;•   On the First TestStation (FTS), the plan was always to design the InterconnectIO Box coupled with the Selftest Board to ensure that the hardware operates as intended and the firmware functions as expected, with minimal bugs.&lt;br /&gt;
+•   The test sequence for validating the First TestStation was developed following the creation of the Selftest Block Diagram to ensure that the maximum number of hardware components and functionalities are covered in the Test Validation list.&lt;br /&gt;
+•	The Test Validation sequence are part of the InterconnectIO Box in the github repository.  For details, refer to the &lt;a href=&quot;https://github.com/FirstTestStation/First_TestStation/pdf/Validation_Test_200-1000.pdf&quot;&gt;Validation_Test_200-1000.pdf&lt;/a&gt;&lt;br /&gt;
+•   The Test Sequence has been integrated into the InterconnectIO Box in a built-in format to facilitate the validation and debugging of both the hardware and firmware. &lt;br /&gt;
+•   The design plan is to utilize the &lt;a href=&quot;https://opentap.io/&quot;&gt;OpenTAP environment&lt;/a&gt; to transition the built-in Selftest functionality to an external test sequencer.&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;flowchart&quot;&gt;Flowchart&lt;/h2&gt;
+
+&lt;p&gt;•	The flowchart below illustrates the algorithm used to validate the test procedures of the First TestStation.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../../images/Selftest_flowchart.jpg&quot; alt=&quot;Test Sequence Flowchart&quot; /&gt;
+  &lt;figcaption&gt;Test Sequence Flowchart&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;ul class=&quot;side-nav t60&quot;&gt;
+
+  
+
+    
+
+  
+&lt;/ul&gt;
+
+</description>
+				<guid isPermaLink="true">https://FirstTestStation.github.com/FTS_Website/software/Test_Sequence/</guid>
+			</item>
+		
+			<item>
+				<title>Selftest firmware used on Selftest Board</title>
+				<link>https://FirstTestStation.github.com/FTS_Website/firmware/Selftest_Firmware/</link>
+				<pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
+				<description>&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
+
+&lt;p&gt;•	The Seftest firmware is the controller of the Selftest Board.  The device receive I2C command from InterconnectIO Box, execute the command and return the answer. &lt;br /&gt;
+•	The Selftest code firmware is used mainly to verify the communication protocols available on the InterconnectIO Box (I2C, SPI and Serial). &lt;br /&gt;
+•	Commands supported by the Pico Selftest firmware are listed in the GitHub repository Selftest_code. For details, refer to the &lt;a href=&quot;https://github.com/FirstTestStation/Selftest_code_Firmware/blob/main/README.md&quot;&gt;readme.md&lt;/a&gt;&lt;br /&gt;
+•	The I2C addresses used to communicate with the Pico Selftest are defined by two hardware lines connected to ground (0) or left open (1). 
+•	The Selftest firmware needs to be loaded onto the Pico controllers and installed at the location marked in the picture above. &lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;flowchart&quot;&gt;Flowchart&lt;/h2&gt;
+
+&lt;p&gt;•	The flowchart below illustrates the algorithm used to process commands received from the Iterconnect IO Box  on the I2C port.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../../images/Pico_Selftest_flowchart.jpg&quot; alt=&quot;Selftest Flowchart&quot; /&gt;
+  &lt;figcaption&gt;Master Firmware Flowchart&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;ul class=&quot;side-nav t60&quot;&gt;
+
+  
+
+    
+
+  
+&lt;/ul&gt;
+
+</description>
+				<guid isPermaLink="true">https://FirstTestStation.github.com/FTS_Website/firmware/Selftest_Firmware/</guid>
+			</item>
+		
+			<item>
+				<title>Slave firmware for InterconnectIO Board</title>
+				<link>https://FirstTestStation.github.com/FTS_Website/firmware/Slave_IO_Firmware/</link>
+				<pubDate>Sun, 08 Dec 2024 00:00:00 +0000</pubDate>
+				<description>&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
+&lt;p&gt;•	The Pico slave firmware acts as the I2C slave controller for the InterconnectIO Box. The Pico slave receives 2 bytes of information (command + parameters) from the Master Pico, processes the command, and returns an answer if necessary.&lt;br /&gt;
+•	The Pico slave devices are used to perform only basic GPIO actions, which do not require speed.&lt;br /&gt;
+•	Commands supported by the Pico slave firmware are listed in the GitHub repository InterconnectIO_Slave. For details, refer to the &lt;a href=&quot;https://github.com/FirstTestStation/InterconnectIO_Slave/blob/main/README.md&quot;&gt;readme.md&lt;/a&gt;&lt;br /&gt;
+•	The I2C addresses used to communicate with the Pico slaves are defined by two hardware lines connected to ground (0) or left open (1).&lt;br /&gt;
+•	The slave firmware needs to be loaded onto the three Pico controllers and installed at the location marked in the picture above. &lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;flowchart&quot;&gt;Flowchart&lt;/h2&gt;
+
+&lt;p&gt;•	The flowchart below illustrates the algorithm used to process commands received from the Master Pico on the I2C port.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../../images/Pico_Slave_flowchart.jpg&quot; alt=&quot;Slave Flowchart&quot; /&gt;
+  &lt;figcaption&gt;Slave Firmware Flowchart&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;ul class=&quot;side-nav t60&quot;&gt;
+
+  
+
+    
+
+  
+&lt;/ul&gt;
+
+</description>
+				<guid isPermaLink="true">https://FirstTestStation.github.com/FTS_Website/firmware/Slave_IO_Firmware/</guid>
+			</item>
+		
+			<item>
+				<title>Master firmware for InterconnectIO Board</title>
+				<link>https://FirstTestStation.github.com/FTS_Website/firmware/Master_IO_Firmware/</link>
+				<pubDate>Fri, 06 Dec 2024 00:00:00 +0000</pubDate>
+				<description>&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
+
+&lt;p&gt;•	The Pico master firmware is the main controller of the interconnectIO Box.  The Master receive SCPI command from serial port, execute the command and return the answer. &lt;br /&gt;
+•	The Pico Master device is used to control the InterconnectIO Board and handle the communication protocols available on the board (I2C, SPI, Serial, and 1-Wire).  &lt;br /&gt;
+•	SCPI commands supported by the Pico master firmware are listed in the GitHub repository InterconnectIO_Master. For details, refer to the &lt;a href=&quot;https://github.com/FirstTestStation/InterconnectIO_Master_Firmware/blob/main/README.md&quot;&gt;readme.md&lt;/a&gt;&lt;br /&gt;
+•	Thanks to the open-source SCPI device library written by Jan Breuer, available at  &lt;a href=&quot;https://www.jaybee.cz/scpi-parser/&quot;&gt;SCPI parser&lt;/a&gt;&lt;br /&gt;
+•	Detailed messages to aid in debugging or understanding the process flow are available through the USB connector of the Pico controller.&lt;br /&gt;
+•	The configuration EEPROM is used to store user preferences.&lt;br /&gt;
+•	On error, the ‘Red Fail’ LED on the front panel will turn ON, and a beep will sound for a short duration.&lt;br /&gt;
+•	The Master firmware needs to be loaded onto the Pico controller and installed at the location marked in the picture above. &lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;flowchart&quot;&gt;Flowchart&lt;/h2&gt;
+
+&lt;p&gt;•	The flowchart below illustrates the algorithm used to process SCPI commands received on the serial port.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../../images/Pico_Master_flowchart.jpg&quot; alt=&quot;Master Flowchart&quot; /&gt;
+  &lt;figcaption&gt;Master Firmware Flowchart&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;ul class=&quot;side-nav t60&quot;&gt;
+
+  
+
+    
+
+  
+&lt;/ul&gt;
+
+</description>
+				<guid isPermaLink="true">https://FirstTestStation.github.com/FTS_Website/firmware/Master_IO_Firmware/</guid>
+			</item>
+		
+			<item>
+				<title>InterconnectIO Box Project</title>
+				<link>https://FirstTestStation.github.com/FTS_Website/hardware/InterconnectOpenBox/</link>
+				<pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
+				<description>&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
+
+&lt;p&gt;•	 The InterconnectIO board is mounted in a low-cost molded ABS rackmount box (rackmount bracket not shown in the image). &lt;br /&gt;
+•	 The front and back panels are laser-cut from plywood. &lt;br /&gt;
+•	 Custom-designed guide rails (3d printed) are included to help the operator easily insert and remove the board, featuring push and pull handles on top of the guide rails. &lt;br /&gt;
+•	The project is powered by an external 5V power pack &lt;br /&gt;&lt;/p&gt;
+
+&lt;ul class=&quot;side-nav t60&quot;&gt;
+
+  
+
+    
+
+  
+&lt;/ul&gt;
+
+</description>
+				<guid isPermaLink="true">https://FirstTestStation.github.com/FTS_Website/hardware/InterconnectOpenBox/</guid>
+			</item>
+		
+			<item>
+				<title>InterconnectIO Box</title>
+				<link>https://FirstTestStation.github.com/FTS_Website/hardware/InterconnectBox/</link>
+				<pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
+				<description>&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
+
+&lt;p&gt;•	The front panel is laser-cut, and the text was added using Inkscape. &lt;br /&gt;
+•	The logo, “Dlock8 Test,” was added to enhance the professional appearance. &lt;br /&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../../images/FrontPanel.png&quot; alt=&quot;Front panel IO Box&quot; /&gt;
+  &lt;figcaption&gt;IO Box Front Panel&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;•	The back panel is laser-cut, and the text was added using Inkscape. &lt;br /&gt;
+•	Maximum information has been added to the panel to ensure connections can be made without errors. &lt;br /&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../../images/BackPanel.png&quot; alt=&quot;Back panel IO Box&quot; /&gt;
+  &lt;figcaption&gt;IO Box Back Panel&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;•   The Selftest board can be easily inserted into the InterconnectIO Box using the guided rails.&lt;br /&gt;
+•   The position of the guided rails is adjustable horizontally to accommodate shorter or larger boards.&lt;br /&gt;
+•   The Selftest board can be used as a template to create custom boards for testing new Units Under Test (UUTs)..&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../../images/IoBox-image-2.jpeg&quot; alt=&quot;Selftest Board on IO Box&quot; /&gt;
+  &lt;figcaption&gt;IO Box with Selftest Board&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;•   A custom cable harness could be connected to the InterconnectIO Box. &lt;br /&gt;
+•   A plan has been made to design a custom case for the connector, which can be produced using 3D printing. &lt;br /&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../../images/IoBox-image-3.jpeg&quot; alt=&quot;Cable harness on IO Box&quot; /&gt;
+  &lt;figcaption&gt;IO Box with harness cable&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;•   Rackmount brackets are included with the InterconnectIO Box, making it compatible with a 19-inch rackmount cabinet.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../../images/io_rackmount.jpg&quot; alt=&quot;Rackmount bracket on IO Box&quot; /&gt;
+  &lt;figcaption&gt;IO Box in rackmount configuration&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;ul class=&quot;side-nav t60&quot;&gt;
+
+  
+
+    
+
+  
+&lt;/ul&gt;
+
+</description>
+				<guid isPermaLink="true">https://FirstTestStation.github.com/FTS_Website/hardware/InterconnectBox/</guid>
+			</item>
+		
+			<item>
+				<title>Selftest Board PCB</title>
+				<link>https://FirstTestStation.github.com/FTS_Website/hardware/SelftestBoardPCB/</link>
+				<pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
+				<description>&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
+
+&lt;p&gt;•	 Design of the Selftest board was carried out using the open source software Kicad V7.x. &lt;br /&gt;
+•	 Selftest board source files are available on Github. Link: &lt;a href=&quot;https://github.com/FirstTestStation/Selftest_Board&quot;&gt;Selftest_Board&lt;/a&gt;&lt;br /&gt;
+•	 For mode details, please refer to the electrical schematic on Github.&lt;br /&gt;
+•	 On board, hundred of Net Tie components (NTxxx) have been installed to help with on-board modification. The NetTie PCB component facilitates modification routing by providing a clear space where PCB traces can be cut (cut between two holes) and changed routing by adding wire (solder on one of the holes on each side of the trace cut).&lt;br /&gt;
+•	 Active components are mounted on sockets to facilitate replacement.&lt;br /&gt;
+•	 There is a reserved area for a custom module that will be added in the future.&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul class=&quot;side-nav t60&quot;&gt;
+
+  
+
+    
+
+  
+&lt;/ul&gt;
+
+</description>
+				<guid isPermaLink="true">https://FirstTestStation.github.com/FTS_Website/hardware/SelftestBoardPCB/</guid>
+			</item>
+		
+	</channel>
+</rss>
