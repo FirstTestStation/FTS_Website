@@ -2,7 +2,10 @@ name: Build and Deploy Jekyll Site
 
 on:
   push:
-    branches: [main]  # or 'master' if that’s your default branch
+    branches: [main]
+
+permissions:
+  contents: write  # ✅ Allow GitHub Actions to push to gh-pages branch
 
 jobs:
   jekyll:
