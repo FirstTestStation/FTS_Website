@@ -21,7 +21,7 @@ author: dlock8
 
 ## Features
 
-•	 The Selftest will be able to verify the Interconnect IO Board without the use of external instruments. A better precision could be achieved, however, if external instruments are connected for verification. <br>
+•	 The Selftest will be able to verify the InterconnectIO Board without the use of external instruments. A better precision could be achieved, however, if external instruments are connected for verification. <br>
 •	The test strategy uses relays to multiplex the different power sources (PS1 - PS10). We use the same strategy to measure the results (VM1 - VM6).<br>
 •	 As part of the test strategy, stimulus will be applied to PS1 and voltage will be observed on VM1 to validate basic function. We will validate the digital port in seconds in order to make sure the selftest board relays are working as they should.<br>
 •	 The strategy for testing relay contacts is based on current measurement.  A power source is applied to one side of the relay contact, while the other side is grounded.<br>

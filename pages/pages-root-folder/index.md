@@ -9,7 +9,7 @@ header:
   image_fullwidth: Interconnect_pcb.jpeg
 widget1:
   title: "First TestStation <br> Project"
-  url:  #'http://dlock8.github.io/FTS_Website/info/'
+  url:  #'http://FirstTestStation.github.io/FTS_Website/info/'
   image: FirstTestStation.png
   text: "The project's objective is to provide, at a low cost, a starting test platform for testing electronic production boards or electronic systems. Designed as a free project by just retired Test Engineer, it will offer a complete test solution by providing a complete testing example."
 widget2:
@@ -21,9 +21,9 @@ widget2:
   #video: '<a href="#" data-reveal-id="videoModal"><img src="http://phlow.github.io/feeling-responsive/images/start-video-feeling-responsive-302x182.jpg" width="302" height="182" alt=""/></a>'
 widget3:
   title: "Download Project"
-  url: 'https://github.com/dlock8'
+  url: 'https://github.com/FirstTestStation'
   image: github.jpg
-  text: The '<em>First TestStation</em>' project is an open-source initiative providing schematics, Gerber files, and source code for a complete testing solution, freely available on GitHub.
+  text: The '<em>FirstTestStation</em>' project is an open-source initiative providing schematics, Gerber files, and source code for a complete testing solution, freely available on GitHub.
 # Use the call for action to show a button on the frontpage
 #
 # To make internal links, just use a permalink like this

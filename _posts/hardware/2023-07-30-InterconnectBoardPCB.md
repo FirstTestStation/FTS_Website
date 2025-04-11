@@ -1,8 +1,8 @@
 ---
 layout: page-fullwidth
 subheadline: Printed Circuit Board
-title:  "Interconnect IO Board PCB"
-teaser: "Routing of the Interconnect IO Printed Circuit Board (PCB)"
+title:  "InterconnectIO Board PCB"
+teaser: "Routing of the InterconnectIO Printed Circuit Board (PCB)"
 meta_teaser: ""
 breadcrumb: true
 categories:
@@ -14,15 +14,15 @@ tags:
     - post format
 image:
     title: IOBoard_pcb.png
-    caption: Interconnect IO Board source file
-    caption_url: https://github.com/dlock8/InterconnectIO_Board
+    caption: InterconnectIO Board source file
+    caption_url: https://github.com/FirstTestStation/InterconnectIO_Board
 author: dlock8
 ---
 
 ## Features
 
 •	 Design of the Interconnect IO board was carried out using the open source software Kicad V7.x. <br>
-•	 Inteconnect Io board source files are available on Github. Link: <a href= "https://github.com/dlock8/InterconnectIO_Board">InterconnectIO_Board</a><br>
+•	 Inteconnect Io board source files are available on Github. Link: <a href= "https://github.com/FirstTestStation/InterconnectIO_Board">InterconnectIO_Board</a><br>
 •	 For mode details, please refer to the electrical schematic.<br>
 •	 On board, hundred of Net Tie components (NTxxx) have been installed to help with on-board modification. The NetTie PCB component facilitates modification routing by providing a clear space where PCB traces can be cut (cut between two holes) and changed routing by adding wire (solder on one of the holes on each side of the trace cut).<br>
 •	 Board users can either use already developed specialized modules available on the market at a low cost, or solder surface-mount components directly onto the board to achieve the same functionality.<br>

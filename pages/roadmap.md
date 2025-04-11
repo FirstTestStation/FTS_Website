@@ -10,5 +10,6 @@ permalink           : "/roadmap/"
 
 ## TO DO
 
-•	Complete OpenTAP sequence. <br>
+•	Buy External Instruments. <br>
+•	Add Instruments to openTAP Selftest Sequence. <br>
 •	Complete documentation.<br>

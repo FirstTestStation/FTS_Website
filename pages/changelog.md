@@ -9,21 +9,24 @@ header:
 permalink: "/changelog/"
 ---
 
+2025-04-10 // OpenTAP
+:   Completed OpenTAP plugin for InterconnectIO Box
+:   Completed OpenTAP stand-alone Selftest Sequence (no extrnal instruments)
 
 2025-01-08 // Firmware Version 1.1 
 :   Updated to SDK 2.0.1 and now compatible with the Raspberry Pi Pico extension in Visual Studio Code.
 :   Code development has been moved from Raspberry Pi 4 to Raspberry Pi 5, providing improved performance and capabilities.
 
 2024-10-08 // Firmware Version 1.0 
-:   First Release.  Interconnect IO Master Firmware
-:   First Release.  Interconnect IO Slave Firmware
+:   First Release.  InterconnectIO Master Firmware
+:   First Release.  InterconnectIO Slave Firmware
 :   First Release.  Selftest Firmware
 
 2023-10-31 // Version 2.0
 :   Second Release. Hardware routing of Selftest PCB is completed
 
 2023-08-06 // Version 1.0
-:   First Release. Hardware design of Interconnect IO PCB is completed
+:   First Release. Hardware design of InterconnectIO PCB is completed
 :   First Release. Hardware design of Selftest PCB is completed
 
 2022-07-07 // Version 0.1

@@ -1,8 +1,8 @@
 ---
 layout: page-fullwidth
 subheadline: Box
-title:  "Interconnect IO Box"
-teaser: "Interconnect IO Box of the First TestStation"
+title:  "InterconnectIO Box"
+teaser: "InterconnectIO Box of the First TestStation"
 meta_teaser: ""
 breadcrumb: true
 categories:
@@ -14,7 +14,7 @@ tags:
     - post format
 image:
     title: IoBox-image-1.jpeg
-    caption: Interconnect IO Box
+    caption: InterconnectIO Box
     caption_url:
     author: dlock8
 ---
@@ -36,7 +36,7 @@ image:
   <figcaption>IO Box Back Panel</figcaption>
 </figure>
 
-•   The Selftest board can be easily inserted into the Interconnect IO Box using the guided rails.<br>
+•   The Selftest board can be easily inserted into the InterconnectIO Box using the guided rails.<br>
 •   The position of the guided rails is adjustable horizontally to accommodate shorter or larger boards.<br>
 •   The Selftest board can be used as a template to create custom boards for testing new Units Under Test (UUTs)..<br>
 
@@ -46,7 +46,7 @@ image:
   <figcaption>IO Box with Selftest Board</figcaption>
 </figure>
 
-•   A custom cable harness could be connected to the Interconnect IO Box. <br>
+•   A custom cable harness could be connected to the InterconnectIO Box. <br>
 •   A plan has been made to design a custom case for the connector, which can be produced using 3D printing. <br>
 
 
@@ -55,7 +55,7 @@ image:
   <figcaption>IO Box with harness cable</figcaption>
 </figure>
 
-•   Rackmount brackets are included with the Interconnect IO Box, making it compatible with a 19-inch rackmount cabinet.<br>
+•   Rackmount brackets are included with the InterconnectIO Box, making it compatible with a 19-inch rackmount cabinet.<br>
 
 <figure>
   <img src="../../images/io_rackmount.jpg" alt="Rackmount bracket on IO Box">

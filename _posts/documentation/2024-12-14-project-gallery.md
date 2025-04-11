@@ -11,19 +11,19 @@ image:
    thumb: "gallery-image-1-thumb.jpg"
 gallery:
     - image_url: gallery-image-9.jpg
-      caption: Empty PCB of Interconnect IO Board and Selftest Board
+      caption: Empty PCB of InterconnectIO Board and Selftest Board
     - image_url: gallery-image-6.jpg
-      caption: Interconnect IO Board with socket installed
+      caption: InterconnectIO Board with socket installed
     - image_url: gallery-image-1.jpg
-      caption: Closed Interconnect IO Box
+      caption: Closed InterconnectIO Box
     - image_url: gallery-image-15.jpg
-      caption: Front panel of Interconnect IO Box
+      caption: Front panel of InterconnectIO Box
     - image_url: gallery-image-16.jpg
-      caption: Back panel of Interconnect IO Box
+      caption: Back panel of InterconnectIO Box
     - image_url: gallery-image-7.jpg
       caption: Development setup of First TestStation
     - image_url: gallery-image-8.jpg
-      caption: Selftest board connected to Interconnect IO Box
+      caption: Selftest board connected to InterconnectIO Box
     - image_url: gallery-image-10.jpg
       caption: A method to remove a board without difficulty
     - image_url: gallery-image-13.jpg

@@ -1,8 +1,8 @@
 ---
 layout: page-fullwidth
 subheadline: software
-title:  "Test Sequence Strategy on First TestStation"
-teaser: "Software plan to build test sequence."
+title:  "OpenTAP SelfTest Sequence to validate the  First TestStation"
+teaser: "Ensure flawless performance with the OpenTAP SelfTest Sequence to validate your First Test Station setup!"
 meta_teaser: ""
 breadcrumb: true
 categories:

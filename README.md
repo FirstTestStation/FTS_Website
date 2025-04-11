@@ -1,6 +1,6 @@
 # First TestStation Website
 
-This website showcases the First Test Station project, including its hardware, software, and mechanical assembly. It serves as a hub for sharing project details, images, and GitHub repositories. project ([FTS](https://dlock8.github.io/FTS_Website/))
+This website showcases the First TestStation project, including its hardware, software, and mechanical assembly. It serves as a hub for sharing project details, images, and GitHub repositories. project ([FTS](https://FirstTestStation.github.io/FTS_Website/))
 
 
 ![Site](images/FTS_website.jpg)
@@ -20,7 +20,7 @@ This website showcases the First Test Station project, including its hardware, s
 The First TestStation project is a comprehensive solution for automating the testing and validation of electronic devices and PCBs during production. <br>
 Designed with flexibility in mind, it integrates custom hardware, firmware, and mechanical assemblies to provide an efficient and cost-effective testing process.
 
-•	Purpose: To document and showcase the First Test Station project.<br>
+•	Purpose: To document and showcase the First TestStation project.<br>
 •	Technology: Built using Jekyll, HTML, CSS, and hosted on GitHub Pages.<br>
 •	Audience: Engineers, developers, or anyone interested in the project.<br>
 
@@ -30,7 +30,7 @@ The website is designed to provide an engaging and informative experience for us
 
 - **Comprehensive Photo Gallery**: View high-quality images detailing the project's hardware and software progress.
 - **GitHub Repository Links**: Access repositories for firmware, hardware designs, and mechanical assemblies.
-- **Technical Documentation**: Learn about key components like the Interconnect IO Board and Selftest Board.
+- **Technical Documentation**: Learn about key components like the InterconnectIO Board and Selftest Board.
 - **Responsive Design**: Enjoy seamless navigation on desktop and mobile devices.
 - **Interactive Interface**: Easily browse through galleries, repositories, and project documentation.
 
@@ -38,7 +38,7 @@ This website consolidates all project resources in one place, ensuring a user-fr
 
 ## How to Use
 
-The website is designed to provide users with easy access to all aspects of the First Test Station project. Follow these steps to explore the content:
+The website is designed to provide users with easy access to all aspects of the First TestStation project. Follow these steps to explore the content:
 
 1. **Browse the Photo Gallery**:
    - Navigate to the **Gallery** section to view images of the project’s progress.
@@ -63,37 +63,45 @@ Whether you're an engineer looking for technical details or a hobbyist exploring
 
 Each repository in this project serves a unique purpose. Below is an overview of each repository and its contents:
 
-1. **[FirstTestStation](https://github.com/dlock8/FirstTestSation)**  
-   - **Purpose**: Root of the First TestStation project. Contains the initial design documentation and main part list
+1. **[First TestStation](https://github.com/FirstTestStation/First_TestStation)**  
+   - **Purpose**: Root of the FirstTestStation project. Contains the initial design documentation and main part list
    - **Key Files**: `/DOC`, `/pdf`, `README.md`
 
-2. **[FTS_Website Repository](https://dlock8.github.io/FTS_Website/)**  
+2. **[FTS_Website Repository](https://FirstTestStation.github.io/FTS_Website/)**  
    - **Purpose**: Contains the website files, including documentation, images, and styles for presenting project information to users.
    - **Key Files**: `index.html`, `styles.css`, `images/`
 
-3. **[Interconnect IO Box Repository](https://github.com/dlock8/InterconnectIO_Box)**  
+3. **[InterconnectIO Box Repository](https://github.com/FirstTestStation/InterconnectIO_Box)**  
    - **Purpose**: Stores CAD files and assembly guides for the mechanical assembly of the project.
    - **Key Files**: `Freecad/`, `assembly_instructions.pdf`, `README.md`
 
-4. **[Interconnect IO Board Repository](https://github.com/dlock8/InterconnectIO_Board)**  
-   - **Purpose**: Contains the electrical schematics and PCB layout files for the Interconnect IO Board.
+4. **[InterconnectIO Board Repository](https://github.com/FirstTestStation/InterconnectIO_Board)**  
+   - **Purpose**: Contains the electrical schematics and PCB layout files for the InterconnectIO Board.
    - **Key Files**: `schematics`, `BOM/` `interconnect.kicad_pcb`, `README.md`
 
-5. **[Firmware Master Repository](https://github.com/dlock8/InterconnectIO_Master)**  
-   - **Purpose**: Holds the firmware source code and related files for the Master Pico used in the Interconnect IO Board.
+5. **[Firmware Master Repository](https://github.com/FirstTestStation/InterconnectIO_Master_Firmware)**  
+   - **Purpose**: Holds the firmware source code and related files for the Master Pico used in the InterconnectIO Board.
    - **Key Files**: `firmware/`, `master.c`, `README.md`
 
-6. **[Firmware Slave Repository](https://github.com/dlock8/InterconnectIO_Slave)**  
-   - **Purpose**: Holds the firmware source code and related files for the Slave Pico used in the Interconnect IO Board.
+6. **[Firmware Slave Repository](https://github.com/FirstTestStation/InterconnectIO_Slave_Firmware)**  
+   - **Purpose**: Holds the firmware source code and related files for the Slave Pico used in the InterconnectIO Board.
    - **Key Files**: `firmware/`, `slave.c`, `README.md`
 
-7. **[Selftest Board Repository](https://github.com/dlock8/Selftest_Board)**  
-   - **Purpose**: Includes the design files and firmware for the Selftest Board used in the First TestStation.
+7. **[Selftest Board Repository](https://github.com/FirstTestStation/Selftest_Board)**  
+   - **Purpose**: Includes the design files and firmware for the Selftest Board used in the FirstTestStation.
    - **Key Files**: `schematics`, `BOM/` `selftest.kicad_pcb`, `README.md`
 
-8. **[Firmware Selftest Repository](https://github.com/dlock8/Selftest_code)**  
+8. **[Firmware Selftest Repository](https://github.com/FirstTestStation/Selftest_code_Firmware)**  
    - **Purpose**: Holds the firmware source code and related files for the Selftest Pico used in the Selftest Board.
    - **Key Files**: `firmware/`, `selftest.c`, `README.md`
+
+9. **[OpenTAP Selftest Sequence](https://github.com/FirstTestStation/FTS_OpenTAP_Selftest_Sequence)**  
+   - **Purpose**: Holds the OpenTAP sequence (TapPlan)  to execute the selftest on InterconnectIO Box 
+   - **Key Files**: `Sequence/`, `README.md`
+
+10. **[OpenTAP InterconnectIO Box Plugin](https://github.com/FirstTestStation/FTS_InterconnectIOBox_OpenTAP_Plugin)**  
+      - **Purpose**: Holds the OpenTAP plugin to help the communication with the InterconnectIO Box 
+      - **Key Files**: `bin/Release/`, `README.md`
 
 
 # Contributing to the Project

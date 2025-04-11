@@ -26,11 +26,11 @@
   url: "/hardware/"
   side: left
   dropdown:
-  - title: "Interconnect IO Project"
+  - title: "InterconnectIO Project"
     url: "/hardware/InterconnectOpenBox/"
-  - title: "Interconnect  IO Box"
+  - title: "InterconnectIO Box"
     url: "/hardware/InterconnectBox/"
-  - title: "Interconnect IO Board PCB"
+  - title: "InterconnectIO Board PCB"
     url: "/hardware/InterconnectBoardPCB/"
   - title: "Selftest Board PCB"
     url: "/hardware/SelftestBoardPCB/"
@@ -53,7 +53,10 @@
   dropdown:
   - title: "test Sequence Strategy"
     url: "/software/Test_Sequence/"
-
+  - title: "OpenTAP Plugin"
+    url: "/software/OpenTAP_Plugin/"
+  - title: "OpenTAP Sequence"
+    url: "/software/OpenTAP_Sequence/"
 
 - title: Documentation
   url: "/documentation/"
