@@ -26,7 +26,7 @@ author: dlock8
 
 # This URL is the main address for absolute links. Don't include a slash at the end.
 #
-url: 'https://github.com/FirstTestStation'
+url: 'https://FirstTestStation.github.com'
 baseurl: '/FTS_Website'
 
 # This is for the editing function in _/includes/improve_content
@@ -42,7 +42,7 @@ improve_content:
 
 urlimg: '/FTS_Website/images/'
 
-##urlimg: 'https://FirstTestStation.github.io/FTS_Website/images/'
+urlimg: 'https://FirstTestStation.github.io/FTS_Website/images/'
 
 
 # Logo size is 600x80 pixels
