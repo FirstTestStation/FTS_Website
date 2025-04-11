@@ -1,15 +1,16 @@
-name: Build Jekyll site
+name: Build and Deploy Jekyll Site
 
 on:
   push:
-    branches: [main]  # or 'master', depending on your setup
+    branches: [main]  # or 'master' if that’s your default branch
 
 jobs:
-  build:
+  jekyll:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
@@ -19,8 +20,8 @@ jobs:
       - name: Install dependencies
         run: bundle install
 
-      - name: Build the site
-        run: bundle exec jekyll build -d _site
+      - name: Build the site with Jekyll
+        run: bundle exec jekyll build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
