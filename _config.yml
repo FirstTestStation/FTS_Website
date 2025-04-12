@@ -42,7 +42,7 @@ improve_content:
 
 urlimg: '/FTS_Website/images/'
 
-urlimg: 'https://FirstTestStation.github.io/FTS_Website/images/'
+##urlimg: 'https://FirstTestStation.github.io/FTS_Website/images/'
 
 
 # Logo size is 600x80 pixels

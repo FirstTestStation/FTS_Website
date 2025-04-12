@@ -24,5 +24,5 @@ header:
 │   └── 🧠 700-2010-xxx Firmware Selftest Board 🔗[Repository](https://github.com/FirstTestStation/Selftest_code_Firmware)<br>
 |
 ├── 📁 OpenTAP<br>
-│   ├── 🧭 800-1010-xxx OpenTAP Selftest Sequence 🔗[Repository](https://github.com/FirstTestStation/FTS_OpenTAP_Selftest_Sequence)<br>
+│   ├── 🧭 800-1010-xxx OpenTAP Selftest Test Plan 🔗[Repository](https://github.com/FirstTestStation/FTS_Selftest_OpenTAP_TestPlan)<br>
 │   └── 🔌 800-1020-xxx OpenTAP InterconnectIO Box Plugin 🔗[Repository](https://github.com/FirstTestStation/FTS_InterconnectIOBox_OpenTAP_Plugin)<br>

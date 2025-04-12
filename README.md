@@ -95,9 +95,9 @@ Each repository in this project serves a unique purpose. Below is an overview of
    - **Purpose**: Holds the firmware source code and related files for the Selftest Pico used in the Selftest Board.
    - **Key Files**: `firmware/`, `selftest.c`, `README.md`
 
-9. **[OpenTAP Selftest Sequence](https://github.com/FirstTestStation/FTS_OpenTAP_Selftest_Sequence)**  
-   - **Purpose**: Holds the OpenTAP sequence (TapPlan)  to execute the selftest on InterconnectIO Box 
-   - **Key Files**: `Sequence/`, `README.md`
+9. **[OpenTAP Selftest Test Plan](https://github.com/FirstTestStation/FTS_Selftest_OpenTAP_TestPlan)**  
+   - **Purpose**: Holds the OpenTAP Test Plan sequence (TapPlan)  to execute the selftest on InterconnectIO Box 
+   - **Key Files**: `TestPlan/`, `README.md`
 
 10. **[OpenTAP InterconnectIO Box Plugin](https://github.com/FirstTestStation/FTS_InterconnectIOBox_OpenTAP_Plugin)**  
       - **Purpose**: Holds the OpenTAP plugin to help the communication with the InterconnectIO Box 

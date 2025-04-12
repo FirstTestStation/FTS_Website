@@ -11,5 +11,5 @@ permalink           : "/roadmap/"
 ## TO DO
 
 •	Buy External Instruments. <br>
-•	Add Instruments to openTAP Selftest Sequence. <br>
+•	Create an OpenTAP Test Plan sequence that includes the complete set of instrumentation.. <br>
 •	Complete documentation.<br>

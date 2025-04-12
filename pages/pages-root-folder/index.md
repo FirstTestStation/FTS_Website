@@ -16,7 +16,7 @@ widget2:
   title: "Test Automation"
   url: 'http://opentap.io/'
   image: opentap2.jpg
-  text: '<a href= "http://opentap.io/OpenTap">OpenTap</a>, a free open source test automation software, will be used to perform the test sequence execution. The new software on the test industry is well documented, and you can access many training videos on <a href="https://www.youtube.com/results?search_query=opentap">YouTube</a>. Although I have never used it myself, I am confident that the test sequencer will work properly.'
+  text: '<a href= "http://opentap.io/OpenTap">OpenTap</a>, a free open source test automation software, will be used to perform the test sequence execution. The new software on the test industry is well documented, and you can access many training videos on <a href="https://www.youtube.com/results?search_query=opentap">YouTube</a>.'
  
   #video: '<a href="#" data-reveal-id="videoModal"><img src="http://phlow.github.io/feeling-responsive/images/start-video-feeling-responsive-302x182.jpg" width="302" height="182" alt=""/></a>'
 widget3:

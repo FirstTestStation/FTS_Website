@@ -11,7 +11,7 @@ permalink: "/changelog/"
 
 2025-04-10 // OpenTAP
 :   Completed OpenTAP plugin for InterconnectIO Box
-:   Completed OpenTAP stand-alone Selftest Sequence (without  external instruments)
+:   Completed OpenTAP stand-alone Selftest Test Plan sequence (without  external instruments)
 
 2025-01-08 // Firmware Version 1.1 
 :   Updated to SDK 2.0.1 and now compatible with the Raspberry Pi Pico extension in Visual Studio Code.

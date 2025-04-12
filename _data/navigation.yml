@@ -51,12 +51,12 @@
   url: "/software/"
   side: left
   dropdown:
-  - title: "test Sequence Strategy"
-    url: "/software/Test_Sequence/"
+  - title: "Test Plan Strategy"
+    url: "/software/Test_Plan/"
   - title: "OpenTAP Plugin"
     url: "/software/OpenTAP_Plugin/"
-  - title: "OpenTAP Sequence"
-    url: "/software/OpenTAP_Sequence/"
+  - title: "OpenTAP Test Plan"
+    url: "/software/OpenTAP_TestPlan/"
 
 - title: Documentation
   url: "/documentation/"
