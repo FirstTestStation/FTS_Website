@@ -2,22 +2,28 @@
 // Foundation by ZURB
 // foundation.zurb.com
 // Licensed under MIT Open Source
+@use "sass:math";
+
 
 // This is the default html and body font-size for the base rem value.
 $rem-base: 16px !default;
 
 // IMPORT ONCE
 // We use this to prevent styles from being loaded multiple times for compenents that rely on other components.
-$modules: () !default;
+$modules: (
+  ) !default;
+
 @mixin exports($name) {
   // Import from global scope
   $modules: $modules !global;
   // Check if a module is already on the list
-  $module_index: index($modules, $name);
-  @if (($module_index == null) or ($module_index == false)) {
-    $modules: append($modules, $name) !global;
-    @content;
-  }
+  $module_index: index($modules, $name
+  );
+
+@if (($module_index ==null) or ($module_index ==false)) {
+  $modules: append($modules, $name) !global;
+  @content;
+}
 }
 
 //
@@ -27,80 +33,97 @@ $modules: () !default;
 
 // RANGES
 // We use these functions to define ranges for various things, like media queries.
-@function lower-bound($range){
-  @if length($range) <= 0 {
+@function lower-bound($range) {
+  @if length($range) <=0 {
     @return 0;
   }
-  @return nth($range,1);
+
+  @return nth($range, 1);
 }
 
 @function upper-bound($range) {
   @if length($range) < 2 {
     @return 999999999999;
   }
+
   @return nth($range, 2);
 }
 
 // STRIP UNIT
 // It strips the unit of measure and returns it
-@function strip-unit($num) {
-  @return $num / ($num * 0 + 1);
+/// Strips the unit from a length.
+/// @param $value - The length from which to strip the unit.
+/// @return - The unitless number.
+@function strip-unit($value) {
+  @if type-of($value)=='number' and not unitless($value) {
+    @return ($value/ ($value * 0 + 1)); // Converts to unitless by dividing by itself
+  }
+
+  @else {
+    @return $value;
+  }
 }
+
+
+
+
 
 // TEXT INPUT TYPES
 
-@function text-inputs( $types: all, $selector: input ) {
+@function text-inputs($types: all, $selector: input) {
 
-    $return: ();
+  $return: (
+  );
 
-    $all-text-input-types:
-      text
-      password
-      date
-      datetime
-      datetime-local
-      month
-      week
-      email
-      number
-      search
-      tel
-      time
-      url
-      color
-      textarea;
+$all-text-input-types: text password date datetime datetime-local month week email number search tel time url color textarea;
 
-    @if $types == all { $types: $all-text-input-types; }
+@if $types ==all {
+  $types: $all-text-input-types;
+}
 
-    @each $type in $types {
-        @if $type == textarea {
-            @if $selector == input {
-              $return: append($return, unquote('#{$type}'), comma)
-            } @else {
-              $return: append($return, unquote('#{$type}#{$selector}'), comma)
-            }
-        } @else {
-            $return: append($return, unquote('#{$selector}[type="#{$type}"]'), comma)
-        }
+@each $type in $types {
+  @if $type ==textarea {
+    @if $selector ==input {
+      $return: append($return, unquote('#{$type}'), comma)
     }
 
-    @return $return;
+    @else {
+      $return: append($return, unquote('#{$type}#{$selector}'), comma)
+    }
+  }
+
+  @else {
+    $return: append($return, unquote('#{$selector}[type="#{$type}"]'), comma)
+  }
+}
+
+@return $return;
 
 }
 
 // CONVERT TO REM
-@function convert-to-rem($value, $base-value: $rem-base)  {
-  $value: strip-unit($value) / strip-unit($base-value) * 1rem;
-  @if ($value == 0rem) { $value: 0; } // Turn 0rem into 0
-  @return $value;
+@function convert-to-rem($value, $base-value: $rem-base) {
+  // Use math.div for division to avoid deprecation warning
+  $numerical-value: (
+    strip-unit($value)/strip-unit($base-value)
+  );
+
+@if ($numerical-value ==0) {
+  @return 0;
+}
+
+@else {
+  // Manually construct the rem string
+  @return #{$numerical-value}rem;
+}
 }
 
 @function data($attr) {
   @if $namespace {
-    @return '[data-' + $namespace + '-' + $attr + ']';
+    @return '[data-'+$namespace +'-'+$attr +']';
   }
 
-  @return '[data-' + $attr + ']';
+  @return '[data-'+$attr +']';
 }
 
 // REM CALC
@@ -125,23 +148,28 @@ $modules: () !default;
 @function rem-calc($values, $base-value: $rem-base) {
   $max: length($values);
 
-  @if $max == 1 { @return convert-to-rem(nth($values, 1), $base-value); }
-
-  $remValues: ();
-  @for $i from 1 through $max {
-    $remValues: append($remValues, convert-to-rem(nth($values, $i), $base-value));
+  @if $max ==1 {
+    @return convert-to-rem(nth($values, 1), $base-value);
   }
-  @return $remValues;
+
+  $remValues: (
+  );
+
+@for $i from 1 through $max {
+  $remValues: append($remValues, convert-to-rem(nth($values, $i), $base-value));
+}
+
+@return $remValues;
 }
 
 // OLD EM CALC
 // Deprecated: We'll drop support for this in 5.1.0, use rem-calc()
-@function emCalc($values){
+@function emCalc($values) {
   @return rem-calc($values);
 }
 
 // OLD EM CALC
 // Deprecated: We'll drop support for this in 5.1.0, use rem-calc()
-@function em-calc($values){
+@function em-calc($values) {
   @return rem-calc($values);
 }
