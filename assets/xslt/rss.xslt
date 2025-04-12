@@ -374,7 +374,7 @@
 
                       
 
-                      <li><a  href="https://FirstTestStation.github.io/FTS_Website/software/Test_Sequence/">test Sequence Strategy</a></li>
+                      <li><a  href="https://FirstTestStation.github.io/FTS_Website/software/Test_Plan/">Test Plan Strategy</a></li>
                     
 
                       
@@ -384,7 +384,7 @@
 
                       
 
-                      <li><a  href="https://FirstTestStation.github.io/FTS_Website/software/OpenTAP_Sequence/">OpenTAP Sequence</a></li>
+                      <li><a  href="https://FirstTestStation.github.io/FTS_Website/software/OpenTAP_TestPlan/">OpenTAP Test Plan</a></li>
                     
                   </ul>
 

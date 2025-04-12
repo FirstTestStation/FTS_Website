@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>https://FirstTestStation.github.io/FTS_Website/</id>
 	<title>First TestStation</title>
-	<updated>2025-04-11T23:29:50+00:00</updated>
+	<updated>2025-04-12T01:02:15+00:00</updated>
 
 	<subtitle>»First TestStation« is a starting test solution to be used to validate electronics boards and system.</subtitle>
 
@@ -26,30 +26,39 @@
 
 	
 		<entry>
-			<id>https://FirstTestStation.github.io/FTS_Website/software/OpenTAP_Sequence/</id>
-			<title>OpenTAP SelfTest Sequence to validate the  First TestStation</title>
-			<link href="https://FirstTestStation.github.io/FTS_Website/software/OpenTAP_Sequence/" rel="alternate" type="text/html" title="OpenTAP SelfTest Sequence to validate the  First TestStation" />
+			<id>https://FirstTestStation.github.io/FTS_Website/software/OpenTAP_TestPlan/</id>
+			<title>OpenTAP SelfTest Test Plan sequence to validate the  First TestStation</title>
+			<link href="https://FirstTestStation.github.io/FTS_Website/software/OpenTAP_TestPlan/" rel="alternate" type="text/html" title="OpenTAP SelfTest Test Plan sequence to validate the  First TestStation" />
 			<updated>2025-03-01T00:00:00+00:00</updated>
 
 			
-			<summary>Ensure flawless performance with the OpenTAP SelfTest Sequence to validate your First Test Station setup!</summary>
-			<content type="html" xml:base="https://FirstTestStation.github.io/FTS_Website/software/OpenTAP_Sequence/">&lt;hr /&gt;
-&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
+			<summary>Ensure flawless performance with the OpenTAP SelfTest Test Plan to validate your First TestStation setup!</summary>
+			<content type="html" xml:base="https://FirstTestStation.github.io/FTS_Website/software/OpenTAP_TestPlan/">&lt;hr /&gt;
 
-&lt;p&gt;•   On the First TestStation (FTS), the plan was always to design the InterconnectIO Box coupled with the Selftest Board to ensure that the hardware operates as intended and the firmware functions as expected, with minimal bugs.&lt;br /&gt;
-•   The test sequence for validating the First TestStation was developed following the creation of the Selftest Block Diagram to ensure that the maximum number of hardware components and functionalities are covered in the Test Validation list.&lt;br /&gt;
-•	The Test Validation sequence are part of the InterconnectIO Box in the github repository.  For details, refer to the &lt;a href=&quot;https://github.com/FirstTestStation/InterconnectIO_Box/tree/main/pdf/Test_Validation.pdf&quot;&gt;Test Validation.pdf&lt;/a&gt;&lt;br /&gt;
-•   The Test Sequence has been integrated into the InterconnectIO Box in a built-in format to facilitate the validation and debugging of both the hardware and firmware. &lt;br /&gt;
-•   The design plan is to utilize the &lt;a href=&quot;https://opentap.io/&quot;&gt;OpenTAP environment&lt;/a&gt; to transition the built-in Selftest functionality to an external test sequencer.&lt;br /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;purpose&quot;&gt;Purpose&lt;/h2&gt;
 
-&lt;h2 id=&quot;flowchart&quot;&gt;Flowchart&lt;/h2&gt;
+&lt;p&gt;The primary objective of the SelfTest Test Plan is to conduct a series of tests, known as Test Steps, to verify the functionality of the hardware and software components that are part of the First TestStation.&lt;/p&gt;
 
-&lt;p&gt;•	The flowchart below illustrates the algorithm used to validate the test procedures of the First TestStation.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;In the case of First TestStation, the OpenTAP software solution enables fast and easy development and execution of automated tests.&lt;/p&gt;
 
-&lt;figure&gt;
-  &lt;img src=&quot;../../images/Selftest_flowchart.jpg&quot; alt=&quot;Test Sequence Flowchart&quot; /&gt;
-  &lt;figcaption&gt;Test Sequence Flowchart&lt;/figcaption&gt;
-&lt;/figure&gt;
+&lt;p&gt;In OpenTAP environments, the Test Step sequences are grouped in the same file with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.TapPlan&lt;/code&gt; extension.&lt;/p&gt;
+
+&lt;p&gt;Because the hardware component of the First TestStation is not always present, different Test Plans have been created to accommodate this variation.&lt;/p&gt;
+
+&lt;h2 id=&quot;how&quot;&gt;How&lt;/h2&gt;
+
+&lt;p&gt;The test strategy for creating the Test Plan has been documented in two documents:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Test method diagram&lt;/strong&gt; to validate the hardware of the InterconnectIO Box:&lt;br /&gt;
+&lt;a href=&quot;https://github.com/FirstTestStation/First_TestStation/pdf/Selftest_Strategy.pdf&quot;&gt;Selftest_Strategy.pdf&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Step-by-Step List of tests&lt;/strong&gt; to perform to complete the validation:&lt;br /&gt;
+&lt;a href=&quot;https://github.com/FirstTestStation/First_TestStation/pdf/Validation_Test_200-1000.pdf&quot;&gt;Validation_Test_200-1000.pdf&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;ul class=&quot;side-nav t60&quot;&gt;
 
@@ -220,92 +229,92 @@ Test Steps dedicated to controlling the &lt;strong&gt;Selftest Board&lt;/strong&
 		
 		
 		
-		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-9.jpg&quot;&gt;&lt;img data-caption=&quot;Empty PCB of InterconnectIO Board and Selftest Board&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-9-thumb.jpg&quot; alt=&quot;Empty PCB of InterconnectIO Board and Selftest Board&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;/FTS_Website/images/gallery-image-9.jpg&quot;&gt;&lt;img data-caption=&quot;Empty PCB of InterconnectIO Board and Selftest Board&quot; src=&quot;/FTS_Website/images/gallery-image-9-thumb.jpg&quot; alt=&quot;Empty PCB of InterconnectIO Board and Selftest Board&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
 		
 		
 		
 		
-		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-6.jpg&quot;&gt;&lt;img data-caption=&quot;InterconnectIO Board with socket installed&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-6-thumb.jpg&quot; alt=&quot;InterconnectIO Board with socket installed&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;/FTS_Website/images/gallery-image-6.jpg&quot;&gt;&lt;img data-caption=&quot;InterconnectIO Board with socket installed&quot; src=&quot;/FTS_Website/images/gallery-image-6-thumb.jpg&quot; alt=&quot;InterconnectIO Board with socket installed&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
 		
 		
 		
 		
-		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-1.jpg&quot;&gt;&lt;img data-caption=&quot;Closed InterconnectIO Box&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-1-thumb.jpg&quot; alt=&quot;Closed InterconnectIO Box&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;/FTS_Website/images/gallery-image-1.jpg&quot;&gt;&lt;img data-caption=&quot;Closed InterconnectIO Box&quot; src=&quot;/FTS_Website/images/gallery-image-1-thumb.jpg&quot; alt=&quot;Closed InterconnectIO Box&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
 		
 		
 		
 		
-		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-15.jpg&quot;&gt;&lt;img data-caption=&quot;Front panel of InterconnectIO Box&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-15-thumb.jpg&quot; alt=&quot;Front panel of InterconnectIO Box&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;/FTS_Website/images/gallery-image-15.jpg&quot;&gt;&lt;img data-caption=&quot;Front panel of InterconnectIO Box&quot; src=&quot;/FTS_Website/images/gallery-image-15-thumb.jpg&quot; alt=&quot;Front panel of InterconnectIO Box&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
 		
 		
 		
 		
-		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-16.jpg&quot;&gt;&lt;img data-caption=&quot;Back panel of InterconnectIO Box&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-16-thumb.jpg&quot; alt=&quot;Back panel of InterconnectIO Box&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;/FTS_Website/images/gallery-image-16.jpg&quot;&gt;&lt;img data-caption=&quot;Back panel of InterconnectIO Box&quot; src=&quot;/FTS_Website/images/gallery-image-16-thumb.jpg&quot; alt=&quot;Back panel of InterconnectIO Box&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
 		
 		
 		
 		
-		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-7.jpg&quot;&gt;&lt;img data-caption=&quot;Development setup of First TestStation&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-7-thumb.jpg&quot; alt=&quot;Development setup of First TestStation&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;/FTS_Website/images/gallery-image-7.jpg&quot;&gt;&lt;img data-caption=&quot;Development setup of First TestStation&quot; src=&quot;/FTS_Website/images/gallery-image-7-thumb.jpg&quot; alt=&quot;Development setup of First TestStation&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
 		
 		
 		
 		
-		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-8.jpg&quot;&gt;&lt;img data-caption=&quot;Selftest board connected to InterconnectIO Box&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-8-thumb.jpg&quot; alt=&quot;Selftest board connected to InterconnectIO Box&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;/FTS_Website/images/gallery-image-8.jpg&quot;&gt;&lt;img data-caption=&quot;Selftest board connected to InterconnectIO Box&quot; src=&quot;/FTS_Website/images/gallery-image-8-thumb.jpg&quot; alt=&quot;Selftest board connected to InterconnectIO Box&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
 		
 		
 		
 		
-		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-10.jpg&quot;&gt;&lt;img data-caption=&quot;A method to remove a board without difficulty&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-10-thumb.jpg&quot; alt=&quot;A method to remove a board without difficulty&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;/FTS_Website/images/gallery-image-10.jpg&quot;&gt;&lt;img data-caption=&quot;A method to remove a board without difficulty&quot; src=&quot;/FTS_Website/images/gallery-image-10-thumb.jpg&quot; alt=&quot;A method to remove a board without difficulty&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
 		
 		
 		
 		
-		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-13.jpg&quot;&gt;&lt;img data-caption=&quot;Selftest board insertion using fingers only&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-13-thumb.jpg&quot; alt=&quot;Selftest board insertion using fingers only&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;/FTS_Website/images/gallery-image-13.jpg&quot;&gt;&lt;img data-caption=&quot;Selftest board insertion using fingers only&quot; src=&quot;/FTS_Website/images/gallery-image-13-thumb.jpg&quot; alt=&quot;Selftest board insertion using fingers only&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
 		
 		
 		
 		
-		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-11.jpg&quot;&gt;&lt;img data-caption=&quot;A method to insert a board using tools without difficulty.&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-11-thumb.jpg&quot; alt=&quot;A method to insert a board using tools without difficulty.&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;/FTS_Website/images/gallery-image-11.jpg&quot;&gt;&lt;img data-caption=&quot;A method to insert a board using tools without difficulty.&quot; src=&quot;/FTS_Website/images/gallery-image-11-thumb.jpg&quot; alt=&quot;A method to insert a board using tools without difficulty.&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
 		
 		
 		
 		
-		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-12.jpg&quot;&gt;&lt;img data-caption=&quot;Selftest board version 2.0 with connectors errors corrected&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-12-thumb.jpg&quot; alt=&quot;Selftest board version 2.0 with connectors errors corrected&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;/FTS_Website/images/gallery-image-12.jpg&quot;&gt;&lt;img data-caption=&quot;Selftest board version 2.0 with connectors errors corrected&quot; src=&quot;/FTS_Website/images/gallery-image-12-thumb.jpg&quot; alt=&quot;Selftest board version 2.0 with connectors errors corrected&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
 		
 		
 		
 		
-		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-14.jpg&quot;&gt;&lt;img data-caption=&quot;Errors found running built-in selftest&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-14-thumb.jpg&quot; alt=&quot;Errors found running built-in selftest&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;/FTS_Website/images/gallery-image-14.jpg&quot;&gt;&lt;img data-caption=&quot;Errors found running built-in selftest&quot; src=&quot;/FTS_Website/images/gallery-image-14-thumb.jpg&quot; alt=&quot;Errors found running built-in selftest&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
 		
 		
 		
 		
-		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-21.jpg&quot;&gt;&lt;img data-caption=&quot;Serial interface and diagnostic monitor on Master Pico&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-21-thumb.jpg&quot; alt=&quot;Serial interface and diagnostic monitor on Master Pico&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;/FTS_Website/images/gallery-image-21.jpg&quot;&gt;&lt;img data-caption=&quot;Serial interface and diagnostic monitor on Master Pico&quot; src=&quot;/FTS_Website/images/gallery-image-21-thumb.jpg&quot; alt=&quot;Serial interface and diagnostic monitor on Master Pico&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
 		
 		
 		
 		
-		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-19.jpg&quot;&gt;&lt;img data-caption=&quot;Operator Menu for built-in selftest&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-19-thumb.jpg&quot; alt=&quot;Operator Menu for built-in selftest&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;/FTS_Website/images/gallery-image-19.jpg&quot;&gt;&lt;img data-caption=&quot;Operator Menu for built-in selftest&quot; src=&quot;/FTS_Website/images/gallery-image-19-thumb.jpg&quot; alt=&quot;Operator Menu for built-in selftest&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
 		
 		
 		
 		
-		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-22.jpg&quot;&gt;&lt;img data-caption=&quot;Sefltest running on serial interface and on diagnostic monitor&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-22-thumb.jpg&quot; alt=&quot;Sefltest running on serial interface and on diagnostic monitor&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;/FTS_Website/images/gallery-image-22.jpg&quot;&gt;&lt;img data-caption=&quot;Sefltest running on serial interface and on diagnostic monitor&quot; src=&quot;/FTS_Website/images/gallery-image-22-thumb.jpg&quot; alt=&quot;Sefltest running on serial interface and on diagnostic monitor&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
 		
 		
 		
 		
-		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-20.jpg&quot;&gt;&lt;img data-caption=&quot;Selftest completed without errors&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-20-thumb.jpg&quot; alt=&quot;Selftest completed without errors&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;/FTS_Website/images/gallery-image-20.jpg&quot;&gt;&lt;img data-caption=&quot;Selftest completed without errors&quot; src=&quot;/FTS_Website/images/gallery-image-20-thumb.jpg&quot; alt=&quot;Selftest completed without errors&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
 		
 		
 		
 		
-		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-50.jpg&quot;&gt;&lt;img data-caption=&quot;Setup updated with Raspberry pi 5&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-50-thumb.jpg&quot; alt=&quot;Setup updated with Raspberry pi 5&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;/FTS_Website/images/gallery-image-50.jpg&quot;&gt;&lt;img data-caption=&quot;Setup updated with Raspberry pi 5&quot; src=&quot;/FTS_Website/images/gallery-image-50-thumb.jpg&quot; alt=&quot;Setup updated with Raspberry pi 5&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
 		
 		
 		
 		
-		&lt;li&gt;&lt;a href=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-51.jpg&quot;&gt;&lt;img data-caption=&quot;Cutecom settings with Raspberry pi 5&quot; src=&quot;https://FirstTestStation.github.io/FTS_Website/images/gallery-image-51-thumb.jpg&quot; alt=&quot;Cutecom settings with Raspberry pi 5&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;/FTS_Website/images/gallery-image-51.jpg&quot;&gt;&lt;img data-caption=&quot;Cutecom settings with Raspberry pi 5&quot; src=&quot;/FTS_Website/images/gallery-image-51-thumb.jpg&quot; alt=&quot;Cutecom settings with Raspberry pi 5&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
 		
 	&lt;/ul&gt;
 &lt;/div&gt;
@@ -323,20 +332,20 @@ Test Steps dedicated to controlling the &lt;strong&gt;Selftest Board&lt;/strong&
 		</entry>
 	
 		<entry>
-			<id>https://FirstTestStation.github.io/FTS_Website/software/Test_Sequence/</id>
-			<title>Test Sequence Strategy on First TestStation</title>
-			<link href="https://FirstTestStation.github.io/FTS_Website/software/Test_Sequence/" rel="alternate" type="text/html" title="Test Sequence Strategy on First TestStation" />
+			<id>https://FirstTestStation.github.io/FTS_Website/software/Test_Plan/</id>
+			<title>Test Plan Strategy on First TestStation</title>
+			<link href="https://FirstTestStation.github.io/FTS_Website/software/Test_Plan/" rel="alternate" type="text/html" title="Test Plan Strategy on First TestStation" />
 			<updated>2024-12-09T00:00:00+00:00</updated>
 
 			
-			<summary>Software plan to build test sequence.</summary>
-			<content type="html" xml:base="https://FirstTestStation.github.io/FTS_Website/software/Test_Sequence/">&lt;hr /&gt;
+			<summary>Software plan to validate hardware of the First TestStation.</summary>
+			<content type="html" xml:base="https://FirstTestStation.github.io/FTS_Website/software/Test_Plan/">&lt;hr /&gt;
 &lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
 
 &lt;p&gt;•   On the First TestStation (FTS), the plan was always to design the InterconnectIO Box coupled with the Selftest Board to ensure that the hardware operates as intended and the firmware functions as expected, with minimal bugs.&lt;br /&gt;
-•   The test sequence for validating the First TestStation was developed following the creation of the Selftest Block Diagram to ensure that the maximum number of hardware components and functionalities are covered in the Test Validation list.&lt;br /&gt;
-•	The Test Validation sequence are part of the InterconnectIO Box in the github repository.  For details, refer to the &lt;a href=&quot;https://github.com/FirstTestStation/First_TestStation/pdf/Validation_Test_200-1000.pdf&quot;&gt;Validation_Test_200-1000.pdf&lt;/a&gt;&lt;br /&gt;
-•   The Test Sequence has been integrated into the InterconnectIO Box in a built-in format to facilitate the validation and debugging of both the hardware and firmware. &lt;br /&gt;
+•   The Test Plan for validating the First TestStation was developed following the creation of the Selftest Block Diagram to ensure that the maximum number of hardware components and functionalities are covered in the Test Validation list.&lt;br /&gt;
+•	The Test Validation Plan are part of the InterconnectIO Box in the github repository.  For details, refer to the &lt;a href=&quot;https://github.com/FirstTestStation/First_TestStation/pdf/Validation_Test_200-1000.pdf&quot;&gt;Validation_Test_200-1000.pdf&lt;/a&gt;&lt;br /&gt;
+•   The Test Plan sequence has been integrated into the InterconnectIO Box in a built-in format to facilitate the validation and debugging of both the hardware and firmware. &lt;br /&gt;
 •   The design plan is to utilize the &lt;a href=&quot;https://opentap.io/&quot;&gt;OpenTAP environment&lt;/a&gt; to transition the built-in Selftest functionality to an external test sequencer.&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;flowchart&quot;&gt;Flowchart&lt;/h2&gt;
@@ -344,8 +353,8 @@ Test Steps dedicated to controlling the &lt;strong&gt;Selftest Board&lt;/strong&
 &lt;p&gt;•	The flowchart below illustrates the algorithm used to validate the test procedures of the First TestStation.&lt;br /&gt;&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;img src=&quot;../../images/Selftest_flowchart.jpg&quot; alt=&quot;Test Sequence Flowchart&quot; /&gt;
-  &lt;figcaption&gt;Test Sequence Flowchart&lt;/figcaption&gt;
+  &lt;img src=&quot;../../images/Selftest_flowchart.jpg&quot; alt=&quot;Test Plan Flowchart&quot; /&gt;
+  &lt;figcaption&gt;Test Plan Flowchart&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;ul class=&quot;side-nav t60&quot;&gt;
