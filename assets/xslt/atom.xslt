@@ -10,11 +10,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Atom Feed (Styled)</title>
 
-    <link rel="stylesheet" type="text/css" href="https://firsttestttation.github.io/FTS_Website/assets/css/styles_feeling_responsive.css">
+    <link rel="stylesheet" type="text/css" href="https://firsttestttation.github.io/FTS_Website//assets/css/styles_feeling_responsive.css">
 
   
 
-	<script src="https://firsttestttation.github.io/FTS_Website/assets/js/modernizr.min.js"></script>
+	<script src="https://firsttestttation.github.io/FTS_Website//assets/js/modernizr.min.js"></script>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
 	<script>
@@ -37,13 +37,13 @@
 	
 	
 	
-	<link rel="canonical" href="https://firsttestttation.github.io/FTS_Website/assets/xslt/atom.xslt">
+	<link rel="canonical" href="https://firsttestttation.github.io/FTS_Website//assets/xslt/atom.xslt">
 
 
 	<!-- Facebook Open Graph -->
 	<meta property="og:title" content="Atom Feed (Styled)">
 	<meta property="og:description" content="»First TestStation« is a starting test solution to be used to validate electronics boards and system.">
-	<meta property="og:url" content="https://firsttestttation.github.io/FTS_Website/assets/xslt/atom.xslt">
+	<meta property="og:url" content="https://firsttestttation.github.io/FTS_Website//assets/xslt/atom.xslt">
 	<meta property="og:locale" content="en_EN">
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="First TestStation">
@@ -53,7 +53,7 @@
 
 	
 
-	<link type="text/plain" rel="author" href="https://firsttestttation.github.io/FTS_Website/humans.txt">
+	<link type="text/plain" rel="author" href="https://firsttestttation.github.io/FTS_Website//humans.txt">
 
 	
 
@@ -99,7 +99,7 @@
   <nav class="top-bar" role="navigation" data-topbar data-options="scrolltop: false">
     <ul class="title-area">
       <li class="name">
-        <h1 class="hide-for-large-up"><a href="https://firsttestttation.github.io/FTS_Website" class="icon-tree"> First TestStation</a>
+        <h1 class="hide-for-large-up"><a href="https://firsttestttation.github.io/FTS_Website/" class="icon-tree"> First TestStation</a>
         </h1>
       </li>
       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
@@ -118,7 +118,7 @@
         
         
         <li><a 
-            href="https://firsttestttation.github.io/FTS_Website/" >Home</a></li>
+            href="https://firsttestttation.github.io/FTS_Website//" >Home</a></li>
           <li class="divider"></li>
 
           
@@ -134,7 +134,7 @@
         
         
         <li><a 
-            href="https://firsttestttation.github.io/FTS_Website/purpose/" >Purpose</a></li>
+            href="https://firsttestttation.github.io/FTS_Website//purpose/" >Purpose</a></li>
           <li class="divider"></li>
 
           
@@ -151,7 +151,7 @@
         
 
           <li class="has-dropdown">
-            <a  href="https://firsttestttation.github.io/FTS_Website/design/" >Design</a>
+            <a  href="https://firsttestttation.github.io/FTS_Website//design/" >Design</a>
 
             <ul class="dropdown">
               
@@ -159,25 +159,25 @@
               
 
               <li><a 
-                  href="https://firsttestttation.github.io/FTS_Website/design/TestStationBlockDiagram/" >TestStation Drawing</a></li>
+                  href="https://firsttestttation.github.io/FTS_Website//design/TestStationBlockDiagram/" >TestStation Drawing</a></li>
               
 
               
 
               <li><a 
-                  href="https://firsttestttation.github.io/FTS_Website/design/InterconnectBlockDiagram/" >Interconnect IO BOX Diagram</a></li>
+                  href="https://firsttestttation.github.io/FTS_Website//design/InterconnectBlockDiagram/" >Interconnect IO BOX Diagram</a></li>
               
 
               
 
               <li><a 
-                  href="https://firsttestttation.github.io/FTS_Website/design/InterconnectIOBlockDiagram/" >Interconnect IO Board Block Diagram</a></li>
+                  href="https://firsttestttation.github.io/FTS_Website//design/InterconnectIOBlockDiagram/" >Interconnect IO Board Block Diagram</a></li>
               
 
               
 
               <li><a 
-                  href="https://firsttestttation.github.io/FTS_Website/design/SelftestBlockDiagram/" >SelfTest Board Block Diagram</a></li>
+                  href="https://firsttestttation.github.io/FTS_Website//design/SelftestBlockDiagram/" >SelfTest Board Block Diagram</a></li>
               
             </ul>
 
@@ -196,7 +196,7 @@
         
 
           <li class="has-dropdown">
-            <a  href="https://firsttestttation.github.io/FTS_Website/hardware/" >Hardware</a>
+            <a  href="https://firsttestttation.github.io/FTS_Website//hardware/" >Hardware</a>
 
             <ul class="dropdown">
               
@@ -204,25 +204,25 @@
               
 
               <li><a 
-                  href="https://firsttestttation.github.io/FTS_Website/hardware/InterconnectOpenBox/" >InterconnectIO Project</a></li>
+                  href="https://firsttestttation.github.io/FTS_Website//hardware/InterconnectOpenBox/" >InterconnectIO Project</a></li>
               
 
               
 
               <li><a 
-                  href="https://firsttestttation.github.io/FTS_Website/hardware/InterconnectBox/" >InterconnectIO Box</a></li>
+                  href="https://firsttestttation.github.io/FTS_Website//hardware/InterconnectBox/" >InterconnectIO Box</a></li>
               
 
               
 
               <li><a 
-                  href="https://firsttestttation.github.io/FTS_Website/hardware/InterconnectBoardPCB/" >InterconnectIO Board PCB</a></li>
+                  href="https://firsttestttation.github.io/FTS_Website//hardware/InterconnectBoardPCB/" >InterconnectIO Board PCB</a></li>
               
 
               
 
               <li><a 
-                  href="https://firsttestttation.github.io/FTS_Website/hardware/SelftestBoardPCB/" >Selftest Board PCB</a></li>
+                  href="https://firsttestttation.github.io/FTS_Website//hardware/SelftestBoardPCB/" >Selftest Board PCB</a></li>
               
             </ul>
 
@@ -241,7 +241,7 @@
         
 
           <li class="has-dropdown">
-            <a  href="https://firsttestttation.github.io/FTS_Website/firmware/" >Firmware</a>
+            <a  href="https://firsttestttation.github.io/FTS_Website//firmware/" >Firmware</a>
 
             <ul class="dropdown">
               
@@ -249,19 +249,19 @@
               
 
               <li><a 
-                  href="https://firsttestttation.github.io/FTS_Website/firmware/Master_IO_Firmware/" >Pico Master Firmware</a></li>
+                  href="https://firsttestttation.github.io/FTS_Website//firmware/Master_IO_Firmware/" >Pico Master Firmware</a></li>
               
 
               
 
               <li><a 
-                  href="https://firsttestttation.github.io/FTS_Website/firmware/Slave_IO_Firmware/" >Pico Slave Firmware</a></li>
+                  href="https://firsttestttation.github.io/FTS_Website//firmware/Slave_IO_Firmware/" >Pico Slave Firmware</a></li>
               
 
               
 
               <li><a 
-                  href="https://firsttestttation.github.io/FTS_Website/firmware/Selftest_Firmware/" >Pico Selftest Firmware</a></li>
+                  href="https://firsttestttation.github.io/FTS_Website//firmware/Selftest_Firmware/" >Pico Selftest Firmware</a></li>
               
             </ul>
 
@@ -280,7 +280,7 @@
         
 
           <li class="has-dropdown">
-            <a  href="https://firsttestttation.github.io/FTS_Website/software/" >Software</a>
+            <a  href="https://firsttestttation.github.io/FTS_Website//software/" >Software</a>
 
             <ul class="dropdown">
               
@@ -288,19 +288,19 @@
               
 
               <li><a 
-                  href="https://firsttestttation.github.io/FTS_Website/software/Test_Plan/" >Test Plan Strategy</a></li>
+                  href="https://firsttestttation.github.io/FTS_Website//software/Test_Plan/" >Test Plan Strategy</a></li>
               
 
               
 
               <li><a 
-                  href="https://firsttestttation.github.io/FTS_Website/software/OpenTAP_Plugin/" >OpenTAP Plugin</a></li>
+                  href="https://firsttestttation.github.io/FTS_Website//software/OpenTAP_Plugin/" >OpenTAP Plugin</a></li>
               
 
               
 
               <li><a 
-                  href="https://firsttestttation.github.io/FTS_Website/software/OpenTAP_TestPlan/" >OpenTAP Test Plan</a></li>
+                  href="https://firsttestttation.github.io/FTS_Website//software/OpenTAP_TestPlan/" >OpenTAP Test Plan</a></li>
               
             </ul>
 
@@ -319,7 +319,7 @@
         
 
           <li class="has-dropdown">
-            <a  href="https://firsttestttation.github.io/FTS_Website/documentation/" >Documentation</a>
+            <a  href="https://firsttestttation.github.io/FTS_Website//documentation/" >Documentation</a>
 
             <ul class="dropdown">
               
@@ -327,19 +327,19 @@
               
 
               <li><a 
-                  href="https://firsttestttation.github.io/FTS_Website/documentation/project-gallery/" >Photos Gallery</a></li>
+                  href="https://firsttestttation.github.io/FTS_Website//documentation/project-gallery/" >Photos Gallery</a></li>
               
 
               
 
               <li><a 
-                  href="https://firsttestttation.github.io/FTS_Website/changelog/" >Changelog</a></li>
+                  href="https://firsttestttation.github.io/FTS_Website//changelog/" >Changelog</a></li>
               
 
               
 
               <li><a 
-                  href="https://firsttestttation.github.io/FTS_Website/roadmap/" >Roadmap</a></li>
+                  href="https://firsttestttation.github.io/FTS_Website//roadmap/" >Roadmap</a></li>
               
             </ul>
 
@@ -358,7 +358,7 @@
         
 
           <li class="has-dropdown">
-            <a  href="https://firsttestttation.github.io/FTS_Website/blog/" >Blog</a>
+            <a  href="https://firsttestttation.github.io/FTS_Website//blog/" >Blog</a>
 
             <ul class="dropdown">
               
@@ -366,7 +366,7 @@
               
 
               <li><a 
-                  href="https://firsttestttation.github.io/FTS_Website/blog/archive/" >Blog Archive</a></li>
+                  href="https://firsttestttation.github.io/FTS_Website//blog/archive/" >Blog Archive</a></li>
               
             </ul>
 
@@ -469,7 +469,7 @@
         
         <li class="divider"></li>
         <li><a 
-            href="https://firsttestttation.github.io/FTS_Website/search/" >Search</a></li>
+            href="https://firsttestttation.github.io/FTS_Website//search/" >Search</a></li>
 
           
           
@@ -486,7 +486,7 @@
         
         <li class="divider"></li>
         <li><a 
-            href="https://firsttestttation.github.io/FTS_Website/contact/" >Contact</a></li>
+            href="https://firsttestttation.github.io/FTS_Website//contact/" >Contact</a></li>
 
           
           
@@ -504,7 +504,7 @@
 	<div class="row">
 		<div class="small-12 columns">
 			<a id="logo" href="https://firsttestttation.github.io/FTS_Website/" title="First TestStation – A Low Cost Flexible TestStation">
-				<img src="https://firsttestttation.github.io/FTS_Website/assets/img/logo.svg" alt="First TestStation – A Low Cost Flexible TestStation">
+				<img src="https://firsttestttation.github.io/FTS_Website//assets/img/logo.svg" alt="First TestStation – A Low Cost Flexible TestStation">
 			</a>
 		</div><!-- /.small-12.columns -->
 	</div><!-- /.row -->
@@ -606,7 +606,7 @@
             
               
                 <li >
-                  <a href="https://firsttestttation.github.io/FTS_Website"  title=""></a>
+                  <a href="https://firsttestttation.github.io/FTS_Website/"  title=""></a>
                 </li>
             
               
@@ -641,7 +641,7 @@
 		
 
 
-<script src="https://firsttestttation.github.io/FTS_Website/assets/js/javascript.min.js"></script>
+<script src="https://firsttestttation.github.io/FTS_Website//assets/js/javascript.min.js"></script>
 
 
 
