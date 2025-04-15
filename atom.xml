@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="/FTS_Website/assets/xslt/atom.xslt" ?>
-<?xml-stylesheet type="text/css" href="/FTS_Website/assets/css/atom.css" ?>
+<?xml-stylesheet type="text/xsl" href="/assets/xslt/atom.xslt" ?>
+<?xml-stylesheet type="text/css" href="/assets/css/atom.css" ?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>https://firsttestttation.github.io/FTS_Website/</id>
 	<title>First TestStation</title>
-	<updated>2025-04-15T00:15:38+00:00</updated>
+	<updated>2025-04-15T18:13:12+00:00</updated>
 
 	<subtitle>»First TestStation« is a starting test solution to be used to validate electronics boards and system.</subtitle>
 
