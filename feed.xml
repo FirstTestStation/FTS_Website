@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="https://firstteststation.github.io/FTS_Website/assets/xslt/rss.xslt" ?>
-<?xml-stylesheet type="text/css" href="https://firstteststation.github.io/FTS_Website/assets/css/rss.css" ?>
+<?xml-stylesheet type="text/xsl" href="https://FirstTestStation.github.io/FTS_Website/assets/xslt/rss.xslt" ?>
+<?xml-stylesheet type="text/css" href="https://FirstTestStation.github.io/FTS_Website/assets/css/rss.css" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>First TestStation</title>
 		<description>»First TestStation« is a starting test solution to be used to validate electronics boards and system.</description>
-		<link>https://firstteststation.github.io/FTS_Website/</link>
-		<atom:link href="https://firstteststation.github.io/FTS_Website/feed.xml" rel="self" type="application/rss+xml" />
+		<link>https://FirstTestStation.github.io/FTS_Website/</link>
+		<atom:link href="https://FirstTestStation.github.io/FTS_Website/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
 				<title>OpenTAP SelfTest Test Plan sequence to validate the  First TestStation</title>
-				<link>https://firstteststation.github.io/FTS_Website/software/OpenTAP_TestPlan/</link>
+				<link>https://FirstTestStation.github.io/FTS_Website/software/OpenTAP_TestPlan/</link>
 				<pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
 				<description>&lt;hr /&gt;
 
@@ -49,12 +49,12 @@
 &lt;/ul&gt;
 
 </description>
-				<guid isPermaLink="true">https://firstteststation.github.io/FTS_Website/software/OpenTAP_TestPlan/</guid>
+				<guid isPermaLink="true">https://FirstTestStation.github.io/FTS_Website/software/OpenTAP_TestPlan/</guid>
 			</item>
 		
 			<item>
 				<title>OpenTAP Plugin of InterconnectIO Box</title>
-				<link>https://firstteststation.github.io/FTS_Website/software/OpenTAP_Plugin/</link>
+				<link>https://FirstTestStation.github.io/FTS_Website/software/OpenTAP_Plugin/</link>
 				<pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
 				<description>&lt;hr /&gt;
 
@@ -157,12 +157,12 @@ Test Steps dedicated to controlling the &lt;strong&gt;Selftest Board&lt;/strong&
 &lt;/ul&gt;
 
 </description>
-				<guid isPermaLink="true">https://firstteststation.github.io/FTS_Website/software/OpenTAP_Plugin/</guid>
+				<guid isPermaLink="true">https://FirstTestStation.github.io/FTS_Website/software/OpenTAP_Plugin/</guid>
 			</item>
 		
 			<item>
 				<title>First TestStation project photos</title>
-				<link>https://firstteststation.github.io/FTS_Website/documentation/project-gallery/</link>
+				<link>https://FirstTestStation.github.io/FTS_Website/documentation/project-gallery/</link>
 				<pubDate>Sat, 14 Dec 2024 00:00:00 +0000</pubDate>
 				<description>&lt;p&gt;The photos below showcase the progress of the project in both hardware and software, highlighting the tangible results. Click on the thumbnail images to view larger versions.&lt;/p&gt;
 
@@ -263,12 +263,12 @@ Test Steps dedicated to controlling the &lt;strong&gt;Selftest Board&lt;/strong&
 &lt;/div&gt;
 
 </description>
-				<guid isPermaLink="true">https://firstteststation.github.io/FTS_Website/documentation/project-gallery/</guid>
+				<guid isPermaLink="true">https://FirstTestStation.github.io/FTS_Website/documentation/project-gallery/</guid>
 			</item>
 		
 			<item>
 				<title>Test Plan Strategy on First TestStation</title>
-				<link>https://firstteststation.github.io/FTS_Website/software/Test_Plan/</link>
+				<link>https://FirstTestStation.github.io/FTS_Website/software/Test_Plan/</link>
 				<pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
 				<description>&lt;hr /&gt;
 &lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
@@ -298,12 +298,12 @@ Test Steps dedicated to controlling the &lt;strong&gt;Selftest Board&lt;/strong&
 &lt;/ul&gt;
 
 </description>
-				<guid isPermaLink="true">https://firstteststation.github.io/FTS_Website/software/Test_Plan/</guid>
+				<guid isPermaLink="true">https://FirstTestStation.github.io/FTS_Website/software/Test_Plan/</guid>
 			</item>
 		
 			<item>
 				<title>Selftest firmware used on Selftest Board</title>
-				<link>https://firstteststation.github.io/FTS_Website/firmware/Selftest_Firmware/</link>
+				<link>https://FirstTestStation.github.io/FTS_Website/firmware/Selftest_Firmware/</link>
 				<pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
 				<description>&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
 
@@ -332,12 +332,12 @@ Test Steps dedicated to controlling the &lt;strong&gt;Selftest Board&lt;/strong&
 &lt;/ul&gt;
 
 </description>
-				<guid isPermaLink="true">https://firstteststation.github.io/FTS_Website/firmware/Selftest_Firmware/</guid>
+				<guid isPermaLink="true">https://FirstTestStation.github.io/FTS_Website/firmware/Selftest_Firmware/</guid>
 			</item>
 		
 			<item>
 				<title>Slave firmware for InterconnectIO Board</title>
-				<link>https://firstteststation.github.io/FTS_Website/firmware/Slave_IO_Firmware/</link>
+				<link>https://FirstTestStation.github.io/FTS_Website/firmware/Slave_IO_Firmware/</link>
 				<pubDate>Sun, 08 Dec 2024 00:00:00 +0000</pubDate>
 				<description>&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
 &lt;p&gt;•	The Pico slave firmware acts as the I2C slave controller for the InterconnectIO Box. The Pico slave receives 2 bytes of information (command + parameters) from the Master Pico, processes the command, and returns an answer if necessary.&lt;br /&gt;
@@ -365,12 +365,12 @@ Test Steps dedicated to controlling the &lt;strong&gt;Selftest Board&lt;/strong&
 &lt;/ul&gt;
 
 </description>
-				<guid isPermaLink="true">https://firstteststation.github.io/FTS_Website/firmware/Slave_IO_Firmware/</guid>
+				<guid isPermaLink="true">https://FirstTestStation.github.io/FTS_Website/firmware/Slave_IO_Firmware/</guid>
 			</item>
 		
 			<item>
 				<title>Master firmware for InterconnectIO Board</title>
-				<link>https://firstteststation.github.io/FTS_Website/firmware/Master_IO_Firmware/</link>
+				<link>https://FirstTestStation.github.io/FTS_Website/firmware/Master_IO_Firmware/</link>
 				<pubDate>Fri, 06 Dec 2024 00:00:00 +0000</pubDate>
 				<description>&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
 
@@ -402,12 +402,12 @@ Test Steps dedicated to controlling the &lt;strong&gt;Selftest Board&lt;/strong&
 &lt;/ul&gt;
 
 </description>
-				<guid isPermaLink="true">https://firstteststation.github.io/FTS_Website/firmware/Master_IO_Firmware/</guid>
+				<guid isPermaLink="true">https://FirstTestStation.github.io/FTS_Website/firmware/Master_IO_Firmware/</guid>
 			</item>
 		
 			<item>
 				<title>InterconnectIO Box Project</title>
-				<link>https://firstteststation.github.io/FTS_Website/hardware/InterconnectOpenBox/</link>
+				<link>https://FirstTestStation.github.io/FTS_Website/hardware/InterconnectOpenBox/</link>
 				<pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
 				<description>&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
 
@@ -426,12 +426,12 @@ Test Steps dedicated to controlling the &lt;strong&gt;Selftest Board&lt;/strong&
 &lt;/ul&gt;
 
 </description>
-				<guid isPermaLink="true">https://firstteststation.github.io/FTS_Website/hardware/InterconnectOpenBox/</guid>
+				<guid isPermaLink="true">https://FirstTestStation.github.io/FTS_Website/hardware/InterconnectOpenBox/</guid>
 			</item>
 		
 			<item>
 				<title>InterconnectIO Box</title>
-				<link>https://firstteststation.github.io/FTS_Website/hardware/InterconnectBox/</link>
+				<link>https://FirstTestStation.github.io/FTS_Website/hardware/InterconnectBox/</link>
 				<pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
 				<description>&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
 
@@ -485,12 +485,12 @@ Test Steps dedicated to controlling the &lt;strong&gt;Selftest Board&lt;/strong&
 &lt;/ul&gt;
 
 </description>
-				<guid isPermaLink="true">https://firstteststation.github.io/FTS_Website/hardware/InterconnectBox/</guid>
+				<guid isPermaLink="true">https://FirstTestStation.github.io/FTS_Website/hardware/InterconnectBox/</guid>
 			</item>
 		
 			<item>
 				<title>Selftest Board PCB</title>
-				<link>https://firstteststation.github.io/FTS_Website/hardware/SelftestBoardPCB/</link>
+				<link>https://FirstTestStation.github.io/FTS_Website/hardware/SelftestBoardPCB/</link>
 				<pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
 				<description>&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
 
@@ -511,7 +511,7 @@ Test Steps dedicated to controlling the &lt;strong&gt;Selftest Board&lt;/strong&
 &lt;/ul&gt;
 
 </description>
-				<guid isPermaLink="true">https://firstteststation.github.io/FTS_Website/hardware/SelftestBoardPCB/</guid>
+				<guid isPermaLink="true">https://FirstTestStation.github.io/FTS_Website/hardware/SelftestBoardPCB/</guid>
 			</item>
 		
 	</channel>

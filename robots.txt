@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://firstteststation.github.io/FTS_Website/sitemap.xml
+Sitemap: https://FirstTestStation.github.io/FTS_Website/sitemap.xml

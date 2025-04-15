@@ -2,9 +2,9 @@
 <?xml-stylesheet type="text/xsl" href="/FTS_Website/assets/xslt/atom.xslt" ?>
 <?xml-stylesheet type="text/css" href="/FTS_Website/assets/css/atom.css" ?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<id>https://firstteststation.github.io/FTS_Website/</id>
+	<id>https://FirstTestStation.github.io/FTS_Website/</id>
 	<title>First TestStation</title>
-	<updated>2025-04-15T18:31:48+00:00</updated>
+	<updated>2025-04-15T18:35:19+00:00</updated>
 
 	<subtitle>»First TestStation« is a starting test solution to be used to validate electronics boards and system.</subtitle>
 
@@ -19,21 +19,21 @@
 		</author>
 	
 
-	<link href="https://firstteststation.github.io/FTS_Website/atom.xml" rel="self" type="application/rss+xml" />
-	<link href="https://firstteststation.github.io/FTS_Website/" rel="alternate" type="text/html" />
+	<link href="https://FirstTestStation.github.io/FTS_Website/atom.xml" rel="self" type="application/rss+xml" />
+	<link href="https://FirstTestStation.github.io/FTS_Website/" rel="alternate" type="text/html" />
 
 	<generator uri="http://jekyllrb.com" version="3.10.0">Jekyll</generator>
 
 	
 		<entry>
-			<id>https://firstteststation.github.io/FTS_Website/software/OpenTAP_TestPlan/</id>
+			<id>https://FirstTestStation.github.io/FTS_Website/software/OpenTAP_TestPlan/</id>
 			<title>OpenTAP SelfTest Test Plan sequence to validate the  First TestStation</title>
-			<link href="https://firstteststation.github.io/FTS_Website/software/OpenTAP_TestPlan/" rel="alternate" type="text/html" title="OpenTAP SelfTest Test Plan sequence to validate the  First TestStation" />
+			<link href="https://FirstTestStation.github.io/FTS_Website/software/OpenTAP_TestPlan/" rel="alternate" type="text/html" title="OpenTAP SelfTest Test Plan sequence to validate the  First TestStation" />
 			<updated>2025-03-01T00:00:00+00:00</updated>
 
 			
 			<summary>Ensure flawless performance with the OpenTAP SelfTest Test Plan to validate your First TestStation setup!</summary>
-			<content type="html" xml:base="https://firstteststation.github.io/FTS_Website/software/OpenTAP_TestPlan/">&lt;hr /&gt;
+			<content type="html" xml:base="https://FirstTestStation.github.io/FTS_Website/software/OpenTAP_TestPlan/">&lt;hr /&gt;
 
 &lt;h2 id=&quot;purpose&quot;&gt;Purpose&lt;/h2&gt;
 
@@ -88,14 +88,14 @@
 		</entry>
 	
 		<entry>
-			<id>https://firstteststation.github.io/FTS_Website/software/OpenTAP_Plugin/</id>
+			<id>https://FirstTestStation.github.io/FTS_Website/software/OpenTAP_Plugin/</id>
 			<title>OpenTAP Plugin of InterconnectIO Box</title>
-			<link href="https://firstteststation.github.io/FTS_Website/software/OpenTAP_Plugin/" rel="alternate" type="text/html" title="OpenTAP Plugin of InterconnectIO Box" />
+			<link href="https://FirstTestStation.github.io/FTS_Website/software/OpenTAP_Plugin/" rel="alternate" type="text/html" title="OpenTAP Plugin of InterconnectIO Box" />
 			<updated>2025-02-15T00:00:00+00:00</updated>
 
 			
 			<summary>Integrate and automate your testing process with the OpenTAP Plugin for the InterconnectIO Box on the First TestStation!</summary>
-			<content type="html" xml:base="https://firstteststation.github.io/FTS_Website/software/OpenTAP_Plugin/">&lt;hr /&gt;
+			<content type="html" xml:base="https://FirstTestStation.github.io/FTS_Website/software/OpenTAP_Plugin/">&lt;hr /&gt;
 
 &lt;h2 id=&quot;purpose&quot;&gt;Purpose&lt;/h2&gt;
 
@@ -214,14 +214,14 @@ Test Steps dedicated to controlling the &lt;strong&gt;Selftest Board&lt;/strong&
 		</entry>
 	
 		<entry>
-			<id>https://firstteststation.github.io/FTS_Website/documentation/project-gallery/</id>
+			<id>https://FirstTestStation.github.io/FTS_Website/documentation/project-gallery/</id>
 			<title>First TestStation project photos</title>
-			<link href="https://firstteststation.github.io/FTS_Website/documentation/project-gallery/" rel="alternate" type="text/html" title="First TestStation project photos" />
+			<link href="https://FirstTestStation.github.io/FTS_Website/documentation/project-gallery/" rel="alternate" type="text/html" title="First TestStation project photos" />
 			<updated>2024-12-14T00:00:00+00:00</updated>
 
 			
 			<summary>A Glimpse into Innovation: First TestStation Project Gallery</summary>
-			<content type="html" xml:base="https://firstteststation.github.io/FTS_Website/documentation/project-gallery/">&lt;p&gt;The photos below showcase the progress of the project in both hardware and software, highlighting the tangible results. Click on the thumbnail images to view larger versions.&lt;/p&gt;
+			<content type="html" xml:base="https://FirstTestStation.github.io/FTS_Website/documentation/project-gallery/">&lt;p&gt;The photos below showcase the progress of the project in both hardware and software, highlighting the tangible results. Click on the thumbnail images to view larger versions.&lt;/p&gt;
 
 &lt;div&gt;
 	&lt;ul class=&quot;clearing-thumbs small-block-grid-4&quot; data-clearing=&quot;&quot;&gt;
@@ -332,14 +332,14 @@ Test Steps dedicated to controlling the &lt;strong&gt;Selftest Board&lt;/strong&
 		</entry>
 	
 		<entry>
-			<id>https://firstteststation.github.io/FTS_Website/software/Test_Plan/</id>
+			<id>https://FirstTestStation.github.io/FTS_Website/software/Test_Plan/</id>
 			<title>Test Plan Strategy on First TestStation</title>
-			<link href="https://firstteststation.github.io/FTS_Website/software/Test_Plan/" rel="alternate" type="text/html" title="Test Plan Strategy on First TestStation" />
+			<link href="https://FirstTestStation.github.io/FTS_Website/software/Test_Plan/" rel="alternate" type="text/html" title="Test Plan Strategy on First TestStation" />
 			<updated>2024-12-09T00:00:00+00:00</updated>
 
 			
 			<summary>Software plan to validate hardware of the First TestStation.</summary>
-			<content type="html" xml:base="https://firstteststation.github.io/FTS_Website/software/Test_Plan/">&lt;hr /&gt;
+			<content type="html" xml:base="https://FirstTestStation.github.io/FTS_Website/software/Test_Plan/">&lt;hr /&gt;
 &lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
 
 &lt;p&gt;•   On the First TestStation (FTS), the plan was always to design the InterconnectIO Box coupled with the Selftest Board to ensure that the hardware operates as intended and the firmware functions as expected, with minimal bugs.&lt;br /&gt;
@@ -385,14 +385,14 @@ Test Steps dedicated to controlling the &lt;strong&gt;Selftest Board&lt;/strong&
 		</entry>
 	
 		<entry>
-			<id>https://firstteststation.github.io/FTS_Website/firmware/Selftest_Firmware/</id>
+			<id>https://FirstTestStation.github.io/FTS_Website/firmware/Selftest_Firmware/</id>
 			<title>Selftest firmware used on Selftest Board</title>
-			<link href="https://firstteststation.github.io/FTS_Website/firmware/Selftest_Firmware/" rel="alternate" type="text/html" title="Selftest firmware used on Selftest Board" />
+			<link href="https://FirstTestStation.github.io/FTS_Website/firmware/Selftest_Firmware/" rel="alternate" type="text/html" title="Selftest firmware used on Selftest Board" />
 			<updated>2024-12-09T00:00:00+00:00</updated>
 
 			
 			<summary>Firmware information for the Pico Selftest device used on the Selftest Board of the First TestStation.</summary>
-			<content type="html" xml:base="https://firstteststation.github.io/FTS_Website/firmware/Selftest_Firmware/">&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
+			<content type="html" xml:base="https://FirstTestStation.github.io/FTS_Website/firmware/Selftest_Firmware/">&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
 
 &lt;p&gt;•	The Seftest firmware is the controller of the Selftest Board.  The device receive I2C command from InterconnectIO Box, execute the command and return the answer. &lt;br /&gt;
 •	The Selftest code firmware is used mainly to verify the communication protocols available on the InterconnectIO Box (I2C, SPI and Serial). &lt;br /&gt;
@@ -437,14 +437,14 @@ Test Steps dedicated to controlling the &lt;strong&gt;Selftest Board&lt;/strong&
 		</entry>
 	
 		<entry>
-			<id>https://firstteststation.github.io/FTS_Website/firmware/Slave_IO_Firmware/</id>
+			<id>https://FirstTestStation.github.io/FTS_Website/firmware/Slave_IO_Firmware/</id>
 			<title>Slave firmware for InterconnectIO Board</title>
-			<link href="https://firstteststation.github.io/FTS_Website/firmware/Slave_IO_Firmware/" rel="alternate" type="text/html" title="Slave firmware for InterconnectIO Board" />
+			<link href="https://FirstTestStation.github.io/FTS_Website/firmware/Slave_IO_Firmware/" rel="alternate" type="text/html" title="Slave firmware for InterconnectIO Board" />
 			<updated>2024-12-08T00:00:00+00:00</updated>
 
 			
 			<summary>Firmware information of the slave devices used on the interconnectIO Board of the First TestStation</summary>
-			<content type="html" xml:base="https://firstteststation.github.io/FTS_Website/firmware/Slave_IO_Firmware/">&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
+			<content type="html" xml:base="https://FirstTestStation.github.io/FTS_Website/firmware/Slave_IO_Firmware/">&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
 &lt;p&gt;•	The Pico slave firmware acts as the I2C slave controller for the InterconnectIO Box. The Pico slave receives 2 bytes of information (command + parameters) from the Master Pico, processes the command, and returns an answer if necessary.&lt;br /&gt;
 •	The Pico slave devices are used to perform only basic GPIO actions, which do not require speed.&lt;br /&gt;
 •	Commands supported by the Pico slave firmware are listed in the GitHub repository InterconnectIO_Slave. For details, refer to the &lt;a href=&quot;https://github.com/FirstTestStation/InterconnectIO_Slave/blob/main/README.md&quot;&gt;readme.md&lt;/a&gt;&lt;br /&gt;
@@ -488,14 +488,14 @@ Test Steps dedicated to controlling the &lt;strong&gt;Selftest Board&lt;/strong&
 		</entry>
 	
 		<entry>
-			<id>https://firstteststation.github.io/FTS_Website/firmware/Master_IO_Firmware/</id>
+			<id>https://FirstTestStation.github.io/FTS_Website/firmware/Master_IO_Firmware/</id>
 			<title>Master firmware for InterconnectIO Board</title>
-			<link href="https://firstteststation.github.io/FTS_Website/firmware/Master_IO_Firmware/" rel="alternate" type="text/html" title="Master firmware for InterconnectIO Board" />
+			<link href="https://FirstTestStation.github.io/FTS_Website/firmware/Master_IO_Firmware/" rel="alternate" type="text/html" title="Master firmware for InterconnectIO Board" />
 			<updated>2024-12-06T00:00:00+00:00</updated>
 
 			
 			<summary>Firmware information of the master device used on the interconnectIO Board of the First TestStation</summary>
-			<content type="html" xml:base="https://firstteststation.github.io/FTS_Website/firmware/Master_IO_Firmware/">&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
+			<content type="html" xml:base="https://FirstTestStation.github.io/FTS_Website/firmware/Master_IO_Firmware/">&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
 
 &lt;p&gt;•	The Pico master firmware is the main controller of the interconnectIO Box.  The Master receive SCPI command from serial port, execute the command and return the answer. &lt;br /&gt;
 •	The Pico Master device is used to control the InterconnectIO Board and handle the communication protocols available on the board (I2C, SPI, Serial, and 1-Wire).  &lt;br /&gt;
@@ -543,14 +543,14 @@ Test Steps dedicated to controlling the &lt;strong&gt;Selftest Board&lt;/strong&
 		</entry>
 	
 		<entry>
-			<id>https://firstteststation.github.io/FTS_Website/hardware/InterconnectOpenBox/</id>
+			<id>https://FirstTestStation.github.io/FTS_Website/hardware/InterconnectOpenBox/</id>
 			<title>InterconnectIO Box Project</title>
-			<link href="https://firstteststation.github.io/FTS_Website/hardware/InterconnectOpenBox/" rel="alternate" type="text/html" title="InterconnectIO Box Project" />
+			<link href="https://FirstTestStation.github.io/FTS_Website/hardware/InterconnectOpenBox/" rel="alternate" type="text/html" title="InterconnectIO Box Project" />
 			<updated>2024-12-05T00:00:00+00:00</updated>
 
 			
 			<summary>Complete Interconnect IO Box and attached Selftest board of the First TestStation</summary>
-			<content type="html" xml:base="https://firstteststation.github.io/FTS_Website/hardware/InterconnectOpenBox/">&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
+			<content type="html" xml:base="https://FirstTestStation.github.io/FTS_Website/hardware/InterconnectOpenBox/">&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
 
 &lt;p&gt;•	 The InterconnectIO board is mounted in a low-cost molded ABS rackmount box (rackmount bracket not shown in the image). &lt;br /&gt;
 •	 The front and back panels are laser-cut from plywood. &lt;br /&gt;
@@ -585,14 +585,14 @@ Test Steps dedicated to controlling the &lt;strong&gt;Selftest Board&lt;/strong&
 		</entry>
 	
 		<entry>
-			<id>https://firstteststation.github.io/FTS_Website/hardware/InterconnectBox/</id>
+			<id>https://FirstTestStation.github.io/FTS_Website/hardware/InterconnectBox/</id>
 			<title>InterconnectIO Box</title>
-			<link href="https://firstteststation.github.io/FTS_Website/hardware/InterconnectBox/" rel="alternate" type="text/html" title="InterconnectIO Box" />
+			<link href="https://FirstTestStation.github.io/FTS_Website/hardware/InterconnectBox/" rel="alternate" type="text/html" title="InterconnectIO Box" />
 			<updated>2024-12-05T00:00:00+00:00</updated>
 
 			
 			<summary>InterconnectIO Box of the First TestStation</summary>
-			<content type="html" xml:base="https://firstteststation.github.io/FTS_Website/hardware/InterconnectBox/">&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
+			<content type="html" xml:base="https://FirstTestStation.github.io/FTS_Website/hardware/InterconnectBox/">&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
 
 &lt;p&gt;•	The front panel is laser-cut, and the text was added using Inkscape. &lt;br /&gt;
 •	The logo, “Dlock8 Test,” was added to enhance the professional appearance. &lt;br /&gt;&lt;/p&gt;
@@ -662,9 +662,9 @@ Test Steps dedicated to controlling the &lt;strong&gt;Selftest Board&lt;/strong&
 		</entry>
 	
 		<entry>
-			<id>https://firstteststation.github.io/FTS_Website/hardware/SelftestBoardPCB/</id>
+			<id>https://FirstTestStation.github.io/FTS_Website/hardware/SelftestBoardPCB/</id>
 			<title>Selftest Board PCB</title>
-			<link href="https://firstteststation.github.io/FTS_Website/hardware/SelftestBoardPCB/" rel="alternate" type="text/html" title="Selftest Board PCB" />
+			<link href="https://FirstTestStation.github.io/FTS_Website/hardware/SelftestBoardPCB/" rel="alternate" type="text/html" title="Selftest Board PCB" />
 			<updated>2023-07-30T00:00:00+00:00</updated>
 
 			
@@ -678,7 +678,7 @@ Test Steps dedicated to controlling the &lt;strong&gt;Selftest Board&lt;/strong&
 				</author>
 			
 			<summary>Routing of the Selftest Printed Circuit Board (PCB) used to validate First TestStation</summary>
-			<content type="html" xml:base="https://firstteststation.github.io/FTS_Website/hardware/SelftestBoardPCB/">&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
+			<content type="html" xml:base="https://FirstTestStation.github.io/FTS_Website/hardware/SelftestBoardPCB/">&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
 
 &lt;p&gt;•	 Design of the Selftest board was carried out using the open source software Kicad V7.x. &lt;br /&gt;
 •	 Selftest board source files are available on Github. Link: &lt;a href=&quot;https://github.com/FirstTestStation/Selftest_Board&quot;&gt;Selftest_Board&lt;/a&gt;&lt;br /&gt;
