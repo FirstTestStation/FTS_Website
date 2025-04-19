@@ -605,60 +605,53 @@
 
 
 <style>
-  .frontpage-widget-highlight {
-    border: 6px solid #ffcc00;
-    border-radius: 20px;
-    overflow: hidden; /* Ensure content does not exceed the fixed height */
+  .frontpage-widget {
+    overflow: hidden;
+    /* Ensure content does not exceed the fixed height */
   }
 
   .widget-content {
-    height: 250px; /* Adjust the fixed height as needed */
+    height: 250px;
+    /* Adjust the fixed height as needed */
     padding: 10px;
   }
 
-  .frontpage-widget-highlight h2.font-size-h3.t10 {
+  .frontpage-widget h2.font-size-h3.t10 {
     font-size: 24px;
     color: #333;
   }
 
-.frontpage-widget-highlight h2.font-size-h2.t10 {
+  .frontpage-widget h2.font-size-h2.t10 {
     font-size: 36px;
-    color: rgb(24,67,202);
+    color: rgb(24, 67, 202);
+  }
+
+  .button-container {
+    margin-top: auto;
+    /* Push the button to the bottom */
+  }
+
+  .frontpage-widget .button {
+    margin: 0;
+    /* Reset any margin applied to the button */
   }
 </style>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Get the current date
-    var now = new Date();
-    
-    // Get the month name
-    var monthNames = [
-      "January", "February", "March", "April", "May", "June",
-      "July", "August", "September", "October", "November", "December"
-    ];
-    var currentMonth = monthNames[now.getMonth()];
 
-    // Update the month in the widget
-    document.getElementById('currentMonth').textContent = currentMonth;
-  });
-</script>
+<div class="medium-4 columns frontpage-widget">
+  <h2 class="font-size-h2 t10"></h2>
+  
+  <a href="http://opentap.io/">
+    <img src="/FTS_Website/images/opentap2.jpg" alt="" />
+  </a>
+  
+  <h2 class="font-size-h3 t10">Test Automation</h2>
 
-
-
-<div class="medium-4 columns frontpage-widget-highlight">
-	<h2 class="font-size-h2 t10">  </h2>
-	
-		<a href="http://opentap.io/">
-			<img src="/FTS_Website/images/opentap2.jpg" alt="" />
-		</a>
-	
-	<h2 class="font-size-h3 t10">Test Automation</h2>
-
-	<p><a href= "http://opentap.io/OpenTap">OpenTap</a>, a free open source test automation software, will be used to perform the test sequence execution. The new software on the test industry is well documented, and you can access many training videos on <a href="https://www.youtube.com/results?search_query=opentap">YouTube</a>.</p>
-	<p><a class="button tiny radius" href="http://opentap.io/">More ›</a></p>
+  <p><a href= "http://opentap.io/OpenTap">OpenTap</a>, a free open source test automation software, will be used to perform the test sequence execution. The new software on the test industry is well documented, and you can access many training videos on <a href="https://www.youtube.com/results?search_query=opentap">YouTube</a>.</p>
+  <div class="button-container">
+    <a class="button tiny radius" href="http://opentap.io/">More ›</a>
+  </div>
 </div>
-
 	
 
 	
