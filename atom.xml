@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>https://FirstTestStation.github.io/FTS_Website/</id>
 	<title>First TestStation</title>
-	<updated>2025-04-19T00:35:09+00:00</updated>
+	<updated>2025-04-19T00:57:03+00:00</updated>
 
 	<subtitle>»First TestStation« is a starting test solution to be used to validate electronics boards and system.</subtitle>
 
@@ -394,7 +394,7 @@ Test Steps dedicated to controlling the &lt;strong&gt;Selftest Board&lt;/strong&
 			<summary>Firmware information for the Pico Selftest device used on the Selftest Board of the First TestStation.</summary>
 			<content type="html" xml:base="https://FirstTestStation.github.io/FTS_Website/firmware/Selftest_Firmware/">&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
 
-&lt;p&gt;•	The Seftest firmware is the controller of the Selftest Board.  The device receive I2C command from InterconnectIO Box, execute the command and return the answer. &lt;br /&gt;
+&lt;p&gt;•	The selftest firmware is the controller of the Selftest Board.  The device receive I2C command from InterconnectIO Box, execute the command and return the answer. &lt;br /&gt;
 •	The Selftest code firmware is used mainly to verify the communication protocols available on the InterconnectIO Box (I2C, SPI and Serial). &lt;br /&gt;
 •	Commands supported by the Pico Selftest firmware are listed in the GitHub repository Selftest_code. For details, refer to the &lt;a href=&quot;https://github.com/FirstTestStation/Selftest_code_Firmware/blob/main/README.md&quot;&gt;readme.md&lt;/a&gt;&lt;br /&gt;
 •	The I2C addresses used to communicate with the Pico Selftest are defined by two hardware lines connected to ground (0) or left open (1). 
@@ -402,7 +402,7 @@ Test Steps dedicated to controlling the &lt;strong&gt;Selftest Board&lt;/strong&
 
 &lt;h2 id=&quot;flowchart&quot;&gt;Flowchart&lt;/h2&gt;
 
-&lt;p&gt;•	The flowchart below illustrates the algorithm used to process commands received from the Iterconnect IO Box  on the I2C port.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;•	The flowchart below illustrates the algorithm used to process commands received from the InterconnectIO Box  on the I2C port.&lt;br /&gt;&lt;/p&gt;
 
 &lt;figure&gt;
   &lt;img src=&quot;../../images/Pico_Selftest_flowchart.jpg&quot; alt=&quot;Selftest Flowchart&quot; /&gt;
