@@ -21,7 +21,7 @@ image:
 
 ## Features
 
-•	The Seftest firmware is the controller of the Selftest Board.  The device receive I2C command from InterconnectIO Box, execute the command and return the answer. <br>
+•	The selftest firmware is the controller of the Selftest Board.  The device receive I2C command from InterconnectIO Box, execute the command and return the answer. <br>
 •	The Selftest code firmware is used mainly to verify the communication protocols available on the InterconnectIO Box (I2C, SPI and Serial). <br>
 •	Commands supported by the Pico Selftest firmware are listed in the GitHub repository Selftest_code. For details, refer to the <a href= "https://github.com/FirstTestStation/Selftest_code_Firmware/blob/main/README.md">readme.md</a><br>
 •	The I2C addresses used to communicate with the Pico Selftest are defined by two hardware lines connected to ground (0) or left open (1). 
@@ -31,7 +31,7 @@ image:
 
 ## Flowchart
 
-•	The flowchart below illustrates the algorithm used to process commands received from the Iterconnect IO Box  on the I2C port.<br>
+•	The flowchart below illustrates the algorithm used to process commands received from the InterconnectIO Box  on the I2C port.<br>
 
 <figure>
   <img src="../../images/Pico_Selftest_flowchart.jpg" alt="Selftest Flowchart">

@@ -1,8 +1,8 @@
 ---
 layout: page-fullwidth
 subheadline: Block Diagram
-title:  "Inteconnect IO Board Block Diagram"
-teaser: "Inteconnect IO Board contains electronics required to interface with the UUT"
+title:  "Interconnect IO Board Block Diagram"
+teaser: "Interconnect IO Board contains electronics required to interface with the UUT"
 meta_teaser: ""
 breadcrumb: true
 categories:

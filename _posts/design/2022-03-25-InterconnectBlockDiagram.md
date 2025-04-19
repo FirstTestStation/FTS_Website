@@ -1,7 +1,7 @@
 ---
 layout: page-fullwidth
 subheadline: Block Diagram
-title:  "InteconnectIO Box Block Diagram"
+title:  "InterconnectIO Box Block Diagram"
 teaser: "InterconnectIO Box is an intelligent hardware interface connected between the UUT and the test equipments."
 meta_teaser: ""
 breadcrumb: true

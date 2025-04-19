@@ -2,7 +2,7 @@
 layout: page-fullwidth
 subheadline: Block Diagram
 title:  "SelfTest Board Block Diagram"
-teaser: "Selftest Board contains electronics and routing required to validate the ressources contains on the First TestStation"
+teaser: "Selftest Board contains electronics and routing required to validate the resources contains on the First TestStation"
 meta_teaser: ""
 breadcrumb: true
 categories:

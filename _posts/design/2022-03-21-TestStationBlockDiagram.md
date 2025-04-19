@@ -27,7 +27,7 @@ image:
 •	Popular communication protocol (Spi, I2C, Serial, etc ..) will be supported.<br>
 •	Specialized electronics (DAC and current sense) is added to perform the Selftest without external instruments.<br>
 •	Popular standard connector, type 41612 will be used by the interconnectIO Box to interface with the UUT.<br>
-•	The interconnext IO Box will be compatible to PCB mating or to cable mating for having the maximum of flexibility.<br>
+•	The interconnectIO Box will be compatible to PCB mating or to cable mating for having the maximum of flexibility.<br>
 •	A Selftest board will be designed to verify the functions and instruments available on the TestStation.<br>
 •	The OpenTap Selftest sequence will be used, as complete example, for proof of concept.<br>
 •	Fully documented, with comprehensive instructions and resources available to guide users through building and utilizing the TestStation effectively.
