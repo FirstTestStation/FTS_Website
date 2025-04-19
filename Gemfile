@@ -14,6 +14,7 @@ gem 'coderay', '1.1.1'
 gem 'jekyll-maps'
 gem 'faraday-retry'
 gem 'webrick'
+gem 'wdm', '>= 0.1.0', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
 # source 'https://rubygems.org'

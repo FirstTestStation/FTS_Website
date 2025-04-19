@@ -2,31 +2,13 @@
 layout: default
 format: post
 ---
-<script type="text/javascript" async
-	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-	</script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      processEscapes: true
-    },
-    jax: ["input/TeX", "output/HTML-CSS"],
-    TeX: {
-      extensions: ["AMSmath.js", "AMSsymbols.js"]
-    }
-  });
-</script>
-
 <div class="row t30">
-	<div class="medium-8 columns{% if page.sidebar == NULL %} medium-offset-2 end{% endif %}{% if page.sidebar == "
-		left" %} medium-push-4{% endif %}">
+	<div class="medium-8 columns{% if page.sidebar == NULL %} medium-offset-2 end{% endif %}{% if page.sidebar == "left" %} medium-push-4{% endif %}">
 		<article itemscope itemtype="http://schema.org/Article">
 			<header>
 				{% if page.image.title %}
 				<figure>
-					<img src="{{ site.urlimg }}{{ page.image.title }}" width="970" alt="{{ page.title | escape_once }}"
-						itemprop="image">
+					<img src="{{ site.urlimg }}{{ page.image.title }}" width="970" alt="{{ page.title | escape_once }}" itemprop="image">
 
 					{% if page.image.caption_url and page.image.caption %}
 					<figcaption class="text-right">
@@ -42,8 +24,7 @@ format: post
 
 				<div itemprop="name">
 					{% if page.subheadline %}<p class="subheadline">{{ page.subheadline }}</p>{% endif %}
-					<h1 style="margin-bottom: 5px;">{{ page.title }}</h1>
-					<h2 style="margin-top: 0px;">{{ page.speaker }}</h2>
+					<h1>{{ page.title }}</h1>
 				</div>
 			</header>
 
@@ -55,40 +36,8 @@ format: post
 			{% endif %}
 
 			<div itemprop="articleSection">
-				{{ content }}
+			{{ content }}
 			</div>
-
-			<h2>Similar Talks</h2>
-			{% assign shared_tags_posts = "" | split: "|" %}
-			<!-- Initialize an empty array to hold posts with shared tags -->
-			{% for post in site.posts %}
-			{% assign shared_tag_found = false %}
-			{% for tag in page.categories %}
-			{% if post.categories contains tag and tag != "published" %}
-			{% assign shared_tag_found = true %}
-			{% break %}
-			{% endif %}
-			{% endfor %}
-			{% if shared_tag_found and post.url != page.url %}
-			{% unless shared_tags_posts contains post %}
-			{% assign shared_tags_posts = shared_tags_posts | push: post %}
-			<!-- Add post to array if not already included -->
-			{% endunless %}
-			{% endif %}
-			{% endfor %}
-
-			<ul class="side-nav">
-				{% for post in shared_tags_posts %}
-				<li><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">
-						{% if post.subheadline %}{{ post.subheadline }} › {% endif %}
-						<strong>{{ post.speaker }}</strong> › {{ post.title }}
-					</a>
-				</li>
-				{% endfor %}
-				<li class="text-right"><a href="{{ site.url }}{{ site.baseurl }}/talks/archive/"><strong>{{
-							site.data.language.more }}</strong></a></li>
-			</ul>
-
 
 			{% if page.show_meta == true %}
 			{% include _meta_information.html %}
@@ -114,5 +63,3 @@ format: post
 	</div><!-- /.medium-4.columns -->
 	{% endif %}
 </div><!-- /.row -->
-<div class="row t30">
-</div>

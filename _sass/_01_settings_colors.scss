@@ -26,12 +26,12 @@ $body-bg            : #fdfdfd;
    https://color.adobe.com/de/Flat-Design-Colors-v2-color-theme-4341903/
 ------------------------------------------------------------------- */
 
-$ci-1               : #1E5CD4; // dark turquoise
-$ci-2               : #A8DADC; // turquoise
-$ci-3               : #320E3B; // yellow
+$ci-1               : #006622; // no header default background
+$ci-2               : #45B29D; // turquoise
+$ci-3               : #EFC94C; // yellow
 $ci-4               : #E27A3F; // orange
 $ci-5               : #DF4949; // red  
-$ci-6               : #F7C223; // green
+$ci-6               : #A1D044; // green
 
 
 
@@ -147,7 +147,7 @@ $highlight-name-entity: #800080;
 $highlight-name-exception: #990000;
 $highlight-name-function: #990000;
 $highlight-name-namespace: #555555;
-$highlight-name-tag: #000080;
+$highlight-name-tag:  #3105aa;
 $highlight-text-whitespace: #bbbbbb;
 $highlight-literal-string-regex: #009926;
 $highlight-literal-string-symbol: #990073;
