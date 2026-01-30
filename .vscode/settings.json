@@ -16,5 +16,8 @@
         "Selftest",
         "selftests",
         "wirewrap"
+    ],
+    "python.autoComplete.extraPaths": [
+        "c:\\Users\\Daniel\\.vscode\\extensions\\keysight.opentap-python-0.1.0\\out\\pythonStubs"
     ]
 }

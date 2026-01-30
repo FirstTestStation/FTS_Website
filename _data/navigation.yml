@@ -34,6 +34,8 @@
     url: "/hardware/InterconnectBoardPCB/"
   - title: "Selftest Board PCB"
     url: "/hardware/SelftestBoardPCB/"
+  - title: "InterconnectIO DUT Fixtures"
+    url: "/hardware/DUT_Fixtures/"
 
 
 - title: "Firmware"
@@ -53,10 +55,14 @@
   dropdown:
   - title: "Test Plan Strategy"
     url: "/software/Test_Plan/"
+  - title: "Test Plan Creation"
+    url: "/software/OpenTAP_TestPlan_Creation/"
   - title: "OpenTAP Plugin"
     url: "/software/OpenTAP_Plugin/"
   - title: "OpenTAP Test Plan"
     url: "/software/OpenTAP_TestPlan/"
+  - title: "Operator GUI Plugin"
+    url: "/software/OperatorGUI_Plugin/"
 
 - title: Documentation
   url: "/documentation/"

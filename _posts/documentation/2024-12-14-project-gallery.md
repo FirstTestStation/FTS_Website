@@ -39,7 +39,7 @@ gallery:
     - image_url: gallery-image-19.jpg
       caption: Operator Menu for built-in selftest
     - image_url: gallery-image-22.jpg
-      caption: Sefltest running on serial interface and on diagnostic monitor
+      caption: Selftest running on serial interface and on diagnostic monitor
     - image_url: gallery-image-20.jpg
       caption: Selftest completed without errors
     - image_url: gallery-image-50.jpg
