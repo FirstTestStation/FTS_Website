@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>SelfTest Board Block Diagram</title>
+	<title>OpenTAP Operator GUI</title>
 
     <link rel="stylesheet" type="text/css" href="https://FirstTestStation.github.io/FTS_Website/assets/css/styles_feeling_responsive.css">
 
@@ -26,23 +26,23 @@
 
 
 	<!-- Search Engine Optimization -->
-	<meta name="description" content="Selftest Board contains electronics and routing required to validate the resources contains on the First TestStation">
+	<meta name="description" content="The Operator GUI is a test sequencer execution interface intended for use in production. It controls the execution of OpenTAP test plans, guides the operator through required actions, and provides clear real-time status and pass/fail results.">
 	<meta name="google-site-verification" content="Vk0IOJ2jwG_qEoG7fuEXYqv0m2rLa8P778Fi_GrsgEQ">
 	<meta name="msvalidate.01" content="0FB4C028ABCF07C908C54386ABD2D97F" >
 	
 	
 	
-	<link rel="canonical" href="https://FirstTestStation.github.io/FTS_Website/design/SelftestBlockDiagram/">
+	<link rel="canonical" href="https://FirstTestStation.github.io/FTS_Website/software/OperatorGUI_Plugin/">
 
 
 	<!-- Facebook Open Graph -->
-	<meta property="og:title" content="SelfTest Board Block Diagram">
-	<meta property="og:description" content="Selftest Board contains electronics and routing required to validate the resources contains on the First TestStation">
-	<meta property="og:url" content="https://FirstTestStation.github.io/FTS_Website/design/SelftestBlockDiagram/">
+	<meta property="og:title" content="OpenTAP Operator GUI">
+	<meta property="og:description" content="The Operator GUI is a test sequencer execution interface intended for use in production. It controls the execution of OpenTAP test plans, guides the operator through required actions, and provides clear real-time status and pass/fail results.">
+	<meta property="og:url" content="https://FirstTestStation.github.io/FTS_Website/software/OperatorGUI_Plugin/">
 	<meta property="og:locale" content="en_EN">
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="First TestStation">
-	<meta property="og:image" content="/FTS_Website/images/Selftest_bd.png">
+	<meta property="og:image" content="/FTS_Website/images/Operator_GUI.png">
 	
 
 
@@ -532,11 +532,11 @@
  
    
     
-        <a href="https://FirstTestStation.github.io/FTS_Website/design/">design</a>
+        <a href="https://FirstTestStation.github.io/FTS_Website/software/">software</a>
     
   
     
-        <a class="current">SelfTest Board Block Diagram</a>
+        <a class="current">OpenTAP Operator GUI</a>
     
   
 </nav>
@@ -551,7 +551,7 @@
 	
 <div class="row t30">
 	<div class="small-12 columns">
-		<img src="/FTS_Website/images/Selftest_bd.png" width="970" alt="SelfTest Board Block Diagram">
+		<img src="/FTS_Website/images/Operator_GUI.png" width="970" alt="OpenTAP Operator GUI">
 		
 	</div><!-- /.small-12.columns -->
 </div><!-- /.row -->
@@ -562,35 +562,73 @@
 	<div class="medium-12 columns">
 		<article>
 			<header>
-				<p class="subheadline">Block Diagram</p>
-				<h1>SelfTest Board Block Diagram</h1>
+				<p class="subheadline">software</p>
+				<h1>OpenTAP Operator GUI</h1>
 			</header>
 
 			
 			<p class="teaser">
-				Selftest Board contains electronics and routing required to validate the resources contains on the First TestStation
+				The Operator GUI is a test sequencer execution interface intended for use in production. It controls the execution of OpenTAP test plans, guides the operator through required actions, and provides clear real-time status and pass/fail results.
 			</p>
 			
 
-			<h2 id="features">Features</h2>
+			<hr />
 
-<p>•	 The Selftest will be able to verify the InterconnectIO Board without the use of external instruments. A better precision could be achieved, however, if external instruments are connected for verification. <br />
-•	The test strategy uses relays to multiplex the different power sources (PS1 - PS10). We use the same strategy to measure the results (VM1 - VM6).<br />
-•	 As part of the test strategy, stimulus will be applied to PS1 and voltage will be observed on VM1 to validate basic function. We will validate the digital port in seconds in order to make sure the selftest board relays are working as they should.<br />
-•	 The strategy for testing relay contacts is based on current measurement.  A power source is applied to one side of the relay contact, while the other side is grounded.<br />
-•	 Current and voltage are measured to determine if the relay’s contact resistance is within the limit. It is possible to measure current using either the IN219 module or the DMM (Amp input). The circuit has been designed to limit the maximum current by adding a low value resistance.<br />
-•	 There is a provision on the selftest board to validate the 4-wire resistance measurement if an external DMM is present.<br />
-•	 To avoid overloading the Pico ADC (3V limit), we divide the voltage applied to ADC0-ADC1 by 2.<br />
-•	 Transistors with open collectors are used to toggle relays, and are validated by measuring voltage at their collectors when active (0V) and inactive (5V).<br />
-•	 The validation of digital ports is performed by connecting signals by pair, configuring one line as input and the other as output, applying stimulus at the output, and reading the response at the input.<br />
-•	 Relays present on the selftest board can also be activated using digital ports.<br />
-•	 The relay bank is connected to each other so that it can be tested simultaneously. The test will identify the defective line, but will not determine which relay needs to be replaced (choice of two).<br />
-•	 External instrument other than power supply and DMM will be tested by connecting stimulus instrument (ex: AWG) to the oscilloscope input.<br />
-•	 Using a Pico module, digital communication will be tested. All communication protocols will be validated by the firmware on Pico.<br />
-•	 Besides digital ports, the Pico module can also validate basic digital signals.<br />
-•	 The purpose of a 1-wire device is to be able to read information about UUTs (which board is connected?). The board is equipped with two 1-wire devices, one for each connector if a mating cable is used instead of a single board.<br />
-•	 The high speed device is connected via two connectors (USB and Ethernet). The plan is to connect the flash drive on USB and loopback on Ethernet.<br />
-•	 Space for custom module is present on Selftest Board.<br /></p>
+<h2 id="purpose">Purpose</h2>
+
+<p>FTS Operator Graphical User Interface (GUI) is an open-source application designed to run OpenTAP TestPlans in a production environment. This Windows WPF application is intentionally simple, requiring minimal operator training.</p>
+
+<p>Operators can select the TestPlan to execute, start the test, and follow its progress in real time. The live log window displays OpenTAP output, and the Test Execution panel clearly indicates which steps pass and which fail.</p>
+
+<p>Originally, the plan was to use the OpenTAP Keysight Test Automation Editor with the Community License to run the TestPlans associated with the First Test Station (FTS) project. However, the Keysight Editor is a development tool—not a production tool. While it is excellent for creating TestPlans or debugging defective DUTs (Devices Under Test), it is too flexible and complex for routine production use.</p>
+
+<p>Based on my years of experience in production test engineering—and with the help of modern AI tools—the decision was made to create a dedicated operator-focused GUI. The result is a streamlined, production-ready application.</p>
+
+<p>Designed primarily for the FTS project, most testing and validation has been performed using the custom InterconnectIO plugin developed for this environment. This application is open source and intended to help small businesses access better tools for production testing.</p>
+
+<h2 id="-key-features">✨ Key Features</h2>
+
+<h3 id="1-️-modern-user-interface-ui">1. 🖼️ Modern User Interface (UI)</h3>
+
+<ul>
+  <li><strong>Technology:</strong> Built on the Windows Presentation Foundation (WPF) framework</li>
+  <li><strong>Design:</strong> Designed using the popular <strong>Material Design in XAML</strong> library for a clean, modern, and professional aesthetic</li>
+  <li><strong>Themes:</strong> Themes: Modern color themes allow users to switch between light and dark backgrounds</li>
+</ul>
+
+<h3 id="2--test-execution-support">2. 🧪 Test Execution Support</h3>
+
+<ul>
+  <li><strong>Test Plan Selection (TapPlan):</strong> OpenTAP Test Plans, saved as <code class="language-plaintext highlighter-rouge">.TapPlan</code> files, are the primary method used to select and initiate testing sequences</li>
+  <li><strong>Configuration (TapSetting):</strong> The hardware environment and Device Under Test (DUT) configuration are dynamically defined by reading the associated <strong>TapSettings</strong> file, ensuring consistency across test runs</li>
+  <li><strong>Integration</strong> TapSettings can be integrated into TapPlan by using a special test step to load a single file (.TapPlan) that contains all information</li>
+</ul>
+
+<h3 id="3-️-production-readiness--traceability">3. 🏷️ Production Readiness &amp; Traceability</h3>
+
+<ul>
+  <li><strong>Serial Number Integration:</strong> The application strongly encourages the use of <strong>Serial Numbers</strong>, which serve as the key identifier for comprehensive <strong>production traceability</strong> and logging</li>
+  <li><strong>Plugin Validation:</strong> Automates test sequences, validates the presence of necessary OpenTAP plugins, and provides clear warnings to operators if required plugins are missing before execution begins</li>
+</ul>
+
+<h3 id="4--real-time-monitoring">4. 📊 Real-time Monitoring</h3>
+
+<ul>
+  <li><strong>Test Progress Tracking:</strong> Visual indicators show pass/fail status for each test step with detailed metrics including values and limit comparisons</li>
+  <li><strong>Result Summary:</strong>  Clear pass/fail counters with debug, info, warning, and error message tracking. Real-time execution messages from OpenTAP listeners are sent to the status box where messages can be filtered by type</li>
+</ul>
+
+<h3 id="5--customization">5. 🎨 Customization</h3>
+
+<ul>
+  <li><strong>Dynamic Logo Loading:</strong> Allows integration of a custom <strong>Company Logo</strong> to visually associate the application with the manufacturing company</li>
+</ul>
+
+<h2 id="plugin-location">Plugin Location</h2>
+
+<p>The plugin source code is hosted on the official GitHub repository. In the future, the <strong>Operator_GUI</strong> plugin may also be made available directly through the <strong>OpenTAP Package Manager</strong> for easier installation and updates.</p>
+
+<p>🔗 <a href="https://github.com/FirstTestStation/FTS_OperatorGUI">OpenTAP Operator GUI</a></p>
 
 <ul class="side-nav t60">
 

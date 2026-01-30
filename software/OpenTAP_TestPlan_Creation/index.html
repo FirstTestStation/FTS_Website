@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>SelfTest Board Block Diagram</title>
+	<title>TestPlan Creation using OpenTAP Environment</title>
 
     <link rel="stylesheet" type="text/css" href="https://FirstTestStation.github.io/FTS_Website/assets/css/styles_feeling_responsive.css">
 
@@ -26,23 +26,23 @@
 
 
 	<!-- Search Engine Optimization -->
-	<meta name="description" content="Selftest Board contains electronics and routing required to validate the resources contains on the First TestStation">
+	<meta name="description" content="An overview of the tools used to create and edit OpenTAP test plans">
 	<meta name="google-site-verification" content="Vk0IOJ2jwG_qEoG7fuEXYqv0m2rLa8P778Fi_GrsgEQ">
 	<meta name="msvalidate.01" content="0FB4C028ABCF07C908C54386ABD2D97F" >
 	
 	
 	
-	<link rel="canonical" href="https://FirstTestStation.github.io/FTS_Website/design/SelftestBlockDiagram/">
+	<link rel="canonical" href="https://FirstTestStation.github.io/FTS_Website/software/OpenTAP_TestPlan_Creation/">
 
 
 	<!-- Facebook Open Graph -->
-	<meta property="og:title" content="SelfTest Board Block Diagram">
-	<meta property="og:description" content="Selftest Board contains electronics and routing required to validate the resources contains on the First TestStation">
-	<meta property="og:url" content="https://FirstTestStation.github.io/FTS_Website/design/SelftestBlockDiagram/">
+	<meta property="og:title" content="TestPlan Creation using OpenTAP Environment">
+	<meta property="og:description" content="An overview of the tools used to create and edit OpenTAP test plans">
+	<meta property="og:url" content="https://FirstTestStation.github.io/FTS_Website/software/OpenTAP_TestPlan_Creation/">
 	<meta property="og:locale" content="en_EN">
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="First TestStation">
-	<meta property="og:image" content="/FTS_Website/images/Selftest_bd.png">
+	<meta property="og:image" content="/FTS_Website/images/TestPlan_Creation.png">
 	
 
 
@@ -532,11 +532,11 @@
  
    
     
-        <a href="https://FirstTestStation.github.io/FTS_Website/design/">design</a>
+        <a href="https://FirstTestStation.github.io/FTS_Website/software/">software</a>
     
   
     
-        <a class="current">SelfTest Board Block Diagram</a>
+        <a class="current">TestPlan Creation using OpenTAP Environment</a>
     
   
 </nav>
@@ -551,7 +551,7 @@
 	
 <div class="row t30">
 	<div class="small-12 columns">
-		<img src="/FTS_Website/images/Selftest_bd.png" width="970" alt="SelfTest Board Block Diagram">
+		<img src="/FTS_Website/images/TestPlan_Creation.png" width="970" alt="TestPlan Creation using OpenTAP Environment">
 		
 	</div><!-- /.small-12.columns -->
 </div><!-- /.row -->
@@ -562,35 +562,74 @@
 	<div class="medium-12 columns">
 		<article>
 			<header>
-				<p class="subheadline">Block Diagram</p>
-				<h1>SelfTest Board Block Diagram</h1>
+				<p class="subheadline">software</p>
+				<h1>TestPlan Creation using OpenTAP Environment</h1>
 			</header>
 
 			
 			<p class="teaser">
-				Selftest Board contains electronics and routing required to validate the resources contains on the First TestStation
+				An overview of the tools used to create and edit OpenTAP test plans
 			</p>
 			
 
-			<h2 id="features">Features</h2>
+			<hr />
+<h2 id="purpose">Purpose</h2>
 
-<p>•	 The Selftest will be able to verify the InterconnectIO Board without the use of external instruments. A better precision could be achieved, however, if external instruments are connected for verification. <br />
-•	The test strategy uses relays to multiplex the different power sources (PS1 - PS10). We use the same strategy to measure the results (VM1 - VM6).<br />
-•	 As part of the test strategy, stimulus will be applied to PS1 and voltage will be observed on VM1 to validate basic function. We will validate the digital port in seconds in order to make sure the selftest board relays are working as they should.<br />
-•	 The strategy for testing relay contacts is based on current measurement.  A power source is applied to one side of the relay contact, while the other side is grounded.<br />
-•	 Current and voltage are measured to determine if the relay’s contact resistance is within the limit. It is possible to measure current using either the IN219 module or the DMM (Amp input). The circuit has been designed to limit the maximum current by adding a low value resistance.<br />
-•	 There is a provision on the selftest board to validate the 4-wire resistance measurement if an external DMM is present.<br />
-•	 To avoid overloading the Pico ADC (3V limit), we divide the voltage applied to ADC0-ADC1 by 2.<br />
-•	 Transistors with open collectors are used to toggle relays, and are validated by measuring voltage at their collectors when active (0V) and inactive (5V).<br />
-•	 The validation of digital ports is performed by connecting signals by pair, configuring one line as input and the other as output, applying stimulus at the output, and reading the response at the input.<br />
-•	 Relays present on the selftest board can also be activated using digital ports.<br />
-•	 The relay bank is connected to each other so that it can be tested simultaneously. The test will identify the defective line, but will not determine which relay needs to be replaced (choice of two).<br />
-•	 External instrument other than power supply and DMM will be tested by connecting stimulus instrument (ex: AWG) to the oscilloscope input.<br />
-•	 Using a Pico module, digital communication will be tested. All communication protocols will be validated by the firmware on Pico.<br />
-•	 Besides digital ports, the Pico module can also validate basic digital signals.<br />
-•	 The purpose of a 1-wire device is to be able to read information about UUTs (which board is connected?). The board is equipped with two 1-wire devices, one for each connector if a mating cable is used instead of a single board.<br />
-•	 The high speed device is connected via two connectors (USB and Ethernet). The plan is to connect the flash drive on USB and loopback on Ethernet.<br />
-•	 Space for custom module is present on Selftest Board.<br /></p>
+<p>A DUT (Device Under Test) is validated using a test sequence, commonly referred to as a Test Plan. A test plan is a collection of test steps executed sequentially to validate the DUT and determine whether the product result is PASS or FAIL.</p>
+
+<p>For the FTS (First Test Station) project, OpenTAP was selected as the test sequencer platform. OpenTAP is an open-source test automation environment that is free to download, install, and use.</p>
+
+<p>The fundamentals of test plan creation are well explained in the OpenTAP blog: <a href="https://blog.opentap.io/opentap-test-plan-creation">OpenTAP TestPlan Creation</a><br />.</p>
+
+<p>Within the FTS project, the Keysight Editor with a community license was used to develop all test plans.</p>
+
+<p>Because the project relies on test instruments such as oscilloscopes, DVMs, and power supplies, the preferred solution was an OpenTAP package provided by Keysight. This package includes instrument configuration and control, the OpenTAP software, the OpenTAP Package Manager, and the OpenTAP Editor for test plan creation under a community license.</p>
+
+<p>For this purpose, the following software package was downloaded and installed: <a href="https://www.keysight.com/ca/en/lib/software-detail/computer-software/pathwave-test-automation-2796935.html">Test Automation Developer</a><br />.</p>
+
+<h2 id="recommendations">Recommendations</h2>
+
+<ul>
+  <li>
+    <p>Take the time to define a <strong>detailed test plan</strong> before starting to code in OpenTAP. Having a clear understanding of what the test sequence needs to accomplish will greatly facilitate development, validation, and long-term maintenance.</p>
+  </li>
+  <li>
+    <p>If external instruments are used, configure them first using <strong>Keysight Connection Expert</strong> or equivalent software. Verify that basic commands (for example, <code class="language-plaintext highlighter-rouge">*IDN?</code>) return a valid response before integrating the instrument into an OpenTAP test plan.</p>
+  </li>
+  <li>
+    <p>In OpenTAP, use <strong>unique names for each Test Step</strong>. Reusing the same name in multiple locations (for example, multiple steps named <em>Delay</em>) can cause confusion during test execution and in test reports.</p>
+  </li>
+  <li>
+    <p>DUTs (Device Under Test) must be defined for each product. The <strong>Device Name</strong> and <strong>Product Name</strong> are included in the test report. DUT definitions are provided through plugins, as no standard DUT definition exists in OpenTAP. However, the <strong>InterconnectIO plugin</strong> includes a preliminary definition for generic DUTs, which may be used if the project DUT is compatible.</p>
+  </li>
+  <li>
+    <p>Use a <strong>Serial Number</strong> to uniquely identify each DUT and to generate unique test reports. A Test Step available in the <strong>InterconnectIO plugin</strong> forces the operator to enter a serial number. This serial number can also be validated through the Test Step settings.</p>
+  </li>
+  <li>
+    <p>For each Test Step, replace the default description text in the Test Step settings with a <strong>custom, detailed explanation</strong> describing the purpose of the step. Over time, this documentation helps production operators understand how the product is tested and significantly assists with debugging defective units.</p>
+  </li>
+</ul>
+
+<h2 id="opentap-references--examples">OpenTAP References &amp; Examples</h2>
+
+<ul>
+  <li>
+    <p><strong>OpenTAP Test Plan Overview</strong> — description of test plans and XML structure.<br />
+<a href="https://doc.opentap.io/User%20Guide/Introduction/Readme.html" target="_blank">OpenTAP Test Plan Overview</a></p>
+  </li>
+  <li>
+    <p><strong>OpenTAP Test Plan Creation Tools</strong> — blog covering editors and workflows to build test plans.<br />
+<a href="https://blog.opentap.io/opentap-test-plan-creation" target="_blank">OpenTAP Test Plan Creation Tools</a></p>
+  </li>
+  <li>
+    <p><strong>OpenTAP Getting Started</strong> — official documentation for setup and basics.<br />
+<a href="https://doc.opentap.io/" target="_blank">OpenTAP Getting Started</a></p>
+  </li>
+  <li>
+    <p><strong>Automate Test Plans with PathWave Test Automation</strong> — workflow demo of test plan creation.<br />
+<a href="https://www.youtube.com/watch?v=cNEi_Ldwzbw" target="_blank">Automate Test Plans with PathWave Test Automation (YouTube)</a></p>
+  </li>
+</ul>
 
 <ul class="side-nav t60">
 

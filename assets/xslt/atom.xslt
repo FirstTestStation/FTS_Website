@@ -224,6 +224,12 @@
               <li><a 
                   href="https://FirstTestStation.github.io/FTS_Website/hardware/SelftestBoardPCB/" >Selftest Board PCB</a></li>
               
+
+              
+
+              <li><a 
+                  href="https://FirstTestStation.github.io/FTS_Website/hardware/DUT_Fixtures/" >InterconnectIO DUT Fixtures</a></li>
+              
             </ul>
 
           </li>
@@ -294,6 +300,12 @@
               
 
               <li><a 
+                  href="https://FirstTestStation.github.io/FTS_Website/software/OpenTAP_TestPlan_Creation/" >Test Plan Creation</a></li>
+              
+
+              
+
+              <li><a 
                   href="https://FirstTestStation.github.io/FTS_Website/software/OpenTAP_Plugin/" >OpenTAP Plugin</a></li>
               
 
@@ -301,6 +313,12 @@
 
               <li><a 
                   href="https://FirstTestStation.github.io/FTS_Website/software/OpenTAP_TestPlan/" >OpenTAP Test Plan</a></li>
+              
+
+              
+
+              <li><a 
+                  href="https://FirstTestStation.github.io/FTS_Website/software/OperatorGUI_Plugin/" >Operator GUI Plugin</a></li>
               
             </ul>
 

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>SelfTest Board Block Diagram</title>
+	<title>Blog of Feeling Responsive</title>
 
     <link rel="stylesheet" type="text/css" href="https://FirstTestStation.github.io/FTS_Website/assets/css/styles_feeling_responsive.css">
 
@@ -26,23 +26,23 @@
 
 
 	<!-- Search Engine Optimization -->
-	<meta name="description" content="Selftest Board contains electronics and routing required to validate the resources contains on the First TestStation">
+	<meta name="description" content="This is the Feeling Responsive Blog Template.">
 	<meta name="google-site-verification" content="Vk0IOJ2jwG_qEoG7fuEXYqv0m2rLa8P778Fi_GrsgEQ">
 	<meta name="msvalidate.01" content="0FB4C028ABCF07C908C54386ABD2D97F" >
 	
 	
-	
-	<link rel="canonical" href="https://FirstTestStation.github.io/FTS_Website/design/SelftestBlockDiagram/">
+	<meta name="robots" content="noindex">
+	<link rel="canonical" href="https://FirstTestStation.github.io/FTS_Website/blog/page4/">
 
 
 	<!-- Facebook Open Graph -->
-	<meta property="og:title" content="SelfTest Board Block Diagram">
-	<meta property="og:description" content="Selftest Board contains electronics and routing required to validate the resources contains on the First TestStation">
-	<meta property="og:url" content="https://FirstTestStation.github.io/FTS_Website/design/SelftestBlockDiagram/">
+	<meta property="og:title" content="Blog of Feeling Responsive">
+	<meta property="og:description" content="This is the Feeling Responsive Blog Template.">
+	<meta property="og:url" content="https://FirstTestStation.github.io/FTS_Website/blog/page4/">
 	<meta property="og:locale" content="en_EN">
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="First TestStation">
-	<meta property="og:image" content="/FTS_Website/images/Selftest_bd.png">
+	
 	
 
 
@@ -86,7 +86,7 @@
 
 
 </head>
-<body id="top-of-page" class="page-fullwidth">
+<body id="top-of-page" class="blog-index">
 	
 	
 <div id="navigation" class="sticky">
@@ -514,7 +514,7 @@
 
 	
 
-<div id="masthead-no-image-header">
+<div id="masthead">
 	<div class="row">
 		<div class="small-12 columns">
 			<a id="logo" href="https://firstteststation.github.io/FTS_Website/" title="First TestStation – A Low Cost Flexible TestStation">
@@ -527,86 +527,78 @@
 
 
 
-<nav class="breadcrumbs" role="menubar" aria-label="breadcrumbs">
- <a href="https://FirstTestStation.github.io/FTS_Website">Start</a>
- 
-   
-    
-        <a href="https://FirstTestStation.github.io/FTS_Website/design/">design</a>
-    
-  
-    
-        <a class="current">SelfTest Board Block Diagram</a>
-    
-  
-</nav>
 
 
 
 
 
 
-
-
-	
-<div class="row t30">
-	<div class="small-12 columns">
-		<img src="/FTS_Website/images/Selftest_bd.png" width="970" alt="SelfTest Board Block Diagram">
+	<div class="row">
+	<div class="medium-8 columns t30">
 		
-	</div><!-- /.small-12.columns -->
-</div><!-- /.row -->
 
 
 
-<div class="row t30">
-	<div class="medium-12 columns">
-		<article>
-			<header>
-				<p class="subheadline">Block Diagram</p>
-				<h1>SelfTest Board Block Diagram</h1>
-			</header>
+  <div class="row">
+    <div class="small-12 columns b60">
+      <p class="subheadline"><span class="subheader">design</span> – Block Diagram</p>
+      <h2><a href="https://FirstTestStation.github.io/FTS_Website/design/InterconnectIOBlockDiagram/">Interconnect IO Board Block Diagram</a></h2>
+      <p>
+        
 
-			
-			<p class="teaser">
-				Selftest Board contains electronics and routing required to validate the resources contains on the First TestStation
-			</p>
-			
+        Interconnect IO Board contains electronics required to interface with the UUT
 
-			<h2 id="features">Features</h2>
+        <a href="https://FirstTestStation.github.io/FTS_Website/design/InterconnectIOBlockDiagram/" title="Read Interconnect IO Board Block Diagram"><strong>Read More&nbsp;›</strong></a>
+      </p>
+    </div><!-- /.small-12.columns -->
+  </div><!-- /.row -->
 
-<p>•	 The Selftest will be able to verify the InterconnectIO Board without the use of external instruments. A better precision could be achieved, however, if external instruments are connected for verification. <br />
-•	The test strategy uses relays to multiplex the different power sources (PS1 - PS10). We use the same strategy to measure the results (VM1 - VM6).<br />
-•	 As part of the test strategy, stimulus will be applied to PS1 and voltage will be observed on VM1 to validate basic function. We will validate the digital port in seconds in order to make sure the selftest board relays are working as they should.<br />
-•	 The strategy for testing relay contacts is based on current measurement.  A power source is applied to one side of the relay contact, while the other side is grounded.<br />
-•	 Current and voltage are measured to determine if the relay’s contact resistance is within the limit. It is possible to measure current using either the IN219 module or the DMM (Amp input). The circuit has been designed to limit the maximum current by adding a low value resistance.<br />
-•	 There is a provision on the selftest board to validate the 4-wire resistance measurement if an external DMM is present.<br />
-•	 To avoid overloading the Pico ADC (3V limit), we divide the voltage applied to ADC0-ADC1 by 2.<br />
-•	 Transistors with open collectors are used to toggle relays, and are validated by measuring voltage at their collectors when active (0V) and inactive (5V).<br />
-•	 The validation of digital ports is performed by connecting signals by pair, configuring one line as input and the other as output, applying stimulus at the output, and reading the response at the input.<br />
-•	 Relays present on the selftest board can also be activated using digital ports.<br />
-•	 The relay bank is connected to each other so that it can be tested simultaneously. The test will identify the defective line, but will not determine which relay needs to be replaced (choice of two).<br />
-•	 External instrument other than power supply and DMM will be tested by connecting stimulus instrument (ex: AWG) to the oscilloscope input.<br />
-•	 Using a Pico module, digital communication will be tested. All communication protocols will be validated by the firmware on Pico.<br />
-•	 Besides digital ports, the Pico module can also validate basic digital signals.<br />
-•	 The purpose of a 1-wire device is to be able to read information about UUTs (which board is connected?). The board is equipped with two 1-wire devices, one for each connector if a mating cable is used instead of a single board.<br />
-•	 The high speed device is connected via two connectors (USB and Ethernet). The plan is to connect the flash drive on USB and loopback on Ethernet.<br />
-•	 Space for custom module is present on Selftest Board.<br /></p>
+  <div class="row">
+    <div class="small-12 columns b60">
+      <p class="subheadline"><span class="subheader">design</span> – Block Diagram</p>
+      <h2><a href="https://FirstTestStation.github.io/FTS_Website/design/InterconnectBlockDiagram/">InterconnectIO Box Block Diagram</a></h2>
+      <p>
+        
 
-<ul class="side-nav t60">
+        InterconnectIO Box is an intelligent hardware interface connected between the UUT and the test equipments.
 
-  
+        <a href="https://FirstTestStation.github.io/FTS_Website/design/InterconnectBlockDiagram/" title="Read InterconnectIO Box Block Diagram"><strong>Read More&nbsp;›</strong></a>
+      </p>
+    </div><!-- /.small-12.columns -->
+  </div><!-- /.row -->
 
+  <div class="row">
+    <div class="small-12 columns b60">
+      <p class="subheadline"><span class="subheader">design</span> – Overview Drawing</p>
+      <h2><a href="https://FirstTestStation.github.io/FTS_Website/design/TestStationBlockDiagram/">First TestStation Project Overview Drawing</a></h2>
+      <p>
+        <a href="https://FirstTestStation.github.io/FTS_Website/design/TestStationBlockDiagram/" title="First TestStation Project Overview Drawing"><img src="/FTS_Website/images/FirstTestStation.png" class="alignleft" width="150" height="150" alt="Blog of Feeling Responsive"></a>
+
+        First TestStation plans to provide, free of charge, a starting test solution for testing electronic production boards or electronic systems.
+
+        <a href="https://FirstTestStation.github.io/FTS_Website/design/TestStationBlockDiagram/" title="Read First TestStation Project Overview Drawing"><strong>Read More&nbsp;›</strong></a>
+      </p>
+    </div><!-- /.small-12.columns -->
+  </div><!-- /.row -->
+
+
+
+<nav id="pagination">
+    
+      
+      <a rel="prev" class="radius button small" href="https://FirstTestStation.github.io/FTS_Website/talks/page3/" title="Previous Posts">&laquo; Previous</a>
+      
     
 
-  
-</ul>
+    <a class="radius button small" href="https://FirstTestStation.github.io/FTS_Website/talks/archive/" title="">Blog Archive</a>
+
+    
+  </nav>
 
 
-		</article>
-	</div><!-- /.medium-12.columns -->
+	</div><!-- /.medium-7.columns -->
+
 </div><!-- /.row -->
-
-
 
 
 	
@@ -689,6 +681,11 @@
 <script src="https://FirstTestStation.github.io/FTS_Website/assets/js/javascript.min.js"></script>
 
 
+
+<script>
+    $("#masthead").backstretch("/FTS_Website/images/Interconnect_pcb.jpeg", {fade: 700});
+    $("#masthead-with-text").backstretch("/FTS_Website/images/Interconnect_pcb.jpeg", {fade: 700});
+</script>
 
 
 

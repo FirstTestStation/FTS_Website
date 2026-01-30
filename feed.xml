@@ -9,6 +9,314 @@
 		<atom:link href="https://FirstTestStation.github.io/FTS_Website/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>InterconnectIO DUT Fixtures</title>
+				<link>https://FirstTestStation.github.io/FTS_Website/hardware/DUT_Fixtures/</link>
+				<pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+				<description>&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
+
+&lt;p&gt;To interface with a &lt;strong&gt;Device Under Test (DUT)&lt;/strong&gt;, a custom connection must be built to bridge the DUT to the resources provided by the &lt;strong&gt;First Test Station (FTS)&lt;/strong&gt;. This interface, commonly known as a &lt;strong&gt;Fixture&lt;/strong&gt;, can take several formats depending on complexity.&lt;/p&gt;
+
+&lt;p&gt;This page presents three standard fixture architectures used to connect a DUT to the InterconnectIO Box.&lt;/p&gt;
+
+&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Full Compatibility:&lt;/strong&gt; Designed specifically for the InterconnectIO Box interface.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Fixture ID Support:&lt;/strong&gt; Dedicated physical space for installing Fixture ID identification devices.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Open Documentation:&lt;/strong&gt; Complete design files and guides to serve as a standardized starting point.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Version Controlled:&lt;/strong&gt; All designs are maintained and documented on GitHub repositories.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;dut_board&quot;&gt;DUT_Board&lt;/h2&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../../images/DUT_Board.jpg&quot; alt=&quot;Fixture DUT Board&quot; /&gt;
+  &lt;figcaption&gt;DUT Board Fixture&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The &lt;strong&gt;DUT_Board&lt;/strong&gt; solution utilizes PCB-based interface boards. These are essential when signal conditioning, specialized routing, or active electronics are required between the InterconnectIO system and the DUT.&lt;/p&gt;
+
+&lt;h3 id=&quot;features-1&quot;&gt;Features&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Plug-and-play compatibility&lt;/strong&gt; with InterconnectIO Box&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Standardized connector footprints&lt;/strong&gt; for reliable interconnection&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Reference design files&lt;/strong&gt; including schematics and PCB layouts (KiCad)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Mounting hole patterns&lt;/strong&gt; for secure mechanical attachment&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Example implementations&lt;/strong&gt; to accelerate development&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;typical-use-cases&quot;&gt;Typical Use Cases&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Signal buffering and level shifting.&lt;/li&gt;
+  &lt;li&gt;Power conditioning and protection circuitry.&lt;/li&gt;
+  &lt;li&gt;High-density signal routing.&lt;/li&gt;
+  &lt;li&gt;Standardizing interfaces across multiple test platforms.&lt;/li&gt;
+  &lt;li&gt;Complex DUT test fixtures requiring active components.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Expert Note:&lt;/strong&gt; In many cases, a custom DUT Board is used to integrate specific electronics not natively available on the First TestStation. To achieve the highest reliability, it is ideal to mount the DUT connector directly onto the DUT Board Fixture. This “wireless” approach eliminates floating cables and significantly improves signal integrity and durability. Utilizing our pre-developed PCB templates can drastically reduce design time for these fixtures.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;dut_cable_board&quot;&gt;DUT_Cable_Board&lt;/h2&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../../images/Dut_Cable_Board.png&quot; alt=&quot;Fixture DUT Cable Board&quot; /&gt;
+  &lt;figcaption&gt;DUT Cable Board Fixture&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The &lt;strong&gt;DUT_Cable_Board&lt;/strong&gt; consists of 3D-printed mechanical wiring platforms. These replace traditional PCBs when active electronics are not required. Instead of copper traces, discrete wires and cable harnesses are used to route signals manually.&lt;/p&gt;
+
+&lt;h2 id=&quot;key-features&quot;&gt;Key Features&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;3D Printed Structure&lt;/strong&gt; – Allows for immediate iteration without PCB fabrication lead times.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Connector-Based Interface&lt;/strong&gt; – P1, P2 (or other connectors) are securely mounted on the board.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Cable Harness Routing&lt;/strong&gt; – Wires are logically routed and bundled, mimicking a physical layout.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Integrated Strain Relief&lt;/strong&gt; – Built-in tie-wrap points and mechanical guides to prevent cable stress.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Modular DUT Connection&lt;/strong&gt; – Easily adaptable for varying DUT geometries.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Fixture ID Ready&lt;/strong&gt; – Dedicated space near the primary connectors for ID device installation.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;typical-use-cases-1&quot;&gt;Typical Use Cases&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Passive DUT fixtures requiring no active signal conditioning.&lt;/li&gt;
+  &lt;li&gt;Rapid prototyping and proof-of-concept hardware cycles.&lt;/li&gt;
+  &lt;li&gt;Manufacturing-grade cable harness routing and management.&lt;/li&gt;
+  &lt;li&gt;Modular platforms where wiring needs to be easily serviceable or reconfigurable.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Expert Note:&lt;/strong&gt; The DUT Cable Board was specifically designed to assist with the mechanical insertion and extraction of the fixture from the InterconnectIO Box. While using wires is a standard connection method, mounting those connectors to a rigid base board—similar to a PCB—dramatically improves long-term reliability.&lt;/p&gt;
+
+  &lt;p&gt;Furthermore, installing a &lt;strong&gt;Fixture ID&lt;/strong&gt; device might seem like an extra step, but you will appreciate it the moment a DUT fails or a Test Station starts to smoke because the wrong fixture was plugged in. &lt;strong&gt;Always verify your fixture electronically.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;dut_cable&quot;&gt;DUT_Cable&lt;/h2&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../../images/DUT_Cable.png&quot; alt=&quot;Fixture DUT Cable&quot; /&gt;
+  &lt;figcaption&gt;DUT Cable Fixture&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The &lt;strong&gt;DUT_Cable&lt;/strong&gt; solution features minimal, single-connector cable harnesses. This is the most streamlined approach for DUTs requiring only a limited subset of signals, allowing you to bypass the complexity of the full InterconnectIO P1/P2 resource set.&lt;/p&gt;
+
+&lt;h2 id=&quot;key-features-1&quot;&gt;Key Features&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Minimalist Footprint&lt;/strong&gt; – Reduced bulk for simple testing requirements.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Direct J1 Integration&lt;/strong&gt; – Optimized to utilize the primary J1 connector where specialized resources are concentrated.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;High-Speed Prototyping&lt;/strong&gt; – No PCB fabrication or complex mechanical assembly required.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Strain Relief Management&lt;/strong&gt; – Uses mechanical guides and tie-wraps to ensure connection longevity.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Fixture ID Capability&lt;/strong&gt; – Sufficient space remains for electronic fixture identification.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;typical-use-cases-2&quot;&gt;Typical Use Cases&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Low-complexity DUTs with minimal pin counts.&lt;/li&gt;
+  &lt;li&gt;Dedicated production test jigs for high-volume, simple devices.&lt;/li&gt;
+  &lt;li&gt;Early-stage development and benchtop debugging.&lt;/li&gt;
+  &lt;li&gt;Focused testing: Power-only, programming-only, or basic communication (UART/USB) interfaces.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Expert Note:&lt;/strong&gt; The DUT_Cable was specifically designed for scenarios where full station resources are overkill. We strategically grouped the most critical special features onto the &lt;strong&gt;J1 connector&lt;/strong&gt; of the InterconnectIO Box. This allows for a “single-connector” interface if you only need to program a DUT or perform basic digital communication. In fact, the DUT_Cable was the primary tool used to validate I2C, SPI, and Serial communication during the initial development of the InterconnectIO Box itself.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;fts-communication-fixture-a-true-application-example&quot;&gt;FTS Communication Fixture: A True Application Example&lt;/h1&gt;
+
+&lt;p&gt;The &lt;strong&gt;FTS Communication Fixture&lt;/strong&gt; was designed and used as a real-world application to validate the communication protocols available on the &lt;strong&gt;InterconnectIO Box&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;️-key-features&quot;&gt;🛠️ Key Features&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;J1-Focused Design:&lt;/strong&gt; Optimized to utilize the high-density digital resources available on the InterconnectIO &lt;strong&gt;J1&lt;/strong&gt; port.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Protocol Support:&lt;/strong&gt; Dedicated signal routing for &lt;strong&gt;I2C (SDA/SCL)&lt;/strong&gt;, &lt;strong&gt;SPI (MOSI/MISO/SCK/CS)&lt;/strong&gt;, and &lt;strong&gt;UART (RX/TX/CTS/RTS)&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;3D Printed Chassis:&lt;/strong&gt; Rapidly deployable mechanical enclosure with integrated cable strain relief.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Electronic Fixture ID:&lt;/strong&gt; Integrated Fixture Identification device to prevent incorrect hardware assignment during automated testing.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Expert Note:&lt;/strong&gt;&lt;br /&gt;
+The I2C and SPI protocols were validated using external sensor modules connected via individual flying wires.&lt;br /&gt;
+Using single-wire connections for each signal ensures compatibility with different module pinouts without requiring fixture modifications.&lt;/p&gt;
+
+  &lt;p&gt;In this implementation, the &lt;strong&gt;ADXL345 accelerometer module&lt;/strong&gt; was selected because it supports both &lt;strong&gt;SPI and I2C&lt;/strong&gt;, making it ideal for dual-protocol validation.&lt;br /&gt;
+The corresponding OpenTAP test plans are available in the project &lt;strong&gt;FTS Resources Repository&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul class=&quot;side-nav t60&quot;&gt;
+
+  
+
+    
+
+  
+&lt;/ul&gt;
+
+</description>
+				<guid isPermaLink="true">https://FirstTestStation.github.io/FTS_Website/hardware/DUT_Fixtures/</guid>
+			</item>
+		
+			<item>
+				<title>OpenTAP Operator GUI</title>
+				<link>https://FirstTestStation.github.io/FTS_Website/software/OperatorGUI_Plugin/</link>
+				<pubDate>Mon, 19 Jan 2026 00:00:00 +0000</pubDate>
+				<description>&lt;hr /&gt;
+
+&lt;h2 id=&quot;purpose&quot;&gt;Purpose&lt;/h2&gt;
+
+&lt;p&gt;FTS Operator Graphical User Interface (GUI) is an open-source application designed to run OpenTAP TestPlans in a production environment. This Windows WPF application is intentionally simple, requiring minimal operator training.&lt;/p&gt;
+
+&lt;p&gt;Operators can select the TestPlan to execute, start the test, and follow its progress in real time. The live log window displays OpenTAP output, and the Test Execution panel clearly indicates which steps pass and which fail.&lt;/p&gt;
+
+&lt;p&gt;Originally, the plan was to use the OpenTAP Keysight Test Automation Editor with the Community License to run the TestPlans associated with the First Test Station (FTS) project. However, the Keysight Editor is a development tool—not a production tool. While it is excellent for creating TestPlans or debugging defective DUTs (Devices Under Test), it is too flexible and complex for routine production use.&lt;/p&gt;
+
+&lt;p&gt;Based on my years of experience in production test engineering—and with the help of modern AI tools—the decision was made to create a dedicated operator-focused GUI. The result is a streamlined, production-ready application.&lt;/p&gt;
+
+&lt;p&gt;Designed primarily for the FTS project, most testing and validation has been performed using the custom InterconnectIO plugin developed for this environment. This application is open source and intended to help small businesses access better tools for production testing.&lt;/p&gt;
+
+&lt;h2 id=&quot;-key-features&quot;&gt;✨ Key Features&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-️-modern-user-interface-ui&quot;&gt;1. 🖼️ Modern User Interface (UI)&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Technology:&lt;/strong&gt; Built on the Windows Presentation Foundation (WPF) framework&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Design:&lt;/strong&gt; Designed using the popular &lt;strong&gt;Material Design in XAML&lt;/strong&gt; library for a clean, modern, and professional aesthetic&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Themes:&lt;/strong&gt; Themes: Modern color themes allow users to switch between light and dark backgrounds&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2--test-execution-support&quot;&gt;2. 🧪 Test Execution Support&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Test Plan Selection (TapPlan):&lt;/strong&gt; OpenTAP Test Plans, saved as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.TapPlan&lt;/code&gt; files, are the primary method used to select and initiate testing sequences&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Configuration (TapSetting):&lt;/strong&gt; The hardware environment and Device Under Test (DUT) configuration are dynamically defined by reading the associated &lt;strong&gt;TapSettings&lt;/strong&gt; file, ensuring consistency across test runs&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Integration&lt;/strong&gt; TapSettings can be integrated into TapPlan by using a special test step to load a single file (.TapPlan) that contains all information&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;3-️-production-readiness--traceability&quot;&gt;3. 🏷️ Production Readiness &amp;amp; Traceability&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Serial Number Integration:&lt;/strong&gt; The application strongly encourages the use of &lt;strong&gt;Serial Numbers&lt;/strong&gt;, which serve as the key identifier for comprehensive &lt;strong&gt;production traceability&lt;/strong&gt; and logging&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Plugin Validation:&lt;/strong&gt; Automates test sequences, validates the presence of necessary OpenTAP plugins, and provides clear warnings to operators if required plugins are missing before execution begins&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;4--real-time-monitoring&quot;&gt;4. 📊 Real-time Monitoring&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Test Progress Tracking:&lt;/strong&gt; Visual indicators show pass/fail status for each test step with detailed metrics including values and limit comparisons&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Result Summary:&lt;/strong&gt;  Clear pass/fail counters with debug, info, warning, and error message tracking. Real-time execution messages from OpenTAP listeners are sent to the status box where messages can be filtered by type&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;5--customization&quot;&gt;5. 🎨 Customization&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Dynamic Logo Loading:&lt;/strong&gt; Allows integration of a custom &lt;strong&gt;Company Logo&lt;/strong&gt; to visually associate the application with the manufacturing company&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;plugin-location&quot;&gt;Plugin Location&lt;/h2&gt;
+
+&lt;p&gt;The plugin source code is hosted on the official GitHub repository. In the future, the &lt;strong&gt;Operator_GUI&lt;/strong&gt; plugin may also be made available directly through the &lt;strong&gt;OpenTAP Package Manager&lt;/strong&gt; for easier installation and updates.&lt;/p&gt;
+
+&lt;p&gt;🔗 &lt;a href=&quot;https://github.com/FirstTestStation/FTS_OperatorGUI&quot;&gt;OpenTAP Operator GUI&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul class=&quot;side-nav t60&quot;&gt;
+
+  
+
+    
+
+  
+&lt;/ul&gt;
+
+</description>
+				<guid isPermaLink="true">https://FirstTestStation.github.io/FTS_Website/software/OperatorGUI_Plugin/</guid>
+			</item>
+		
+			<item>
+				<title>TestPlan Creation using OpenTAP Environment</title>
+				<link>https://FirstTestStation.github.io/FTS_Website/software/OpenTAP_TestPlan_Creation/</link>
+				<pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
+				<description>&lt;hr /&gt;
+&lt;h2 id=&quot;purpose&quot;&gt;Purpose&lt;/h2&gt;
+
+&lt;p&gt;A DUT (Device Under Test) is validated using a test sequence, commonly referred to as a Test Plan. A test plan is a collection of test steps executed sequentially to validate the DUT and determine whether the product result is PASS or FAIL.&lt;/p&gt;
+
+&lt;p&gt;For the FTS (First Test Station) project, OpenTAP was selected as the test sequencer platform. OpenTAP is an open-source test automation environment that is free to download, install, and use.&lt;/p&gt;
+
+&lt;p&gt;The fundamentals of test plan creation are well explained in the OpenTAP blog: &lt;a href=&quot;https://blog.opentap.io/opentap-test-plan-creation&quot;&gt;OpenTAP TestPlan Creation&lt;/a&gt;&lt;br /&gt;.&lt;/p&gt;
+
+&lt;p&gt;Within the FTS project, the Keysight Editor with a community license was used to develop all test plans.&lt;/p&gt;
+
+&lt;p&gt;Because the project relies on test instruments such as oscilloscopes, DVMs, and power supplies, the preferred solution was an OpenTAP package provided by Keysight. This package includes instrument configuration and control, the OpenTAP software, the OpenTAP Package Manager, and the OpenTAP Editor for test plan creation under a community license.&lt;/p&gt;
+
+&lt;p&gt;For this purpose, the following software package was downloaded and installed: &lt;a href=&quot;https://www.keysight.com/ca/en/lib/software-detail/computer-software/pathwave-test-automation-2796935.html&quot;&gt;Test Automation Developer&lt;/a&gt;&lt;br /&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;recommendations&quot;&gt;Recommendations&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Take the time to define a &lt;strong&gt;detailed test plan&lt;/strong&gt; before starting to code in OpenTAP. Having a clear understanding of what the test sequence needs to accomplish will greatly facilitate development, validation, and long-term maintenance.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If external instruments are used, configure them first using &lt;strong&gt;Keysight Connection Expert&lt;/strong&gt; or equivalent software. Verify that basic commands (for example, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*IDN?&lt;/code&gt;) return a valid response before integrating the instrument into an OpenTAP test plan.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;In OpenTAP, use &lt;strong&gt;unique names for each Test Step&lt;/strong&gt;. Reusing the same name in multiple locations (for example, multiple steps named &lt;em&gt;Delay&lt;/em&gt;) can cause confusion during test execution and in test reports.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;DUTs (Device Under Test) must be defined for each product. The &lt;strong&gt;Device Name&lt;/strong&gt; and &lt;strong&gt;Product Name&lt;/strong&gt; are included in the test report. DUT definitions are provided through plugins, as no standard DUT definition exists in OpenTAP. However, the &lt;strong&gt;InterconnectIO plugin&lt;/strong&gt; includes a preliminary definition for generic DUTs, which may be used if the project DUT is compatible.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Use a &lt;strong&gt;Serial Number&lt;/strong&gt; to uniquely identify each DUT and to generate unique test reports. A Test Step available in the &lt;strong&gt;InterconnectIO plugin&lt;/strong&gt; forces the operator to enter a serial number. This serial number can also be validated through the Test Step settings.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;For each Test Step, replace the default description text in the Test Step settings with a &lt;strong&gt;custom, detailed explanation&lt;/strong&gt; describing the purpose of the step. Over time, this documentation helps production operators understand how the product is tested and significantly assists with debugging defective units.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;opentap-references--examples&quot;&gt;OpenTAP References &amp;amp; Examples&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;OpenTAP Test Plan Overview&lt;/strong&gt; — description of test plans and XML structure.&lt;br /&gt;
+&lt;a href=&quot;https://doc.opentap.io/User%20Guide/Introduction/Readme.html&quot; target=&quot;_blank&quot;&gt;OpenTAP Test Plan Overview&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;OpenTAP Test Plan Creation Tools&lt;/strong&gt; — blog covering editors and workflows to build test plans.&lt;br /&gt;
+&lt;a href=&quot;https://blog.opentap.io/opentap-test-plan-creation&quot; target=&quot;_blank&quot;&gt;OpenTAP Test Plan Creation Tools&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;OpenTAP Getting Started&lt;/strong&gt; — official documentation for setup and basics.&lt;br /&gt;
+&lt;a href=&quot;https://doc.opentap.io/&quot; target=&quot;_blank&quot;&gt;OpenTAP Getting Started&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Automate Test Plans with PathWave Test Automation&lt;/strong&gt; — workflow demo of test plan creation.&lt;br /&gt;
+&lt;a href=&quot;https://www.youtube.com/watch?v=cNEi_Ldwzbw&quot; target=&quot;_blank&quot;&gt;Automate Test Plans with PathWave Test Automation (YouTube)&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class=&quot;side-nav t60&quot;&gt;
+
+  
+
+    
+
+  
+&lt;/ul&gt;
+
+</description>
+				<guid isPermaLink="true">https://FirstTestStation.github.io/FTS_Website/software/OpenTAP_TestPlan_Creation/</guid>
+			</item>
+		
+			<item>
 				<title>OpenTAP SelfTest Test Plan sequence to validate the  First TestStation</title>
 				<link>https://FirstTestStation.github.io/FTS_Website/software/OpenTAP_TestPlan/</link>
 				<pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
@@ -242,7 +550,7 @@ Test Steps dedicated to controlling the &lt;strong&gt;Selftest Board&lt;/strong&
 		
 		
 		
-		&lt;li&gt;&lt;a href=&quot;/FTS_Website/images/gallery-image-22.jpg&quot;&gt;&lt;img data-caption=&quot;Sefltest running on serial interface and on diagnostic monitor&quot; src=&quot;/FTS_Website/images/gallery-image-22-thumb.jpg&quot; alt=&quot;Sefltest running on serial interface and on diagnostic monitor&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;/FTS_Website/images/gallery-image-22.jpg&quot;&gt;&lt;img data-caption=&quot;Selftest running on serial interface and on diagnostic monitor&quot; src=&quot;/FTS_Website/images/gallery-image-22-thumb.jpg&quot; alt=&quot;Selftest running on serial interface and on diagnostic monitor&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
 		
 		
 		
@@ -403,115 +711,6 @@ Test Steps dedicated to controlling the &lt;strong&gt;Selftest Board&lt;/strong&
 
 </description>
 				<guid isPermaLink="true">https://FirstTestStation.github.io/FTS_Website/firmware/Master_IO_Firmware/</guid>
-			</item>
-		
-			<item>
-				<title>InterconnectIO Box Project</title>
-				<link>https://FirstTestStation.github.io/FTS_Website/hardware/InterconnectOpenBox/</link>
-				<pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
-				<description>&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
-
-&lt;p&gt;•	 The InterconnectIO board is mounted in a low-cost molded ABS rackmount box (rackmount bracket not shown in the image). &lt;br /&gt;
-•	 The front and back panels are laser-cut from plywood. &lt;br /&gt;
-•	 Custom-designed guide rails (3d printed) are included to help the operator easily insert and remove the board, featuring push and pull handles on top of the guide rails. &lt;br /&gt;
-•	The project is powered by an external 5V power pack &lt;br /&gt;&lt;/p&gt;
-
-&lt;ul class=&quot;side-nav t60&quot;&gt;
-
-  
-
-    
-
-  
-&lt;/ul&gt;
-
-</description>
-				<guid isPermaLink="true">https://FirstTestStation.github.io/FTS_Website/hardware/InterconnectOpenBox/</guid>
-			</item>
-		
-			<item>
-				<title>InterconnectIO Box</title>
-				<link>https://FirstTestStation.github.io/FTS_Website/hardware/InterconnectBox/</link>
-				<pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
-				<description>&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
-
-&lt;p&gt;•	The front panel is laser-cut, and the text was added using Inkscape. &lt;br /&gt;
-•	The logo, “Dlock8 Test,” was added to enhance the professional appearance. &lt;br /&gt;&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;../../images/FrontPanel.png&quot; alt=&quot;Front panel IO Box&quot; /&gt;
-  &lt;figcaption&gt;IO Box Front Panel&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;•	The back panel is laser-cut, and the text was added using Inkscape. &lt;br /&gt;
-•	Maximum information has been added to the panel to ensure connections can be made without errors. &lt;br /&gt;&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;../../images/BackPanel.png&quot; alt=&quot;Back panel IO Box&quot; /&gt;
-  &lt;figcaption&gt;IO Box Back Panel&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;•   The Selftest board can be easily inserted into the InterconnectIO Box using the guided rails.&lt;br /&gt;
-•   The position of the guided rails is adjustable horizontally to accommodate shorter or larger boards.&lt;br /&gt;
-•   The Selftest board can be used as a template to create custom boards for testing new Units Under Test (UUTs)..&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;../../images/IoBox-image-2.jpeg&quot; alt=&quot;Selftest Board on IO Box&quot; /&gt;
-  &lt;figcaption&gt;IO Box with Selftest Board&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;•   A custom cable harness could be connected to the InterconnectIO Box. &lt;br /&gt;
-•   A plan has been made to design a custom case for the connector, which can be produced using 3D printing. &lt;br /&gt;&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;../../images/IoBox-image-3.jpeg&quot; alt=&quot;Cable harness on IO Box&quot; /&gt;
-  &lt;figcaption&gt;IO Box with harness cable&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;•   Rackmount brackets are included with the InterconnectIO Box, making it compatible with a 19-inch rackmount cabinet.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;../../images/io_rackmount.jpg&quot; alt=&quot;Rackmount bracket on IO Box&quot; /&gt;
-  &lt;figcaption&gt;IO Box in rackmount configuration&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;ul class=&quot;side-nav t60&quot;&gt;
-
-  
-
-    
-
-  
-&lt;/ul&gt;
-
-</description>
-				<guid isPermaLink="true">https://FirstTestStation.github.io/FTS_Website/hardware/InterconnectBox/</guid>
-			</item>
-		
-			<item>
-				<title>Selftest Board PCB</title>
-				<link>https://FirstTestStation.github.io/FTS_Website/hardware/SelftestBoardPCB/</link>
-				<pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
-				<description>&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
-
-&lt;p&gt;•	 Design of the Selftest board was carried out using the open source software Kicad V7.x. &lt;br /&gt;
-•	 Selftest board source files are available on Github. Link: &lt;a href=&quot;https://github.com/FirstTestStation/Selftest_Board&quot;&gt;Selftest_Board&lt;/a&gt;&lt;br /&gt;
-•	 For mode details, please refer to the electrical schematic on Github.&lt;br /&gt;
-•	 On board, hundred of Net Tie components (NTxxx) have been installed to help with on-board modification. The NetTie PCB component facilitates modification routing by providing a clear space where PCB traces can be cut (cut between two holes) and changed routing by adding wire (solder on one of the holes on each side of the trace cut).&lt;br /&gt;
-•	 Active components are mounted on sockets to facilitate replacement.&lt;br /&gt;
-•	 There is a reserved area for a custom module that will be added in the future.&lt;br /&gt;&lt;/p&gt;
-
-&lt;ul class=&quot;side-nav t60&quot;&gt;
-
-  
-
-    
-
-  
-&lt;/ul&gt;
-
-</description>
-				<guid isPermaLink="true">https://FirstTestStation.github.io/FTS_Website/hardware/SelftestBoardPCB/</guid>
 			</item>
 		
 	</channel>

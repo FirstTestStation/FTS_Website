@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>SelfTest Board Block Diagram</title>
+	<title>InterconnectIO DUT Fixtures</title>
 
     <link rel="stylesheet" type="text/css" href="https://FirstTestStation.github.io/FTS_Website/assets/css/styles_feeling_responsive.css">
 
@@ -26,23 +26,23 @@
 
 
 	<!-- Search Engine Optimization -->
-	<meta name="description" content="Selftest Board contains electronics and routing required to validate the resources contains on the First TestStation">
+	<meta name="description" content="A presentation of the fixture solutions compatible with the InterconnectIO Box.">
 	<meta name="google-site-verification" content="Vk0IOJ2jwG_qEoG7fuEXYqv0m2rLa8P778Fi_GrsgEQ">
 	<meta name="msvalidate.01" content="0FB4C028ABCF07C908C54386ABD2D97F" >
 	
 	
 	
-	<link rel="canonical" href="https://FirstTestStation.github.io/FTS_Website/design/SelftestBlockDiagram/">
+	<link rel="canonical" href="https://FirstTestStation.github.io/FTS_Website/hardware/DUT_Fixtures/">
 
 
 	<!-- Facebook Open Graph -->
-	<meta property="og:title" content="SelfTest Board Block Diagram">
-	<meta property="og:description" content="Selftest Board contains electronics and routing required to validate the resources contains on the First TestStation">
-	<meta property="og:url" content="https://FirstTestStation.github.io/FTS_Website/design/SelftestBlockDiagram/">
+	<meta property="og:title" content="InterconnectIO DUT Fixtures">
+	<meta property="og:description" content="A presentation of the fixture solutions compatible with the InterconnectIO Box.">
+	<meta property="og:url" content="https://FirstTestStation.github.io/FTS_Website/hardware/DUT_Fixtures/">
 	<meta property="og:locale" content="en_EN">
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="First TestStation">
-	<meta property="og:image" content="/FTS_Website/images/Selftest_bd.png">
+	<meta property="og:image" content="/FTS_Website/images/FirstTestStation.png">
 	
 
 
@@ -532,11 +532,11 @@
  
    
     
-        <a href="https://FirstTestStation.github.io/FTS_Website/design/">design</a>
+        <a href="https://FirstTestStation.github.io/FTS_Website/hardware/">hardware</a>
     
   
     
-        <a class="current">SelfTest Board Block Diagram</a>
+        <a class="current">InterconnectIO DUT Fixtures</a>
     
   
 </nav>
@@ -551,7 +551,11 @@
 	
 <div class="row t30">
 	<div class="small-12 columns">
-		<img src="/FTS_Website/images/Selftest_bd.png" width="970" alt="SelfTest Board Block Diagram">
+		<img src="/FTS_Website/images/FirstTestStation.png" width="970" alt="InterconnectIO DUT Fixtures">
+		
+		<p class="text-right caption">
+			<a href="https://github.com/FirstTestStation/">InterconnectIO Project</a>
+		</p>
 		
 	</div><!-- /.small-12.columns -->
 </div><!-- /.row -->
@@ -562,35 +566,155 @@
 	<div class="medium-12 columns">
 		<article>
 			<header>
-				<p class="subheadline">Block Diagram</p>
-				<h1>SelfTest Board Block Diagram</h1>
+				<p class="subheadline">Hardware Interface</p>
+				<h1>InterconnectIO DUT Fixtures</h1>
 			</header>
 
 			
 			<p class="teaser">
-				Selftest Board contains electronics and routing required to validate the resources contains on the First TestStation
+				A presentation of the fixture solutions compatible with the InterconnectIO Box.
 			</p>
 			
 
-			<h2 id="features">Features</h2>
+			<h2 id="overview">Overview</h2>
 
-<p>•	 The Selftest will be able to verify the InterconnectIO Board without the use of external instruments. A better precision could be achieved, however, if external instruments are connected for verification. <br />
-•	The test strategy uses relays to multiplex the different power sources (PS1 - PS10). We use the same strategy to measure the results (VM1 - VM6).<br />
-•	 As part of the test strategy, stimulus will be applied to PS1 and voltage will be observed on VM1 to validate basic function. We will validate the digital port in seconds in order to make sure the selftest board relays are working as they should.<br />
-•	 The strategy for testing relay contacts is based on current measurement.  A power source is applied to one side of the relay contact, while the other side is grounded.<br />
-•	 Current and voltage are measured to determine if the relay’s contact resistance is within the limit. It is possible to measure current using either the IN219 module or the DMM (Amp input). The circuit has been designed to limit the maximum current by adding a low value resistance.<br />
-•	 There is a provision on the selftest board to validate the 4-wire resistance measurement if an external DMM is present.<br />
-•	 To avoid overloading the Pico ADC (3V limit), we divide the voltage applied to ADC0-ADC1 by 2.<br />
-•	 Transistors with open collectors are used to toggle relays, and are validated by measuring voltage at their collectors when active (0V) and inactive (5V).<br />
-•	 The validation of digital ports is performed by connecting signals by pair, configuring one line as input and the other as output, applying stimulus at the output, and reading the response at the input.<br />
-•	 Relays present on the selftest board can also be activated using digital ports.<br />
-•	 The relay bank is connected to each other so that it can be tested simultaneously. The test will identify the defective line, but will not determine which relay needs to be replaced (choice of two).<br />
-•	 External instrument other than power supply and DMM will be tested by connecting stimulus instrument (ex: AWG) to the oscilloscope input.<br />
-•	 Using a Pico module, digital communication will be tested. All communication protocols will be validated by the firmware on Pico.<br />
-•	 Besides digital ports, the Pico module can also validate basic digital signals.<br />
-•	 The purpose of a 1-wire device is to be able to read information about UUTs (which board is connected?). The board is equipped with two 1-wire devices, one for each connector if a mating cable is used instead of a single board.<br />
-•	 The high speed device is connected via two connectors (USB and Ethernet). The plan is to connect the flash drive on USB and loopback on Ethernet.<br />
-•	 Space for custom module is present on Selftest Board.<br /></p>
+<p>To interface with a <strong>Device Under Test (DUT)</strong>, a custom connection must be built to bridge the DUT to the resources provided by the <strong>First Test Station (FTS)</strong>. This interface, commonly known as a <strong>Fixture</strong>, can take several formats depending on complexity.</p>
+
+<p>This page presents three standard fixture architectures used to connect a DUT to the InterconnectIO Box.</p>
+
+<h2 id="features">Features</h2>
+
+<ul>
+  <li><strong>Full Compatibility:</strong> Designed specifically for the InterconnectIO Box interface.</li>
+  <li><strong>Fixture ID Support:</strong> Dedicated physical space for installing Fixture ID identification devices.</li>
+  <li><strong>Open Documentation:</strong> Complete design files and guides to serve as a standardized starting point.</li>
+  <li><strong>Version Controlled:</strong> All designs are maintained and documented on GitHub repositories.</li>
+</ul>
+
+<hr />
+
+<h2 id="dut_board">DUT_Board</h2>
+
+<figure>
+  <img src="../../images/DUT_Board.jpg" alt="Fixture DUT Board" />
+  <figcaption>DUT Board Fixture</figcaption>
+</figure>
+
+<p>The <strong>DUT_Board</strong> solution utilizes PCB-based interface boards. These are essential when signal conditioning, specialized routing, or active electronics are required between the InterconnectIO system and the DUT.</p>
+
+<h3 id="features-1">Features</h3>
+
+<ul>
+  <li><strong>Plug-and-play compatibility</strong> with InterconnectIO Box</li>
+  <li><strong>Standardized connector footprints</strong> for reliable interconnection</li>
+  <li><strong>Reference design files</strong> including schematics and PCB layouts (KiCad)</li>
+  <li><strong>Mounting hole patterns</strong> for secure mechanical attachment</li>
+  <li><strong>Example implementations</strong> to accelerate development</li>
+</ul>
+
+<h3 id="typical-use-cases">Typical Use Cases</h3>
+<ul>
+  <li>Signal buffering and level shifting.</li>
+  <li>Power conditioning and protection circuitry.</li>
+  <li>High-density signal routing.</li>
+  <li>Standardizing interfaces across multiple test platforms.</li>
+  <li>Complex DUT test fixtures requiring active components.</li>
+</ul>
+
+<blockquote>
+  <p><strong>Expert Note:</strong> In many cases, a custom DUT Board is used to integrate specific electronics not natively available on the First TestStation. To achieve the highest reliability, it is ideal to mount the DUT connector directly onto the DUT Board Fixture. This “wireless” approach eliminates floating cables and significantly improves signal integrity and durability. Utilizing our pre-developed PCB templates can drastically reduce design time for these fixtures.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="dut_cable_board">DUT_Cable_Board</h2>
+
+<figure>
+  <img src="../../images/Dut_Cable_Board.png" alt="Fixture DUT Cable Board" />
+  <figcaption>DUT Cable Board Fixture</figcaption>
+</figure>
+
+<p>The <strong>DUT_Cable_Board</strong> consists of 3D-printed mechanical wiring platforms. These replace traditional PCBs when active electronics are not required. Instead of copper traces, discrete wires and cable harnesses are used to route signals manually.</p>
+
+<h2 id="key-features">Key Features</h2>
+<ul>
+  <li><strong>3D Printed Structure</strong> – Allows for immediate iteration without PCB fabrication lead times.</li>
+  <li><strong>Connector-Based Interface</strong> – P1, P2 (or other connectors) are securely mounted on the board.</li>
+  <li><strong>Cable Harness Routing</strong> – Wires are logically routed and bundled, mimicking a physical layout.</li>
+  <li><strong>Integrated Strain Relief</strong> – Built-in tie-wrap points and mechanical guides to prevent cable stress.</li>
+  <li><strong>Modular DUT Connection</strong> – Easily adaptable for varying DUT geometries.</li>
+  <li><strong>Fixture ID Ready</strong> – Dedicated space near the primary connectors for ID device installation.</li>
+</ul>
+
+<h3 id="typical-use-cases-1">Typical Use Cases</h3>
+<ul>
+  <li>Passive DUT fixtures requiring no active signal conditioning.</li>
+  <li>Rapid prototyping and proof-of-concept hardware cycles.</li>
+  <li>Manufacturing-grade cable harness routing and management.</li>
+  <li>Modular platforms where wiring needs to be easily serviceable or reconfigurable.</li>
+</ul>
+
+<blockquote>
+  <p><strong>Expert Note:</strong> The DUT Cable Board was specifically designed to assist with the mechanical insertion and extraction of the fixture from the InterconnectIO Box. While using wires is a standard connection method, mounting those connectors to a rigid base board—similar to a PCB—dramatically improves long-term reliability.</p>
+
+  <p>Furthermore, installing a <strong>Fixture ID</strong> device might seem like an extra step, but you will appreciate it the moment a DUT fails or a Test Station starts to smoke because the wrong fixture was plugged in. <strong>Always verify your fixture electronically.</strong></p>
+</blockquote>
+
+<hr />
+
+<h2 id="dut_cable">DUT_Cable</h2>
+
+<figure>
+  <img src="../../images/DUT_Cable.png" alt="Fixture DUT Cable" />
+  <figcaption>DUT Cable Fixture</figcaption>
+</figure>
+
+<p>The <strong>DUT_Cable</strong> solution features minimal, single-connector cable harnesses. This is the most streamlined approach for DUTs requiring only a limited subset of signals, allowing you to bypass the complexity of the full InterconnectIO P1/P2 resource set.</p>
+
+<h2 id="key-features-1">Key Features</h2>
+<ul>
+  <li><strong>Minimalist Footprint</strong> – Reduced bulk for simple testing requirements.</li>
+  <li><strong>Direct J1 Integration</strong> – Optimized to utilize the primary J1 connector where specialized resources are concentrated.</li>
+  <li><strong>High-Speed Prototyping</strong> – No PCB fabrication or complex mechanical assembly required.</li>
+  <li><strong>Strain Relief Management</strong> – Uses mechanical guides and tie-wraps to ensure connection longevity.</li>
+  <li><strong>Fixture ID Capability</strong> – Sufficient space remains for electronic fixture identification.</li>
+</ul>
+
+<h3 id="typical-use-cases-2">Typical Use Cases</h3>
+<ul>
+  <li>Low-complexity DUTs with minimal pin counts.</li>
+  <li>Dedicated production test jigs for high-volume, simple devices.</li>
+  <li>Early-stage development and benchtop debugging.</li>
+  <li>Focused testing: Power-only, programming-only, or basic communication (UART/USB) interfaces.</li>
+</ul>
+
+<blockquote>
+  <p><strong>Expert Note:</strong> The DUT_Cable was specifically designed for scenarios where full station resources are overkill. We strategically grouped the most critical special features onto the <strong>J1 connector</strong> of the InterconnectIO Box. This allows for a “single-connector” interface if you only need to program a DUT or perform basic digital communication. In fact, the DUT_Cable was the primary tool used to validate I2C, SPI, and Serial communication during the initial development of the InterconnectIO Box itself.</p>
+</blockquote>
+
+<hr />
+
+<h1 id="fts-communication-fixture-a-true-application-example">FTS Communication Fixture: A True Application Example</h1>
+
+<p>The <strong>FTS Communication Fixture</strong> was designed and used as a real-world application to validate the communication protocols available on the <strong>InterconnectIO Box</strong>.</p>
+
+<h2 id="️-key-features">🛠️ Key Features</h2>
+
+<ul>
+  <li><strong>J1-Focused Design:</strong> Optimized to utilize the high-density digital resources available on the InterconnectIO <strong>J1</strong> port.</li>
+  <li><strong>Protocol Support:</strong> Dedicated signal routing for <strong>I2C (SDA/SCL)</strong>, <strong>SPI (MOSI/MISO/SCK/CS)</strong>, and <strong>UART (RX/TX/CTS/RTS)</strong>.</li>
+  <li><strong>3D Printed Chassis:</strong> Rapidly deployable mechanical enclosure with integrated cable strain relief.</li>
+  <li><strong>Electronic Fixture ID:</strong> Integrated Fixture Identification device to prevent incorrect hardware assignment during automated testing.</li>
+</ul>
+
+<blockquote>
+  <p><strong>Expert Note:</strong><br />
+The I2C and SPI protocols were validated using external sensor modules connected via individual flying wires.<br />
+Using single-wire connections for each signal ensures compatibility with different module pinouts without requiring fixture modifications.</p>
+
+  <p>In this implementation, the <strong>ADXL345 accelerometer module</strong> was selected because it supports both <strong>SPI and I2C</strong>, making it ideal for dual-protocol validation.<br />
+The corresponding OpenTAP test plans are available in the project <strong>FTS Resources Repository</strong>.</p>
+</blockquote>
 
 <ul class="side-nav t60">
 
