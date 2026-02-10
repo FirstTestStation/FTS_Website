@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>https://FirstTestStation.github.io/FTS_Website/</id>
 	<title>First TestStation</title>
-	<updated>2026-01-30T01:25:45+00:00</updated>
+	<updated>2026-02-10T01:34:45+00:00</updated>
 
 	<subtitle>»First TestStation« is a starting test solution to be used to validate electronics boards and system.</subtitle>
 
@@ -24,6 +24,189 @@
 
 	<generator uri="http://jekyllrb.com" version="3.10.0">Jekyll</generator>
 
+	
+		<entry>
+			<id>https://FirstTestStation.github.io/FTS_Website/software/Resources/</id>
+			<title>Project Resources</title>
+			<link href="https://FirstTestStation.github.io/FTS_Website/software/Resources/" rel="alternate" type="text/html" title="Project Resources" />
+			<updated>2026-02-08T00:00:00+00:00</updated>
+
+			
+			<summary>A curated collection of documentation, examples, and best practices to help you design, validate, and deploy reliable manufacturing test solutions—from first prototype to production-ready test stations.</summary>
+			<content type="html" xml:base="https://FirstTestStation.github.io/FTS_Website/software/Resources/">&lt;hr /&gt;
+
+&lt;p&gt;A comprehensive collection of examples, documentation, and best practices for developing &lt;strong&gt;production-ready test sequences&lt;/strong&gt; on the &lt;strong&gt;First TestStation (FTS)&lt;/strong&gt; platform using &lt;strong&gt;OpenTAP&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;These resources are designed to shorten the learning curve—from basic OpenTAP test step validation to complete, real-world production test implementations with intelligent fixture design.&lt;/p&gt;
+
+&lt;p&gt;Whether you are new to OpenTAP or an experienced test engineer, this repository provides practical, working examples that reflect real manufacturing constraints.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;what-youll-find-here&quot;&gt;What You’ll Find Here&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ready-to-use OpenTAP test plans&lt;/li&gt;
+  &lt;li&gt;Hardware–software integration examples&lt;/li&gt;
+  &lt;li&gt;Intelligent fixture concepts&lt;/li&gt;
+  &lt;li&gt;Best practices for production test development&lt;/li&gt;
+  &lt;li&gt;Training material for new test engineers and operators&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;fixture-identification&quot;&gt;Fixture Identification&lt;/h3&gt;
+
+&lt;p&gt;Correct identification of fixtures, cables, and interface equipment is critical in a production test environment. To prevent operator errors and protect both the &lt;strong&gt;First TestStation (FTS)&lt;/strong&gt; and the &lt;strong&gt;Device Under Test (DUT)&lt;/strong&gt;, the FTS platform supports the use of &lt;strong&gt;1-Wire EEPROM devices&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;A 1-Wire device is compact (typically available in a &lt;strong&gt;TO-92 package&lt;/strong&gt;) and can be easily integrated into any fixture, cable assembly, or interface module located between the FTS and the DUT.&lt;/p&gt;
+
+&lt;p&gt;When the 1-Wire device is programmed with identification data—such as the &lt;strong&gt;fixture name&lt;/strong&gt; and &lt;strong&gt;fixture identifier&lt;/strong&gt;—the test plan can automatically read and validate this information at the start of execution. If the detected fixture does not match the expected configuration, test execution is &lt;strong&gt;immediately stopped&lt;/strong&gt; and &lt;strong&gt;no power is applied&lt;/strong&gt; to the DUT. This protects both the test station and the DUT from incorrect connections.&lt;/p&gt;
+
+&lt;p&gt;This approach implements a &lt;strong&gt;hardware–software interlock&lt;/strong&gt;, which is essential for safe, repeatable, and production-ready test systems.&lt;/p&gt;
+
+&lt;h4 id=&quot;why-1-wire-in-fts&quot;&gt;Why 1-Wire in FTS&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Automatic Identification&lt;/strong&gt; – Each device has a factory-programmed unique 64-bit ID.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Minimal Wiring&lt;/strong&gt; – Requires only one data line plus ground.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Plug-and-Play&lt;/strong&gt; – No addressing, jumpers, or manual configuration&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Low Cost&lt;/strong&gt; – Widely available devices (e.g., DS2431 in TO-92 package)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Error Prevention&lt;/strong&gt; – Ensures the correct fixture is connected before applying power to the DUT&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Data Collection&lt;/strong&gt; – The data read on “1-wire” is part of the information saved on each DUT to help with analysis&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In a special case, the 1-Wire device could be used not to identify the fixture but to identify the Selftest Board. In this case, the information read on the “1-wire” sets the values for DUT Name, DUT Number, and DUT SerialNumber instead of Fixture Name, Fixture Number, and Fixture SerialNumber.&lt;/p&gt;
+
+&lt;h2 id=&quot;technical-articles&quot;&gt;Technical Articles&lt;/h2&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../../images/1wire.png&quot; alt=&quot;1-Wire Device&quot; /&gt;
+  &lt;figcaption&gt;1-Wire Device&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;-&lt;strong&gt;Overview of 1-Wire Technology and Its Use&lt;/strong&gt; &lt;a href=&quot;https://www.analog.com/en/resources/technical-articles/guide-to-1wire-communication.html&quot;&gt;1-Wire Technology&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;testcases&quot;&gt;TestCases&lt;/h3&gt;
+
+&lt;p&gt;A collection of &lt;strong&gt;simple, focused OpenTAP test cases&lt;/strong&gt; designed to validate the FTS Operator GUI and demonstrate standard OpenTAP test steps.&lt;/p&gt;
+
+&lt;p&gt;Created to understand how Test Step coming with OpenTAP work in creation of test sequences, the test steps are also be used to validate the execution on the FTS Operator GUI&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../../images/TestCases.png&quot; alt=&quot;TestCase&quot; /&gt;
+  &lt;figcaption&gt;OpenTap Test Steps&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h4 id=&quot;typical-use-case&quot;&gt;Typical Use Case&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Validate FTS Operator GUI installation&lt;/li&gt;
+  &lt;li&gt;Train new users on OpenTAP functionality&lt;/li&gt;
+  &lt;li&gt;Provide reference implementations for production test flows&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The Test Steps has been divided in Four Main categories:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1. Basic Steps&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Dialog, Delay, Log Output, Time Guard, Run Program&lt;/li&gt;
+  &lt;li&gt;No hardware required&lt;/li&gt;
+  &lt;li&gt;Demonstrates all verdict types: Pass, Fail, Error, Abort, Inconclusive&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2. Flow Control&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Repeat, If Verdict, Parallel, Sequence, Lock&lt;/li&gt;
+  &lt;li&gt;External Test Plan references&lt;/li&gt;
+  &lt;li&gt;Demonstrates conditional execution and timing dependencies&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;3. Sweep Flow Control&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Sweep Loop, Sweep Range, CSV Sweep, Sweep Parameter&lt;/li&gt;
+  &lt;li&gt;Requires OpenTAP Demonstration plugin&lt;/li&gt;
+  &lt;li&gt;Simulated battery testing and temperature chamber examples&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;4. InterconnectIO Examples&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Validation of the FTS_InterconnectIOBox plugin&lt;/li&gt;
+  &lt;li&gt;System version, firmware, configuration, and SCPI command tests&lt;/li&gt;
+  &lt;li&gt;Requires only the InterconnectIO Box (no DUT required)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;truecases&quot;&gt;TrueCases&lt;/h3&gt;
+
+&lt;p&gt;The TrueCases is a complete example of test implementation for a particular DUT (ADXL345) on the FTS TestStation.&lt;/p&gt;
+
+&lt;p&gt;In this example, the goal was to validate the I2C and SPI communication using a simple commercial module.&lt;/p&gt;
+
+&lt;p&gt;Two test sequences have been created and validated on FTS: the I2C test sequence and the SPI test sequence.&lt;/p&gt;
+
+&lt;p&gt;Pictures below show the fixture and I2C test sequences used to validate the DUT module.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../../images/Fixt_Com.png&quot; alt=&quot;Fixture Communication&quot; /&gt;
+  &lt;figcaption&gt;Communication Fixture&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../../images/I2C_test.jpg&quot; alt=&quot;I2C Communication&quot; /&gt;
+  &lt;figcaption&gt;I2C TapPlan&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;key-features&quot;&gt;Key Features&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ready-to-run TapPlan files
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;900-1100-010&lt;/code&gt; – I²C test sequence&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;900-1101-010&lt;/code&gt; – SPI test sequence&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Preconfigured TapSettings files&lt;/li&gt;
+  &lt;li&gt;Execution logs with pass/fail examples&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;resource-location&quot;&gt;Resource Location&lt;/h2&gt;
+
+&lt;p&gt;The resources are hosted on the official GitHub repository.&lt;/p&gt;
+
+&lt;p&gt;🔗 &lt;a href=&quot;https://github.com/FirstTestStation/FTS_Project_Resources&quot;&gt;FTS Project Resources&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul class=&quot;side-nav t60&quot;&gt;
+
+  
+
+    
+
+  
+&lt;/ul&gt;
+
+</content>
+
+			
+				<category term="software" />
+			
+			
+				<category term="blog" />
+			
+				<category term="content" />
+			
+				<category term="post" />
+			
+				<category term="post format" />
+			
+
+			<published>2026-02-08T00:00:00+00:00</published>
+		</entry>
 	
 		<entry>
 			<id>https://FirstTestStation.github.io/FTS_Website/hardware/DUT_Fixtures/</id>
@@ -150,8 +333,14 @@
 &lt;/blockquote&gt;
 
 &lt;hr /&gt;
+&lt;hr /&gt;
 
 &lt;h1 id=&quot;fts-communication-fixture-a-true-application-example&quot;&gt;FTS Communication Fixture: A True Application Example&lt;/h1&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../../images/Fixt_Com.png&quot; alt=&quot;Fixture Communication&quot; /&gt;
+  &lt;figcaption&gt;Communication Fixture&lt;/figcaption&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;The &lt;strong&gt;FTS Communication Fixture&lt;/strong&gt; was designed and used as a real-world application to validate the communication protocols available on the &lt;strong&gt;InterconnectIO Box&lt;/strong&gt;.&lt;/p&gt;
 
@@ -678,6 +867,21 @@ Test Steps dedicated to controlling the &lt;strong&gt;Selftest Board&lt;/strong&
 		
 		&lt;li&gt;&lt;a href=&quot;/FTS_Website/images/gallery-image-51.jpg&quot;&gt;&lt;img data-caption=&quot;Cutecom settings with Raspberry pi 5&quot; src=&quot;/FTS_Website/images/gallery-image-51-thumb.jpg&quot; alt=&quot;Cutecom settings with Raspberry pi 5&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
 		
+		
+		
+		
+		&lt;li&gt;&lt;a href=&quot;/FTS_Website/images/gallery-image-60.jpg&quot;&gt;&lt;img data-caption=&quot;Connector Board receptacles Din41612&quot; src=&quot;/FTS_Website/images/gallery-image-60-thumb.jpg&quot; alt=&quot;Connector Board receptacles Din41612&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		
+		
+		
+		
+		&lt;li&gt;&lt;a href=&quot;/FTS_Website/images/gallery-image-61.jpg&quot;&gt;&lt;img data-caption=&quot;Single Connector Board receptacle Din41612&quot; src=&quot;/FTS_Website/images/gallery-image-61-thumb.jpg&quot; alt=&quot;Single Connector Board receptacle Din41612&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		
+		
+		
+		
+		&lt;li&gt;&lt;a href=&quot;/FTS_Website/images/gallery-image-62.jpg&quot;&gt;&lt;img data-caption=&quot;Communication Fixture&quot; src=&quot;/FTS_Website/images/gallery-image-62-thumb.jpg&quot; alt=&quot;Communication Fixture&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		
 	&lt;/ul&gt;
 &lt;/div&gt;
 
@@ -847,61 +1051,6 @@ Test Steps dedicated to controlling the &lt;strong&gt;Selftest Board&lt;/strong&
 			
 
 			<published>2024-12-08T00:00:00+00:00</published>
-		</entry>
-	
-		<entry>
-			<id>https://FirstTestStation.github.io/FTS_Website/firmware/Master_IO_Firmware/</id>
-			<title>Master firmware for InterconnectIO Board</title>
-			<link href="https://FirstTestStation.github.io/FTS_Website/firmware/Master_IO_Firmware/" rel="alternate" type="text/html" title="Master firmware for InterconnectIO Board" />
-			<updated>2024-12-06T00:00:00+00:00</updated>
-
-			
-			<summary>Firmware information of the master device used on the interconnectIO Board of the First TestStation</summary>
-			<content type="html" xml:base="https://FirstTestStation.github.io/FTS_Website/firmware/Master_IO_Firmware/">&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
-
-&lt;p&gt;•	The Pico master firmware is the main controller of the interconnectIO Box.  The Master receive SCPI command from serial port, execute the command and return the answer. &lt;br /&gt;
-•	The Pico Master device is used to control the InterconnectIO Board and handle the communication protocols available on the board (I2C, SPI, Serial, and 1-Wire).  &lt;br /&gt;
-•	SCPI commands supported by the Pico master firmware are listed in the GitHub repository InterconnectIO_Master. For details, refer to the &lt;a href=&quot;https://github.com/FirstTestStation/InterconnectIO_Master_Firmware/blob/main/README.md&quot;&gt;readme.md&lt;/a&gt;&lt;br /&gt;
-•	Thanks to the open-source SCPI device library written by Jan Breuer, available at  &lt;a href=&quot;https://www.jaybee.cz/scpi-parser/&quot;&gt;SCPI parser&lt;/a&gt;&lt;br /&gt;
-•	Detailed messages to aid in debugging or understanding the process flow are available through the USB connector of the Pico controller.&lt;br /&gt;
-•	The configuration EEPROM is used to store user preferences.&lt;br /&gt;
-•	On error, the ‘Red Fail’ LED on the front panel will turn ON, and a beep will sound for a short duration.&lt;br /&gt;
-•	The Master firmware needs to be loaded onto the Pico controller and installed at the location marked in the picture above. &lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;flowchart&quot;&gt;Flowchart&lt;/h2&gt;
-
-&lt;p&gt;•	The flowchart below illustrates the algorithm used to process SCPI commands received on the serial port.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;../../images/Pico_Master_flowchart.jpg&quot; alt=&quot;Master Flowchart&quot; /&gt;
-  &lt;figcaption&gt;Master Firmware Flowchart&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;ul class=&quot;side-nav t60&quot;&gt;
-
-  
-
-    
-
-  
-&lt;/ul&gt;
-
-</content>
-
-			
-				<category term="firmware" />
-			
-			
-				<category term="blog" />
-			
-				<category term="content" />
-			
-				<category term="post" />
-			
-				<category term="post format" />
-			
-
-			<published>2024-12-06T00:00:00+00:00</published>
 		</entry>
 	
 </feed>

@@ -320,6 +320,12 @@
               <li><a 
                   href="https://FirstTestStation.github.io/FTS_Website/software/OperatorGUI_Plugin/" >Operator GUI Plugin</a></li>
               
+
+              
+
+              <li><a 
+                  href="https://FirstTestStation.github.io/FTS_Website/software/Resources/" >Project Resources</a></li>
+              
             </ul>
 
           </li>
