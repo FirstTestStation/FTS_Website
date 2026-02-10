@@ -119,8 +119,14 @@ The **DUT_Cable** solution features minimal, single-connector cable harnesses. T
 > **Expert Note:** The DUT_Cable was specifically designed for scenarios where full station resources are overkill. We strategically grouped the most critical special features onto the **J1 connector** of the InterconnectIO Box. This allows for a "single-connector" interface if you only need to program a DUT or perform basic digital communication. In fact, the DUT_Cable was the primary tool used to validate I2C, SPI, and Serial communication during the initial development of the InterconnectIO Box itself.
 
 ---
+---
 
 # FTS Communication Fixture: A True Application Example
+
+<figure>
+  <img src="../../images/Fixt_Com.png" alt="Fixture Communication">
+  <figcaption>Communication Fixture</figcaption>
+</figure>
 
 The **FTS Communication Fixture** was designed and used as a real-world application to validate the communication protocols available on the **InterconnectIO Box**.
 

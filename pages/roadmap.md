@@ -10,6 +10,7 @@ permalink           : "/roadmap/"
 
 ## TO DO
 
-•	Buy External Instruments. <br>
-•	Create an OpenTAP Test Plan sequence that includes the complete set of instrumentation.. <br>
-•	Complete documentation.<br>
+• Integrate test instruments into the FTS project  <br>
+• Create an OpenTAP test plan sequence including the complete instrumentation set  <br>
+• Mechanically integrate test instruments into a standard **19-inch rack**<br>  
+• Complete project documentation  <br>

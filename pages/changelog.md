@@ -9,6 +9,14 @@ header:
 permalink: "/changelog/"
 ---
 
+2026-01-20 // Operator GUI
+:   Completed OpenTAP plugin for the Operator GUI
+
+2025-08-25 // Fixture
+:   Completed hardware design of DUT Cable fixture
+:   Completed design and validation of FTS Communication Fixture
+:   Acquisition of test instruments from a local auction
+
 2025-04-10 // OpenTAP
 :   Completed OpenTAP plugin for InterconnectIO Box
 :   Completed OpenTAP stand-alone Selftest Test Plan sequence (without  external instruments)

@@ -63,6 +63,8 @@
     url: "/software/OpenTAP_TestPlan/"
   - title: "Operator GUI Plugin"
     url: "/software/OperatorGUI_Plugin/"
+  - title: "Project Resources"
+    url: "/software/Resources/"
 
 - title: Documentation
   url: "/documentation/"

@@ -46,6 +46,12 @@ gallery:
       caption:  Setup updated with Raspberry pi 5
     - image_url: gallery-image-51.jpg
       caption:  Cutecom settings with Raspberry pi 5
+    - image_url: gallery-image-60.jpg
+      caption:  Connector Board receptacles Din41612
+    - image_url: gallery-image-61.jpg
+      caption:  Single Connector Board receptacle Din41612
+    - image_url: gallery-image-62.jpg
+      caption:  Communication Fixture
 
 
 
